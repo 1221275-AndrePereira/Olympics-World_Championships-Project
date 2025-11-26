@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>World Championships Results Browser</title>
+<style>
+/* ---- THEME VARIABLES ---- */
+:root {  --bg-color: #121212;  --text-color: #FFA500;  --table-bg: #1f1f1f;  --card-bg: #181818;  --accent-color: #2563eb;  --header-bg: linear-gradient(90deg, #333, #444);  --row-hover: #333333;  --row-even: #1a1a1a;}
+[data-theme='light'] {  --bg-color: #f5f7fa;  --text-color: #333;  --table-bg: #ffffff;  --card-bg: #ffffff;  --accent-color: #0066cc;  --header-bg: linear-gradient(90deg, #e0eafc, #cfdef3);  --row-hover: #e8f0ff;  --row-even: #f9f9f9;}
+body {  margin: 0;  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  font-weight: bold;  padding: 20px;  background: var(--bg-color);  color: var(--text-color);  transition: background 0.3s, color 0.3s;}
+h1 {  font-size: 2.2rem;  margin-bottom: 1.5rem;  color: var(--text-color);  text-align: center;}
+
+/* ---- Dark Mode Toggle ---- */
+#theme-toggle {  position: fixed;  top: 20px;  right: 20px;  border: none;  background: transparent;  font-size: 1.6rem;  cursor: pointer;  color: var(--text-color);}
+
+/* ---- Controls ---- */
+.controls {  display: flex;  flex-wrap: wrap;  gap: 1rem;  margin-bottom: 1.5rem;  justify-content: center;  align-items: center;}
+label {  font-weight: 600;}
+select, button, input {  padding: 0.55rem 1rem;  font-size: 1rem;  border-radius: 8px;  border: 1px solid #ccc;  outline: none;  color: var(--text-color);  background: var(--card-bg);}
+select:focus, input:focus {  border-color: var(--accent-color);  box-shadow: 0 0 5px rgba(37, 99, 235,0.3);}
+button {  background: var(--accent-color);  color: white;  border: none;  cursor: pointer;  transition: all 0.3s ease;}
+button:hover {  background: #004999;}
+button:disabled {  background: #aaa;  cursor: not-allowed;}
+
+/* ---- Table Styling ---- */
+table {  border-collapse: collapse;  width: 100%;  font-size: 0.95rem;  background: var(--table-bg);  box-shadow: 0 4px 10px rgba(0,0,0,0.08);  border-radius: 8px;  overflow: hidden;  margin-top: 1rem;  transition: background 0.3s, color 0.3s;  color: var(--text-color);}
+thead th {  background: var(--header-bg);  padding: 12px;  font-weight: 700;  text-align: center;  color: var(--text-color);}
+tbody td {  padding: 10px 12px;  text-align: center;  border-bottom: 1px solid #555;}
+tbody tr:nth-child(even) {  background: var(--row-even);}
+tbody tr:hover {  background: var(--row-hover);  transform: scale(1.01);  transition: all 0.2s;}
+td img.flag {  width: 28px;  height: 20px;  border: 1px solid #ddd;  border-radius: 3px;  margin-right: 6px;  vertical-align: middle;}
+
+/* ---- Row Animation ---- */
+tbody tr {  opacity: 0;  transform: translateY(10px);  animation: fadeIn 0.35s forwards;}
+@keyframes fadeIn {  to { opacity: 1; transform: translateY(0); }}
+
+/* ---- Responsive ---- */
+@media(max-width: 600px) {  .controls {    flex-direction: column;  }  table {    font-size: 0.85rem;  }}
+
+
+</style>
+</head>
+<body>
+
+<h1>World Championships Results Browser</h1>
+
+<div class="controls">
+  <label>Season:
+    <select id="season"></select>
+  </label>
+  <label>Cycle:
+    <select id="cycle"></select>
+  </label>
+  <label>Sport:
+    <select id="sport"></select>
+  </label>
+  <label>Championship:
+    <select id="championship"></select>
+  </label>
+  <label>Event:
+    <select id="event"></select>
+  </label>
+  <button id="loadResults">Load Results</button>
+  <button id="showMedalTable">Show Medal Table</button>
+  <button id="showAllTimeMedalTable">Show All-Time Medal Table</button>
+
+  <input type="text" id="athleteSearch" placeholder="Search Athlete">
+  <input type="text" id="countrySearch" placeholder="Search Country">
+
+  <select id="sortBy">
+    <option value="rank">Rank</option>
+    <option value="athlete">Athlete</option>
+    <option value="country">Country</option>
+  </select>
+</div>
+
+<table id="resultsTable">
+  <thead>
+    <tr id="tableHeader">
+      <th>Rank</th>
+      <th>Athlete / Team</th>
+      <th>Country</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
+<script src="World Championships Data.js"></script>
+<script>
+
+// ---- COUNTRY FLAGS ----
+
+// ---- FLAGS (from flagcdn.com ISO2 codes) ----
+const flagMap = {
+  "Afghanistan": "af",
+  "Albania": "al",
+  "Algeria": "dz",
+  "American Samoa": "as",
+  "Andorra": "ad",
+  "Angola": "ao",
+  "Antigua and Barbuda": "ag",
+  "Argentina": "ar",
+  "Armenia": "am",
+  "Aruba": "aw",
+  "Australia": "au",
+  "Austria": "at",
+  "Azerbaijan": "az",
+  "Bahamas": "bs",
+  "Bahrain": "bh",
+  "Bangladesh": "bd",
+  "Barbados": "bb",
+  "Belarus": "by",
+  "Belgium": "be",
+  "Belize": "bz",
+  "Benin": "bj",
+  "Bermuda": "bm",
+  "Bhutan": "bt",
+  "Bolivia": "bo",
+  "Bosnia": "ba",
+  "Botswana": "bw",
+  "Brazil": "br",
+  "British Virgin Islands": "vg",
+  "Brunei": "bn",
+  "Bulgaria": "bg",
+  "Burkina Faso": "bf",
+  "Burundi": "bi",
+  "Cambodia": "kh",
+  "Cameroon": "cm",
+  "Canada": "ca",
+  "Cape Verde": "cv",
+  "Cayman Islands": "ky",
+  "Central African Republic": "cf",
+  "Chad": "td",
+  "Chile": "cl",
+  "China": "cn",
+  "Colombia": "co",
+  "Comoros": "km",
+  "Congo": "cg",
+  "DR Congo": "cd",
+  "Cook Islands": "ck",
+  "Costa Rica": "cr",
+  "Croatia": "hr",
+  "Cuba": "cu",
+  "Cyprus": "cy",
+  "Czech Republic": "cz",
+  "Denmark": "dk",
+  "Djibouti": "dj",
+  "Dominica": "dm",
+  "Dominican Republic": "do",
+  "Ecuador": "ec",
+  "Egypt": "eg",
+  "El Salvador": "sv",
+  "Equatorial Guinea": "gq",
+  "Eritrea": "er",
+  "Estonia": "ee",
+  "Eswatini": "sz",
+  "Ethiopia": "et",
+  "Fiji": "fj",
+  "Finland": "fi",
+  "France": "fr",
+  "Gabon": "ga",
+  "Gambia": "gm",
+  "Georgia": "ge",
+  "Germany": "de",
+  "Ghana": "gh",
+  "Greece": "gr",
+  "Grenada": "gd",
+  "Guam": "gu",
+  "Guatemala": "gt",
+  "Guinea": "gn",
+  "Guinea-Bissau": "gw",
+  "Guyana": "gy",
+  "Haiti": "ht",
+  "Honduras": "hn",
+  "Hong Kong": "hk",
+  "Hungary": "hu",
+  "Iceland": "is",
+  "India": "in",
+  "Indonesia": "id",
+  "Iran": "ir",
+  "Iraq": "iq",
+  "Ireland": "ie",
+  "Israel": "il",
+  "Italy": "it",
+  "Ivory Coast": "ci",
+  "Jamaica": "jm",
+  "Japan": "jp",
+  "Jordan": "jo",
+  "Kazakhstan": "kz",
+  "Kenya": "ke",
+  "Kiribati": "ki",
+  "Kosovo": "xk",
+  "Kuwait": "kw",
+  "Kyrgyzstan": "kg",
+  "Laos": "la",
+  "Latvia": "lv",
+  "Lebanon": "lb",
+  "Lesotho": "ls",
+  "Liberia": "lr",
+  "Libya": "ly",
+  "Liechtenstein": "li",
+  "Lithuania": "lt",
+  "Luxembourg": "lu",
+  "Madagascar": "mg",
+  "Malawi": "mw",
+  "Malaysia": "my",
+  "Maldives": "mv",
+  "Mali": "ml",
+  "Malta": "mt",
+  "Marshall Islands": "mh",
+  "Mauritania": "mr",
+  "Mauritius": "mu",
+  "Mexico": "mx",
+  "Micronesia": "fm",
+  "Moldova": "md",
+  "Monaco": "mc",
+  "Mongolia": "mn",
+  "Montenegro": "me",
+  "Morocco": "ma",
+  "Mozambique": "mz",
+  "Myanmar": "mm",
+  "Namibia": "na",
+  "Nauru": "nr",
+  "Nepal": "np",
+  "Netherlands": "nl",
+  "New Zealand": "nz",
+  "Nicaragua": "ni",
+  "Niger": "ne",
+  "Nigeria": "ng",
+  "North Korea": "kp",
+  "Macedonia": "mk",
+  "Norway": "no",
+  "Oman": "om",
+  "Pakistan": "pk",
+  "Palau": "pw",
+  "Palestine": "ps",
+  "Panama": "pa",
+  "Papua New Guinea": "pg",
+  "Paraguay": "py",
+  "Peru": "pe",
+  "Philippines": "ph",
+  "Poland": "pl",
+  "Portugal": "pt",
+  "Puerto Rico": "pr",
+  "Qatar": "qa",
+  "Romania": "ro",
+  "Russia": "ru",
+  "Rwanda": "rw",
+  "Saint Kitts and Nevis": "kn",
+  "Saint Lucia": "lc",
+  "Saint Vincent and Grenadines": "vc",
+  "Samoa": "ws",
+  "San Marino": "sm",
+  "São Tomé": "st",
+  "Saudi Arabia": "sa",
+  "Senegal": "sn",
+  "Serbia": "rs",
+  "Seychelles": "sc",
+  "Sierra Leone": "sl",
+  "Singapore": "sg",
+  "Slovakia": "sk",
+  "Slovenia": "si",
+  "Solomon Islands": "sb",
+  "Somalia": "so",
+  "South Africa": "za",
+  "South Korea": "kr",
+  "South Sudan": "ss",
+  "Spain": "es",
+  "Sri Lanka": "lk",
+  "Sudan": "sd",
+  "Suriname": "sr",
+  "Sweden": "se",
+  "Switzerland": "ch",
+  "Syria": "sy",
+  "Taiwan": "tw",
+  "Tajikistan": "tj",
+  "Tanzania": "tz",
+  "Thailand": "th",
+  "East Timor": "tl",
+  "Togo": "tg",
+  "Tonga": "to",
+  "Trinidad and Tobago": "tt",
+  "Tunisia": "tn",
+  "Turkey": "tr",
+  "Turkmenistan": "tm",
+  "Tuvalu": "tv",
+  "Uganda": "ug",
+  "Ukraine": "ua",
+  "United Arab Emirates": "ae",
+  "Great Britain": "gb",
+  "United States": "us",
+  "Virgin Islands": "vi",
+  "Uruguay": "uy",
+  "Uzbekistan": "uz",
+  "Vanuatu": "vu",
+  "Venezuela": "ve",
+  "Vietnam": "vn",
+  "Yemen": "ye",
+  "Zambia": "zm",
+  "Zimbabwe": "zw"
+};
+
+const sportIconMap = {
+  "3x3 Basketball": "https://upload.wikimedia.org/wikipedia/en/thumb/0/08/Basketball_%283x3%29%2C_Tokyo_2020.svg/1024px-Basketball_%283x3%29%2C_Tokyo_2020.svg.png",
+  "Archery": "https://upload.wikimedia.org/wikipedia/en/thumb/6/67/Archery%2C_Tokyo_2020.svg/1024px-Archery%2C_Tokyo_2020.svg.png",
+  "Artistic Gymnastics": "https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Gymnastics_%28Artistic%29%2C_Tokyo_2020.svg/1024px-Gymnastics_%28Artistic%29%2C_Tokyo_2020.svg.png",
+  "Artistic Swimming": "https://upload.wikimedia.org/wikipedia/en/thumb/6/69/Artistic_Swimming%2C_Tokyo_2020.svg/1024px-Artistic_Swimming%2C_Tokyo_2020.svg.png",
+  "Athletics" : "https://upload.wikimedia.org/wikipedia/en/thumb/0/0b/Athletics%2C_Tokyo_2020.svg/1024px-Athletics%2C_Tokyo_2020.svg.png",
+  "Badminton": "https://upload.wikimedia.org/wikipedia/en/thumb/3/32/Badminton%2C_Tokyo_2020.svg/1024px-Badminton%2C_Tokyo_2020.svg.png",
+  "Baseball" : "https://upload.wikimedia.org/wikipedia/en/thumb/0/0f/Baseball%2C_Tokyo_2020.svg/1024px-Baseball%2C_Tokyo_2020.svg.png",
+  "Basketball": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b1/Basketball%2C_Tokyo_2020.svg/1024px-Basketball%2C_Tokyo_2020.svg.png",
+  "Beach Volleyball": "https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Volleyball_%28Beach%29%2C_Tokyo_2020.svg/1024px-Volleyball_%28Beach%29%2C_Tokyo_2020.svg.png",
+  "Boxing": "https://upload.wikimedia.org/wikipedia/en/thumb/8/87/Boxing%2C_Tokyo_2020.svg/1024px-Boxing%2C_Tokyo_2020.svg.png",
+  "Breaking": "https://upload.wikimedia.org/wikipedia/en/thumb/2/22/Breaking_%E2%80%93_Paris_2024.svg/1024px-Breaking_%E2%80%93_Paris_2024.svg.png",
+  "Canoeing Slalom": "https://upload.wikimedia.org/wikipedia/en/thumb/e/ec/Canoeing_%28Slalom%29%2C_Tokyo_2020.svg/1024px-Canoeing_%28Slalom%29%2C_Tokyo_2020.svg.png",
+  "Canoeing Sprint": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f0/Canoeing_%28Sprint%29%2C_Tokyo_2020.svg/1024px-Canoeing_%28Sprint%29%2C_Tokyo_2020.svg.png",
+  "Cricket": "",
+  "Cycling BMX Freestyle": "https://upload.wikimedia.org/wikipedia/en/thumb/9/98/Cycling_%28BMX_Freestyle%29%2C_Tokyo_2020.svg/1024px-Cycling_%28BMX_Freestyle%29%2C_Tokyo_2020.svg.png",
+  "Cycling BMX Racing": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e7/Cycling_%28BMX_Race%29%2C_Tokyo_2020.svg/1024px-Cycling_%28BMX_Race%29%2C_Tokyo_2020.svg.png",
+  "Cycling Mountain Bike": "https://upload.wikimedia.org/wikipedia/en/thumb/4/47/Cycling_%28Mountain%29%2C_Tokyo_2020.svg/1024px-Cycling_%28Mountain%29%2C_Tokyo_2020.svg.png",
+  "Cycling Road": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0e/Cycling_%28Road%29%2C_Tokyo_2020.svg/1024px-Cycling_%28Road%29%2C_Tokyo_2020.svg.png",
+  "Cycling Track": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d6/Cycling_%28Track%29%2C_Tokyo_2020.svg/1024px-Cycling_%28Track%29%2C_Tokyo_2020.svg.png",
+  "Diving": "https://upload.wikimedia.org/wikipedia/en/thumb/3/33/Diving%2C_Tokyo_2020.svg/1024px-Diving%2C_Tokyo_2020.svg.png",
+  "Equestrian Dressage": "https://upload.wikimedia.org/wikipedia/en/thumb/5/54/Equestrian_%28Dressage%29%2C_Tokyo_2020.svg/1024px-Equestrian_%28Dressage%29%2C_Tokyo_2020.svg.png",
+  "Equestrian Eventing": "https://upload.wikimedia.org/wikipedia/en/thumb/f/fc/Equestrian_%28Eventing%29%2C_Tokyo_2020.svg/1024px-Equestrian_%28Eventing%29%2C_Tokyo_2020.svg.png",
+  "Equestrian Jumping": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9d/Equestrian_%28Jumping%29%2C_Tokyo_2020.svg/1024px-Equestrian_%28Jumping%29%2C_Tokyo_2020.svg.png",
+  "Fencing": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d0/Fencing%2C_Tokyo_2020.svg/1024px-Fencing%2C_Tokyo_2020.svg.png",
+  "Field Hockey": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c2/Field_Hockey%2C_Tokyo_2020.svg/1024px-Field_Hockey%2C_Tokyo_2020.svg.png",
+  "Flag Football": "",
+  "Football": "https://upload.wikimedia.org/wikipedia/en/thumb/9/91/Football%2C_Tokyo_2020.svg/1024px-Football%2C_Tokyo_2020.svg.png",
+  "Golf": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e5/Golf%2C_Tokyo_2020.svg/1024px-Golf%2C_Tokyo_2020.svg.png",
+  "Handball": "https://upload.wikimedia.org/wikipedia/en/thumb/3/33/Handball%2C_Tokyo_2020.svg/1024px-Handball%2C_Tokyo_2020.svg.png",
+  "Judo": "https://upload.wikimedia.org/wikipedia/en/thumb/8/81/Judo%2C_Tokyo_2020.svg/1024px-Judo%2C_Tokyo_2020.svg.png",
+  "Karate": "https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Karate_%28Kumite%29%2C_Tokyo_2020.svg/1024px-Karate_%28Kumite%29%2C_Tokyo_2020.svg.png",
+  "Lacrosse": "",
+  "Marathon Swimming": "https://upload.wikimedia.org/wikipedia/en/thumb/c/cb/Swimming_%28Marathon%29%2C_Tokyo_2020.svg/1024px-Swimming_%28Marathon%29%2C_Tokyo_2020.svg.png",
+  "Modern Pentathlon": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4f/Modern_Pentathlon%2C_Tokyo_2020.svg/300px-Modern_Pentathlon%2C_Tokyo_2020.svg.png",
+  "Rhythmic Gymnastics": "https://upload.wikimedia.org/wikipedia/en/thumb/d/db/Gymnastics_%28Rhythmic%29%2C_Tokyo_2020.svg/1024px-Gymnastics_%28Rhythmic%29%2C_Tokyo_2020.svg.png",
+  "Rowing": "https://upload.wikimedia.org/wikipedia/en/thumb/7/78/Rowing%2C_Tokyo_2020.svg/1024px-Rowing%2C_Tokyo_2020.svg.png",
+  "Rugby Sevens": "https://upload.wikimedia.org/wikipedia/en/thumb/3/34/Rugby_Sevens%2C_Tokyo_2020.svg/1024px-Rugby_Sevens%2C_Tokyo_2020.svg.png",
+  "Sailing": "https://upload.wikimedia.org/wikipedia/en/thumb/7/70/Sailing%2C_Tokyo_2020.svg/1024px-Sailing%2C_Tokyo_2020.svg.png",
+  "Shooting": "https://upload.wikimedia.org/wikipedia/en/thumb/7/75/Shooting%2C_Tokyo_2020.svg/1024px-Shooting%2C_Tokyo_2020.svg.png",
+  "Skateboarding": "https://upload.wikimedia.org/wikipedia/en/thumb/4/40/Skateboarding%2C_Tokyo_2020.svg/1024px-Skateboarding%2C_Tokyo_2020.svg.png",
+  "Softball": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d6/Softball%2C_Tokyo_2020.svg/1024px-Softball%2C_Tokyo_2020.svg.png",
+  "Sport Climbing": "https://upload.wikimedia.org/wikipedia/en/thumb/4/48/Sport_Climbing%2C_Tokyo_2020.svg/1024px-Sport_Climbing%2C_Tokyo_2020.svg.png",
+  "Squash": "",
+  "Surfing": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2e/Surfing%2C_Tokyo_2020.svg/1024px-Surfing%2C_Tokyo_2020.svg.png",
+  "Swimming": "https://upload.wikimedia.org/wikipedia/en/thumb/7/72/Swimming%2C_Tokyo_2020.svg/1024px-Swimming%2C_Tokyo_2020.svg.png",
+  "Table Tennis": "https://upload.wikimedia.org/wikipedia/en/thumb/5/57/Table_Tennis%2C_Tokyo_2020.svg/1024px-Table_Tennis%2C_Tokyo_2020.svg.png",
+  "Taekwondo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2f/Taekwondo%2C_Tokyo_2020.svg/1024px-Taekwondo%2C_Tokyo_2020.svg.png",
+  "Tennis": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Tennis%2C_Tokyo_2020.svg/1024px-Tennis%2C_Tokyo_2020.svg.png",
+  "Trampolining": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e3/Gymnastics_%28Trampoline%29%2C_Tokyo_2020.svg/1024px-Gymnastics_%28Trampoline%29%2C_Tokyo_2020.svg.png",
+  "Triathlon": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7e/Triathlon%2C_Tokyo_2020.svg/1024px-Triathlon%2C_Tokyo_2020.svg.png",
+  "Volleyball": "https://upload.wikimedia.org/wikipedia/en/thumb/e/ea/Volleyball%2C_Tokyo_2020.svg/1024px-Volleyball%2C_Tokyo_2020.svg.png",
+  "Water Polo": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4b/Water_Polo%2C_Tokyo_2020.svg/1024px-Water_Polo%2C_Tokyo_2020.svg.png",
+  "Weightlifting": "https://upload.wikimedia.org/wikipedia/en/thumb/7/70/Weightlifting%2C_Tokyo_2020.svg/300px-Weightlifting%2C_Tokyo_2020.svg.png",
+  "Wrestling": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d8/Wrestling%2C_Tokyo_2020.svg/1024px-Wrestling%2C_Tokyo_2020.svg.png",
+  "Alpine Skiing": "https://image.jimcdn.com/app/cms/image/transf/dimension=282x10000:format=jpg/path/s293f5a94d3403280/image/i4fc4c3021075feb0/version/1730999505/image.jpg",
+  "Biathlon": "https://image.jimcdn.com/app/cms/image/transf/dimension=282x10000:format=jpg/path/s293f5a94d3403280/image/i316e3d3bcd8d3539/version/1730999508/image.jpg",
+  "Bobsleigh": "https://image.jimcdn.com/app/cms/image/transf/dimension=282x10000:format=jpg/path/s293f5a94d3403280/image/i57b379c3cdd7bc64/version/1730999510/image.jpg",
+  "Cross-Country Skiing": "https://image.jimcdn.com/app/cms/image/transf/dimension=282x10000:format=jpg/path/s293f5a94d3403280/image/i812d3f9cc769280b/version/1730999512/image.jpg",
+  "Curling": "https://image.jimcdn.com/app/cms/image/transf/dimension=310x10000:format=jpg/path/s293f5a94d3403280/image/i85bc82b6ab97988b/version/1730999518/image.jpg",
+  "Figure Skating": "https://image.jimcdn.com/app/cms/image/transf/dimension=310x10000:format=jpg/path/s293f5a94d3403280/image/ic694b9355b06e44b/version/1730999520/image.jpg",
+  "Freestyle Skiing": "https://image.jimcdn.com/app/cms/image/transf/dimension=310x10000:format=jpg/path/s293f5a94d3403280/image/ic1b187bc9db9fc6f/version/1730999523/image.jpg",
+  "Ice Hockey": "https://image.jimcdn.com/app/cms/image/transf/dimension=310x10000:format=jpg/path/s293f5a94d3403280/image/iab6ec17e41063d23/version/1730999534/image.jpg",
+  "Luge": "https://image.jimcdn.com/app/cms/image/transf/dimension=310x10000:format=jpg/path/s293f5a94d3403280/image/i7ecedc9d344ce07d/version/1730999539/image.jpg",
+  "Nordic Combined": "https://image.jimcdn.com/app/cms/image/transf/dimension=310x10000:format=jpg/path/s293f5a94d3403280/image/i54e0eb4a2fc352a2/version/1730999541/image.jpg",
+  "Short-track Speed Skating": "https://image.jimcdn.com/app/cms/image/transf/dimension=310x10000:format=jpg/path/s293f5a94d3403280/image/ia6be4f8d09696ff9/version/1730999549/image.jpg",
+  "Skeleton": "https://image.jimcdn.com/app/cms/image/transf/dimension=310x10000:format=jpg/path/s293f5a94d3403280/image/i531407afdeed74f9/version/1730999552/image.jpg",
+  "Ski Jumping": "https://image.jimcdn.com/app/cms/image/transf/dimension=314x10000:format=jpg/path/s293f5a94d3403280/image/i277e56bc70d63d87/version/1730999555/image.jpg",
+  "Ski Mountaineering": "https://image.jimcdn.com/app/cms/image/transf/dimension=314x10000:format=jpg/path/s293f5a94d3403280/image/ie6e22dd4726f37aa/version/1730999566/image.jpg",
+  "Snowboarding": "https://image.jimcdn.com/app/cms/image/transf/dimension=314x10000:format=jpg/path/s293f5a94d3403280/image/ieeb77108fbc203a7/version/1730999612/image.jpg",
+  "Speed Skating": "https://image.jimcdn.com/app/cms/image/transf/dimension=314x10000:format=jpg/path/s293f5a94d3403280/image/ia459e76adb3f74a4/version/1730999615/image.jpg"
+
+};
+
+// ---- Medal Emojis ----
+function medalEmoji(rank) {
+  if (rank === 1) return "🥇";
+  if (rank === 2) return "🥈";
+  if (rank === 3) return "🥉";
+  return rank;
+}
+
+// ---- DOM ELEMENTS ----
+const seasonSelect = document.getElementById('season');
+const cycleSelect = document.getElementById('cycle');
+const sportSelect = document.getElementById('sport');
+const championshipSelect = document.getElementById('championship');
+const eventSelect = document.getElementById('event');
+const tbody = document.querySelector('#resultsTable tbody');
+const tableHeader = document.getElementById('tableHeader');
+const athleteSearch = document.getElementById('athleteSearch');
+const countrySearch = document.getElementById('countrySearch');
+const sortBySelect = document.getElementById('sortBy');
+
+// ---- Populate Dropdowns ----
+function populateSeasons() {
+  seasonSelect.innerHTML = "";
+  Object.keys(resultsData).forEach(season => {
+    seasonSelect.add(new Option(season, season));
+  });
+  populateCycles();
+}
+
+function populateCycles() {
+  const season = seasonSelect.value;
+  cycleSelect.innerHTML = "";
+  Object.keys(resultsData[season]).forEach(cycle => {
+    cycleSelect.add(new Option(cycle, cycle));
+  });
+  populateSports();
+}
+
+function populateSports() {
+  const season = seasonSelect.value;
+  const cycle = cycleSelect.value;
+  sportSelect.innerHTML = "";
+  Object.keys(resultsData[season][cycle]).forEach(sport => {
+    sportSelect.add(new Option(sport, sport));
+  });
+  populateChampionships();
+}
+
+function populateChampionships() {
+  const season = seasonSelect.value;
+  const cycle = cycleSelect.value;
+  const sport = sportSelect.value;
+  championshipSelect.innerHTML = "";
+  Object.keys(resultsData[season][cycle][sport]).forEach(champ => {
+    championshipSelect.add(new Option(champ, champ));
+  });
+  populateEvents();
+}
+
+function populateEvents() {
+  const season = seasonSelect.value;
+  const cycle = cycleSelect.value;
+  const sport = sportSelect.value;
+  const championship = championshipSelect.value;
+  eventSelect.innerHTML = "";
+  Object.keys(resultsData[season][cycle][sport][championship]).forEach(ev => {
+    eventSelect.add(new Option(ev, ev));
+  });
+}
+
+// ---- Render Event Results ----
+function renderResults() {
+  const season = seasonSelect.value;
+  const cycle = cycleSelect.value;
+  const sport = sportSelect.value;
+  const championship = championshipSelect.value;
+  const event = eventSelect.value;
+  const athleteText = athleteSearch.value.toLowerCase();
+  const countryText = countrySearch.value.toLowerCase();
+  const sortBy = sortBySelect.value;
+
+  let rows = resultsData[season][cycle][sport][championship][event] || [];
+
+  if (athleteText) {
+    rows = rows.filter(r => r.athlete.toLowerCase().includes(athleteText));
+  }
+  if (countryText) {
+    rows = rows.filter(r => r.country.toLowerCase().includes(countryText));
+  }
+
+  rows.sort((a, b) => {
+    if (sortBy === "rank") return a.rank - b.rank;
+    return a[sortBy].localeCompare(b[sortBy]);
+  });
+
+  tableHeader.innerHTML = `
+    <th>Rank</th>
+    <th>Athlete / Team</th>
+    <th>Country</th>
+  `;
+
+  tbody.innerHTML = "";
+  rows.forEach(r => {
+    const flagCode = flagMap[r.country];
+    const flagUrl = flagCode ? `https://flagcdn.com/w40/${flagCode}.png` : "";
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td>${medalEmoji(r.rank)}</td>
+      <td><strong>${r.athlete}</strong></td>
+      <td>${flagUrl ? `<img class="flag" src="${flagUrl}">` : ""} ${r.country}</td>
+    `;
+    tbody.appendChild(tr);
+  });
+}
+
+// ---- Render Medal Table ----
+function renderMedalTable() {
+  const season = seasonSelect.value;
+  const cycle = cycleSelect.value;
+  const sports = resultsData[season][cycle];
+  const medalTally = {};
+
+  Object.values(sports).forEach(champs => {
+    Object.values(champs).forEach(events => {
+      Object.values(events).forEach(results => {
+        results.forEach(r => {
+          if (r.rank <= 3) {
+            if (!medalTally[r.country]) {
+              medalTally[r.country] = { gold: 0, silver: 0, bronze: 0, total: 0 };
+            }
+            if (r.rank === 1) medalTally[r.country].gold++;
+            if (r.rank === 2) medalTally[r.country].silver++;
+            if (r.rank === 3) medalTally[r.country].bronze++;
+            medalTally[r.country].total++;
+          }
+        });
+      });
+    });
+  });
+
+  // Convert tally to rows
+  let rows = Object.entries(medalTally).map(([country, m]) => ({ country, ...m }));
+
+  // --- Apply Country Search ---
+  const countryText = countrySearch.value.toLowerCase();
+  if (countryText) {
+    rows = rows.filter(r => r.country.toLowerCase().includes(countryText));
+  }
+
+  // --- Apply Sorting ---
+  const sortBy = sortBySelect.value;
+  rows.sort((a, b) => {
+    if (sortBy === "country") return a.country.localeCompare(b.country);
+    if (sortBy === "rank") return b.gold - a.gold || b.silver - a.silver || b.bronze - a.bronze;
+    return b.total - a.total; // fallback sort by total
+  });
+
+  // --- Render Table ---
+  tableHeader.innerHTML = `
+    <th>Country</th>
+    <th>🥇 Gold</th>
+    <th>🥈 Silver</th>
+    <th>🥉 Bronze</th>
+    <th>Total</th>
+  `;
+  tbody.innerHTML = "";
+  if (rows.length === 0) {
+    tbody.innerHTML = `<tr><td colspan="5">No countries found</td></tr>`;
+    return;
+  }
+  rows.forEach(r => {
+    const flagCode = flagMap[r.country];
+    const flagUrl = flagCode ? `https://flagcdn.com/w40/${flagCode}.png` : "";
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td>${flagUrl ? `<img class="flag" src="${flagUrl}">` : ""} ${r.country}</td>
+      <td>${r.gold}</td>
+      <td>${r.silver}</td>
+      <td>${r.bronze}</td>
+      <td>${r.total}</td>
+    `;
+    tr.style.cursor = "pointer";
+    tr.addEventListener("click", () => renderCountryMedalists(r.country));
+    tbody.appendChild(tr);
+  });
+}
+
+// ---- Render Country Medalists ----
+function renderCountryMedalists(country) {
+  const season = seasonSelect.value;
+  const cycle = cycleSelect.value;
+  const sports = resultsData[season][cycle];
+  let medalists = [];
+
+  Object.entries(sports).forEach(([sportName, champs]) => {
+    Object.entries(champs).forEach(([championshipName, events]) => {
+      Object.entries(events).forEach(([eventName, results]) => {
+        results.forEach(r => {
+          if (r.country === country && r.rank <= 3) {
+            medalists.push({
+              sport: sportName,
+              championship: championshipName,
+              event: eventName,
+              athlete: r.athlete,
+              rank: r.rank,
+              country: r.country
+            });
+          }
+        });
+      });
+    });
+  });
+
+  // --- Apply Athlete Search ---
+  const athleteText = athleteSearch.value.toLowerCase();
+  if (athleteText) {
+    medalists = medalists.filter(r => r.athlete.toLowerCase().includes(athleteText));
+  }
+
+  // --- Apply Sort ---
+  const sortBy = sortBySelect.value;
+  medalists.sort((a, b) => {
+    if (sortBy === "rank") return a.rank - b.rank;
+    if (sortBy === "athlete") return a.athlete.localeCompare(b.athlete);
+    if (sortBy === "country") return a.country.localeCompare(b.country);
+    return 0;
+  });
+
+  // --- Render Table Header ---
+  tableHeader.innerHTML = `
+    <th>Rank</th>
+    <th>Athlete / Team</th>
+    <th>Sport</th>
+    <th>Championship</th>
+    <th>Event</th>
+    <th>Country</th>
+  `;
+
+  tbody.innerHTML = "";
+  if (medalists.length === 0) {
+    tbody.innerHTML = `<tr><td colspan="6">No medalists found</td></tr>`;
+    return;
+  }
+
+  // --- Render Rows ---
+  medalists.forEach(r => {
+    const flagCode = flagMap[r.country];
+    const flagUrl = flagCode ? `https://flagcdn.com/w40/${flagCode}.png` : "";
+    const tr = document.createElement("tr");
+    tr.innerHTML = `
+      <td>${medalEmoji(r.rank)}</td>
+      <td><strong>${r.athlete}</strong></td>
+      <td>
+  ${sportIconMap[r.sport] ? `<img src="${sportIconMap[r.sport]}" alt="${r.sport}" style="height:24px; vertical-align:middle; margin-right:6px;">` : ""}
+  ${r.sport}
+</td>
+      <td>${r.championship}</td>
+      <td>${r.event}</td>
+      <td>${flagUrl ? `<img class="flag" src="${flagUrl}">` : ""} ${r.country}</td>
+    `;
+    tbody.appendChild(tr);
+  });
+}
+
+
+// ---- Render All-Time Medal Table ----
+function renderAllTimeMedalTable() {
+  const season = seasonSelect.value; // Summer or Winter
+  const cycles = resultsData[season];
+  const medalTally = {};
+
+  // Aggregate across ALL cycles
+  Object.values(cycles).forEach(sports => {
+    Object.values(sports).forEach(champs => {
+      Object.values(champs).forEach(events => {
+        Object.values(events).forEach(results => {
+          results.forEach(r => {
+            if (r.rank <= 3) {
+              if (!medalTally[r.country]) {
+                medalTally[r.country] = { gold: 0, silver: 0, bronze: 0, total: 0 };
+              }
+              if (r.rank === 1) medalTally[r.country].gold++;
+              if (r.rank === 2) medalTally[r.country].silver++;
+              if (r.rank === 3) medalTally[r.country].bronze++;
+              medalTally[r.country].total++;
+            }
+          });
+        });
+      });
+    });
+  });
+
+  // Convert tally to rows
+  let rows = Object.entries(medalTally).map(([country, m]) => ({ country, ...m }));
+
+  // --- Apply Country Search ---
+  const countryText = countrySearch.value.toLowerCase();
+  if (countryText) {
+    rows = rows.filter(r => r.country.toLowerCase().includes(countryText));
+  }
+
+  // --- Apply Sorting ---
+  const sortBy = sortBySelect.value;
+  rows.sort((a, b) => {
+    if (sortBy === "country") return a.country.localeCompare(b.country);
+    if (sortBy === "rank") return b.gold - a.gold || b.silver - a.silver || b.bronze - a.bronze;
+    return b.total - a.total; // fallback sort by total
+  });
+
+  // --- Render Table ---
+  tableHeader.innerHTML = `
+    <th>Country</th>
+    <th>🥇 Gold</th>
+    <th>🥈 Silver</th>
+    <th>🥉 Bronze</th>
+    <th>Total</th>
+  `;
+  tbody.innerHTML = "";
+  if (rows.length === 0) {
+    tbody.innerHTML = `<tr><td colspan="5">No countries found</td></tr>`;
+    return;
+  }
+  rows.forEach(r => {
+    const flagCode = flagMap[r.country];
+    const flagUrl = flagCode ? `https://flagcdn.com/w40/${flagCode}.png` : "";
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td>${flagUrl ? `<img class="flag" src="${flagUrl}">` : ""} ${r.country}</td>
+      <td>${r.gold}</td>
+      <td>${r.silver}</td>
+      <td>${r.bronze}</td>
+      <td>${r.total}</td>
+    `;
+    tr.style.cursor = "pointer";
+    tr.addEventListener("click", () => renderAllTimeCountryMedalists(r.country));
+    tbody.appendChild(tr);
+  });
+}
+
+
+
+// ---- Render All-Time Country Medalists ----
+function renderAllTimeCountryMedalists(country) {
+  const season = seasonSelect.value;
+  const cycles = resultsData[season];
+  let medalists = [];
+
+  Object.entries(cycles).forEach(([cycleName, sports]) => {
+    Object.entries(sports).forEach(([sportName, champs]) => {
+      Object.entries(champs).forEach(([championshipName, events]) => {
+        Object.entries(events).forEach(([eventName, results]) => {
+          results.forEach(r => {
+            if (r.country === country && r.rank <= 3) {
+              medalists.push({
+                cycle: cycleName,
+                sport: sportName,
+                championship: championshipName,
+                event: eventName,
+                athlete: r.athlete,
+                rank: r.rank,
+                country: r.country
+              });
+            }
+          });
+        });
+      });
+    });
+  });
+
+  // --- Apply Athlete Search ---
+  const athleteText = athleteSearch.value.toLowerCase();
+  if (athleteText) {
+    medalists = medalists.filter(r => r.athlete.toLowerCase().includes(athleteText));
+  }
+
+  // --- Apply Sort ---
+  const sortBy = sortBySelect.value;
+  medalists.sort((a, b) => {
+    if (sortBy === "rank") return a.rank - b.rank;
+    if (sortBy === "athlete") return a.athlete.localeCompare(b.athlete);
+    if (sortBy === "country") return a.country.localeCompare(b.country);
+    return 0;
+  });
+
+  // --- Render Table Header ---
+  tableHeader.innerHTML = `
+    <th>Rank</th>
+    <th>Athlete / Team</th>
+    <th>Sport</th>
+    <th>Cycle</th>
+    <th>Championship</th>
+    <th>Event</th>
+    <th>Country</th>
+  `;
+
+  tbody.innerHTML = "";
+  if (medalists.length === 0) {
+    tbody.innerHTML = `<tr><td colspan="7">No medalists found</td></tr>`;
+    return;
+  }
+
+  // --- Render Rows ---
+  medalists.forEach(r => {
+    const flagCode = flagMap[r.country];
+    const flagUrl = flagCode ? `https://flagcdn.com/w40/${flagCode}.png` : "";
+    const tr = document.createElement("tr");
+    tr.innerHTML = `
+      <td>${medalEmoji(r.rank)}</td>
+      <td><strong>${r.athlete}</strong></td>
+      <td>
+        ${sportIconMap[r.sport] ? `<img src="${sportIconMap[r.sport]}" alt="${r.sport}" style="height:24px; vertical-align:middle; margin-right:6px;">` : ""}
+        ${r.sport}
+      </td>
+      <td>${r.cycle}</td>
+      <td>${r.championship}</td>
+      <td>${r.event}</td>
+      <td>${flagUrl ? `<img class="flag" src="${flagUrl}">` : ""} ${r.country}</td>
+    `;
+    tbody.appendChild(tr);
+  });
+}
+
+// ---- Event Listeners ----
+document.getElementById('loadResults').addEventListener('click', renderResults);
+document.getElementById('showMedalTable').addEventListener('click', renderMedalTable);
+document.getElementById('showAllTimeMedalTable').addEventListener('click', renderAllTimeMedalTable);
+athleteSearch.addEventListener('input', renderResults);
+countrySearch.addEventListener('input', renderResults);
+sortBySelect.addEventListener('change', renderResults);
+seasonSelect.addEventListener('change', () => { populateCycles(); renderResults(); });
+cycleSelect.addEventListener('change', () => { populateSports(); renderResults(); });
+sportSelect.addEventListener('change', () => { populateChampionships(); renderResults(); });
+championshipSelect.addEventListener('change', () => { populateEvents(); renderResults(); });
+eventSelect.addEventListener('change', renderResults);
+
+// ---- Initial Render ----
+populateSeasons();
+renderResults();
+</script>
+</body>
+</html>
