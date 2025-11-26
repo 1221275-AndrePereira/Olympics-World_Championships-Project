@@ -11,7 +11,9 @@ You can also view the events on past Summer and Winter Olympics and even the eve
 
 ## What to do next
 
-Keep building up the data for past Olympics and World Championships
+Include the world championships medallists from past olympic cycles (in particular 2021-2024 summer cycle and 2022-2026 winter cycle).
+
+Include the results for the past Olympic Games (in particular the medallists).
 
 ## How to run
 

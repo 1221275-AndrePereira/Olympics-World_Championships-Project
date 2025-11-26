@@ -10248,10 +10248,14 @@ const resultsData = {
       "Beach Volleyball": {
         "2025 Beach Volleyball World Championship": { //Adelaide, Australia
           "Men's Tournament": [ 
-           
+          {rank:1,athlete:"David Åhman/Jonatan Hellvig",country:"Sweden"},
+          {rank:2,athlete:"Elmer Andersson/Jacob Nilsson",country:"Sweden"},
+          {rank:3,athlete:"Arnaud Gauthier-Rat/Téo Rotar",country:"France"} 
           ],
           "Women's Tournament": [ 
-           
+          {rank:1,athlete:"Anastasija Samoilova/Tīna Graudiņa",country:"Latvia"},
+          {rank:2,athlete:"Kristen Nuss/Taryn Brasher",country:"United States"},
+          {rank:3,athlete:"Carolina Solberg Salgado/Rebecca Silva",country:"Brazil"} 
           ]
         }
       },
@@ -11196,34 +11200,54 @@ const resultsData = {
         },
         "2025 Shooting - Rifle and Pistol World Championships": { //Cairo, Egypt
           "Men's 10m Air Rifle": [
-           
+          {rank:1,athlete:"Maximilian Dallinger",country:"Germany"},
+          {rank:2,athlete:"Victor Lindgren",country:"Sweden"},
+          {rank:3,athlete:"Sheng Lihao",country:"China"} 
           ],
           "Men's 50m Rifle 3 Positions": [
-           
+          {rank:1,athlete:"Liu Yukun",country:"China"},
+          {rank:2,athlete:"Aishwary Tomar",country:"India"},
+          {rank:3,athlete:"Romain Aufrère",country:"France"} 
           ],
           "Men's 10m Air Pistol": [
-           
+          {rank:1,athlete:"Samrat Rana",country:"India"},
+          {rank:2,athlete:"Hu Kai",country:"China"},
+          {rank:3,athlete:"Varun Tomar",country:"India"} 
           ],
           "Men's 25m Rapid Fire Pistol": [
-           
+          {rank:1,athlete:"Clément Bessaguet",country:"France"},
+          {rank:2,athlete:"Anish Bhanwala",country:"India"},
+          {rank:3,athlete:"Maksym Horodynets",country:"Ukraine"} 
           ],
           "Women's 10m Air Rifle": [
-           
+          {rank:1,athlete:"Ban Hyo-Jin",country:"South Korea"},
+          {rank:2,athlete:"Wang Zifei",country:"China"},
+          {rank:3,athlete:"Elavenil Valarivan",country:"India"} 
           ],
           "Women's 50m Rifle 3 Positions": [
-           
+          {rank:1,athlete:"Jeanette Hegg Duestad",country:"Norway"},
+          {rank:2,athlete:"Emely Jäggi",country:"Switzerland"},
+          {rank:3,athlete:"Seonaid McIntosh",country:"Great Britain"} 
           ],
           "Women's 10m Air Pistol": [
-           
+          {rank:1,athlete:"Yao Qianxun",country:"China"},
+          {rank:2,athlete:"Shing Ho Ching",country:"Hong Kong"},
+          {rank:3,athlete:"Qian Wei",country:"China"} 
           ],
           "Women's 25m Pistol": [
-           
+          {rank:1,athlete:"Yang Ji-In",country:"South Korea"},
+          {rank:2,athlete:"Yao Qianxun",country:"China"},
+          {rank:3,athlete:"Esha Singh",country:"India"} 
           ],
           "Mixed 10m Air Rifle": [
-           
+          {rank:1,athlete:"Sheng Lihao/Wang Zifei",country:"China"},
+          {rank:2,athlete:"Wang Honghao/Peng Xinlu",country:"China"},
+          {rank:3,athlete:"Mert Nalbant/Damla Köse",country:"Turkey"} 
           ],
           "Mixed 10m Air Pistol": [
-           
+          {rank:1,athlete:"Hu Kai/Yao Qianxun",country:"China"},
+          {rank:2,athlete:"Samrat Rana/Esha Singh",country:"India"},
+          {rank:3,athlete:"Hong Su-Hyeon/Oh Ye-Jin",country:"South Korea"} 
           ],
         }
       },
