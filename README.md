@@ -1,7 +1,7 @@
 # Olympics-World_Championships-Project
 
 In this project i used HTML, CSS and JavaScript languages to bring this project to life.
-The data used in this project was obtained via the Totallympics forum, Wikipedia and the websites related to the respective competitions.
+The data used in this project was obtained via the Totallympics forum, Wikipedia, Olympedia and websites related to the respective competitions.
 
 ## What's in it
 
