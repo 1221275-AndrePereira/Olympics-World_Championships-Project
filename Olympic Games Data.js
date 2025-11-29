@@ -3662,578 +3662,578 @@ const resultsData = {
     "2022": {
       "Alpine Skiing": {
         "Men's Combined": [
-        {rank:1,athlete:"",country:""},
-        {rank:2,athlete:"",country:""},
-        {rank:3,athlete:"",country:""} 
+        {rank:1,athlete:"Johannes Strolz",country:"Austria"},
+        {rank:2,athlete:"Aleksander Aamodt Kilde",country:"Norway"},
+        {rank:3,athlete:"Jack Crawford",country:"Canada"} 
         ],
         "Men's Downhill": [
-        {rank:1,athlete:"",country:""},
-        {rank:2,athlete:"",country:""},
-        {rank:3,athlete:"",country:""}
+        {rank:1,athlete:"Beat Feuz",country:"Switzerland"},
+        {rank:2,athlete:"Johan Clarey",country:"France"},
+        {rank:3,athlete:"Matthias Mayer",country:"Austria"}
         ],
         "Men's Giant Slalom": [
-        {rank:1,athlete:"",country:""},
-        {rank:2,athlete:"",country:""},
-        {rank:3,athlete:"",country:""} 
+        {rank:1,athlete:"Marco Odermatt",country:"Switzerland"},
+        {rank:2,athlete:"Žan Kranjec",country:"Slovenia"},
+        {rank:3,athlete:"Mathieu Faivre",country:"France"} 
         ],
         "Men's Slalom": [
-        {rank:1,athlete:"",country:""},
-        {rank:2,athlete:"",country:""},
-        {rank:3,athlete:"",country:""} 
+        {rank:1,athlete:"Clément Noël",country:"France"},
+        {rank:2,athlete:"Johannes Strolz",country:"Austria"},
+        {rank:3,athlete:"Sebastian Foss Solevåg",country:"Norway"} 
         ],
         "Men's Super-G": [
-        {rank:1,athlete:"",country:""},
-        {rank:2,athlete:"",country:""},
-        {rank:3,athlete:"",country:""} 
+        {rank:1,athlete:"Matthias Mayer",country:"Austria"},
+        {rank:2,athlete:"Ryan Cochran-Siegle",country:"United States"},
+        {rank:3,athlete:"Aleksander Aamodt Kilde",country:"Norway"} 
         ],
         "Women's Combined": [
-        {rank:1,athlete:"",country:""},
-        {rank:2,athlete:"",country:""},
-        {rank:3,athlete:"",country:""} 
+        {rank:1,athlete:"Michelle Gisin",country:"Switzerland"},
+        {rank:2,athlete:"Wendy Holdener",country:"Switzerland"},
+        {rank:3,athlete:"Federica Brignone",country:"Italy"} 
         ],
         "Women's Downhill": [
-        {rank:1,athlete:"",country:""},
-        {rank:2,athlete:"",country:""},
-        {rank:3,athlete:"",country:""} 
+        {rank:1,athlete:"Corinne Suter",country:"Switzerland"},
+        {rank:2,athlete:"Sofia Goggia",country:"Italy"},
+        {rank:3,athlete:"Nadia Delago",country:"Italy"} 
         ],
         "Women's Giant Slalom": [
-        {rank:1,athlete:"",country:""},
-        {rank:2,athlete:"",country:""},
-        {rank:3,athlete:"",country:""} 
+        {rank:1,athlete:"Sara Hector",country:"Sweden"},
+        {rank:2,athlete:"Federica Brignone",country:"Italy"},
+        {rank:3,athlete:"Lara Gut-Behrami",country:"Switzerland"} 
         ],
         "Women's Slalom": [
-        {rank:1,athlete:"",country:""},
-        {rank:2,athlete:"",country:""},
-        {rank:3,athlete:"",country:""} 
+        {rank:1,athlete:"Petra Vlhová",country:"Slovakia"},
+        {rank:2,athlete:"Katharina Liensberger",country:"Austria"},
+        {rank:3,athlete:"Wendy Holdener",country:"Switzerland"} 
         ],
         "Women's Super-G": [
-        {rank:1,athlete:"",country:""},
-        {rank:2,athlete:"",country:""},
-        {rank:3,athlete:"",country:""} 
+        {rank:1,athlete:"Lara Gut-Behrami",country:"Switzerland"},
+        {rank:2,athlete:"Mirjam Puchner",country:"Austria"},
+        {rank:3,athlete:"Michelle Gisin",country:"Switzerland"} 
         ],
         "Mixed Team": [
-        {rank:1,athlete:"",country:""},
-        {rank:2,athlete:"",country:""},
-        {rank:3,athlete:"",country:""} 
+        {rank:1,athlete:"National Team",country:"Austria"},
+        {rank:2,athlete:"National Team",country:"Germany"},
+        {rank:3,athlete:"National Team",country:"Norway"} 
         ] 
       },
       "Biathlon": {
-       "Men's Individual": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's Mass Start": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's Pursuit": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's Sprint": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's Team Relay": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Individual": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Mass Start": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Pursuit": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Sprint": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Team Relay": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Mixed Team Relay": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ] 
+        "Men's Individual": [
+        {rank:1,athlete:"Quentin Fillon Maillet",country:"France"},
+        {rank:2,athlete:"Anton Smolski",country:"Belarus"},
+        {rank:3,athlete:"Johannes Thingnes Bø",country:"Norway"} 
+        ],
+        "Men's Mass Start": [
+        {rank:1,athlete:"Johannes Thingnes Bø",country:"Norway"},
+        {rank:2,athlete:"Martin Ponsiluoma",country:"Sweden"},
+        {rank:3,athlete:"Vetle Sjåstad Christiansen",country:"Norway"} 
+        ],
+        "Men's Pursuit": [
+        {rank:1,athlete:"Quentin Fillon Maillet",country:"France"},
+        {rank:2,athlete:"Tarjei Bø",country:"Norway"},
+        {rank:3,athlete:"Eduard Latypov",country:"Russia"} 
+        ],
+        "Men's Sprint": [
+        {rank:1,athlete:"Johannes Thingnes Bø",country:"Norway"},
+        {rank:2,athlete:"Quentin Fillon Maillet",country:"France"},
+        {rank:3,athlete:"Tarjei Bø",country:"Norway"} 
+        ],
+        "Men's Team Relay": [
+        {rank:1,athlete:"National Team",country:"Norway"},
+        {rank:2,athlete:"National Team",country:"France"},
+        {rank:3,athlete:"National Team",country:"Russia"} 
+        ],
+        "Women's Individual": [
+        {rank:1,athlete:"Denise Herrmann",country:"Germany"},
+        {rank:2,athlete:"Anaïs Chevalier-Bouchet",country:"France"},
+        {rank:3,athlete:"Marte Olsbu Røiseland",country:"Norway"} 
+        ],
+        "Women's Mass Start": [
+        {rank:1,athlete:"Justine Braisaz-Bouchet",country:"France"},
+        {rank:2,athlete:"Tiril Eckhoff",country:"Norway"},
+        {rank:3,athlete:"Marte Olsbu Røiseland",country:"Norway"} 
+        ],
+        "Women's Pursuit": [
+        {rank:1,athlete:"Marte Olsbu Røiseland",country:"Norway"},
+        {rank:2,athlete:"Elvira Öberg",country:"Sweden"},
+        {rank:3,athlete:"Tiril Eckhoff",country:"Norway"} 
+        ],
+        "Women's Sprint": [
+        {rank:1,athlete:"Marte Olsbu Røiseland",country:"Norway"},
+        {rank:2,athlete:"Elvira Öberg",country:"Sweden"},
+        {rank:3,athlete:"Dorothea Wierer",country:"Italy"} 
+        ],
+        "Women's Team Relay": [
+        {rank:1,athlete:"National Team",country:"Sweden"},
+        {rank:2,athlete:"National Team",country:"Russia"},
+        {rank:3,athlete:"National Team",country:"Germany"} 
+        ],
+        "Mixed Team Relay": [
+        {rank:1,athlete:"National Team",country:"Norway"},
+        {rank:2,athlete:"National Team",country:"France"},
+        {rank:3,athlete:"National Team",country:"Russia"} 
+        ] 
       },
       "Bobsleigh": {
         "Women's Monobob": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's Two": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Two": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's Four": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ]  
+        {rank:1,athlete:"Kaillie Humphries",country:"United States"},
+        {rank:2,athlete:"Elana Meyers Taylor",country:"United States"},
+        {rank:3,athlete:"Christine de Bruin",country:"Canada"} 
+        ],
+        "Men's Two": [
+        {rank:1,athlete:"Francesco Friedrich/Thorsten Margis",country:"Germany"},
+        {rank:2,athlete:"Florian Bauer/Johannes Lochner",country:"Germany"},
+        {rank:3,athlete:"Christoph Hafer/Matthias Sommer",country:"Germany"} 
+        ],
+        "Women's Two": [
+        {rank:1,athlete:"Deborah Levi/Laura Nolte",country:"Germany"},
+        {rank:2,athlete:"Alexandra Burghardt/Mariama Jamanka",country:"Germany"},
+        {rank:3,athlete:"Elana Meyers Taylor/Sylvia Hoffman",country:"United States"} 
+        ],
+        "Men's Four": [
+        {rank:1,athlete:"Alexander Schüller/Candy Bauer/Francesco Friedrich/Thorsten Margis",country:"Germany"},
+        {rank:2,athlete:"Christian Rasp/Christopher Weber/Florian Bauer/Johannes Lochner",country:"Germany"},
+        {rank:3,athlete:"Ben Coakwell/Cam Stones/Justin Kripps/Ryan Sommer",country:"Canada"} 
+        ]  
       },
       "Cross-Country Skiing": {
-       "Men's Classical": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's Freestyle": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's Mass Start": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's Individual Sprint": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's Team Sprint": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's Team Relay": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Classical": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Freestyle": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Mass Start": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Individual Sprint": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Team Sprint": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Team Relay": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ] 
+        "Men's Classical": [
+        {rank:1,athlete:"Iivo Niskanen",country:"Finland"},
+        {rank:2,athlete:"Aleksandr Bolshunov",country:"Russia"},
+        {rank:3,athlete:"Johannes Høsflot Klæbo",country:"Norway"} 
+        ],
+        "Men's Freestyle": [
+        {rank:1,athlete:"Aleksandr Bolshunov",country:"Russia"},
+        {rank:2,athlete:"Ivan Yakimushkin",country:"Russia"},
+        {rank:3,athlete:"Simen Hegstad Krüger",country:"Norway"}  
+        ],
+        "Men's Skiathlon": [
+        {rank:1,athlete:"Aleksandr Bolshunov",country:"Russia"},
+        {rank:2,athlete:"Denis Spitsov",country:"Russia"},
+        {rank:3,athlete:"Iivo Niskanen",country:"Finland"} 
+        ],
+        "Men's Individual Sprint": [
+        {rank:1,athlete:"Johannes Høsflot Klæbo",country:"Norway"},
+        {rank:2,athlete:"Federico Pellegrino",country:"Italy"},
+        {rank:3,athlete:"Aleksandr Terentyev",country:"Russia"} 
+        ],
+        "Men's Team Sprint": [
+        {rank:1,athlete:"Erik Valnes/Johannes Høsflot Klæbo",country:"Norway"},
+        {rank:2,athlete:"Iivo Niskanen/Joni Mäki",country:"Finland"},
+        {rank:3,athlete:"Aleksandr Bolshunov/Aleksandr Terentyev",country:"Russia"} 
+        ],
+        "Men's Team Relay": [
+        {rank:1,athlete:"National Team",country:"Russia"},
+        {rank:2,athlete:"National Team",country:"Norway"},
+        {rank:3,athlete:"National Team",country:"France"} 
+        ],
+        "Women's Classical": [
+        {rank:1,athlete:"Therese Johaug",country:"Norway"},
+        {rank:2,athlete:"Kerttu Niskanen",country:"Finland"},
+        {rank:3,athlete:"Krista Pärmäkoski",country:"Finland"} 
+        ],
+        "Women's Freestyle": [
+        {rank:1,athlete:"Therese Johaug",country:"Norway"},
+        {rank:2,athlete:"Jessie Diggins",country:"United States"},
+        {rank:3,athlete:"Kerttu Niskanen",country:"Finland"} 
+        ],
+        "Women's Skiathlon": [
+        {rank:1,athlete:"Therese Johaug",country:"Norway"},
+        {rank:2,athlete:"Natalia Nepryayeva",country:"Russia"},
+        {rank:3,athlete:"Teresa Stadlober",country:"Austria"} 
+        ],
+        "Women's Individual Sprint": [
+        {rank:1,athlete:"Jonna Sundling",country:"Sweden"},
+        {rank:2,athlete:"Maja Dahlqvist",country:"Sweden"},
+        {rank:3,athlete:"Jessie Diggins",country:"United States"} 
+        ],
+        "Women's Team Sprint": [
+        {rank:1,athlete:"Katharina Hennig/Victoria Carl",country:"Germany"},
+        {rank:2,athlete:"Jonna Sundling/Maja Dahlqvist",country:"Sweden"},
+        {rank:3,athlete:"Nataliya Nepryayeva/Yuliya Stupak",country:"Russia"} 
+        ],
+        "Women's Team Relay": [
+        {rank:1,athlete:"National Team",country:"Germany"},
+        {rank:2,athlete:"National Team",country:"Sweden"},
+        {rank:3,athlete:"National Team",country:"Russia"} 
+        ] 
       },
       "Curling": {
-       "Men's Tournament": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Tournament": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Mixed Doubles Tournament": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ] 
+        "Men's Tournament": [
+        {rank:1,athlete:"National Team",country:"Sweden"},
+        {rank:2,athlete:"National Team",country:"Great Britain"},
+        {rank:3,athlete:"National Team",country:"Canada"} 
+        ],
+        "Women's Tournament": [
+        {rank:1,athlete:"National Team",country:"Great Britain"},
+        {rank:2,athlete:"National Team",country:"Japan"},
+        {rank:3,athlete:"National Team",country:"Sweden"} 
+        ],
+        "Mixed Doubles Tournament": [
+        {rank:1,athlete:"Amos Mosaner/Stefania Constantini",country:"Italy"},
+        {rank:2,athlete:"Magnus Nedregotten/Kristin Skaslien",country:"Norway"},
+        {rank:3,athlete:"Oskar Eriksson/Almida de Val",country:"Sweden"} 
+        ] 
       },
       "Figure Skating": {
-       "Men's Singles": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Singles": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Mixed Ice Dance": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Mixed Pair": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Mixed Team": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ] 
+        "Men's Singles": [
+        {rank:1,athlete:"Nathan Chen",country:"United States"},
+        {rank:2,athlete:"Yuma Kagiyama",country:"Japan"},
+        {rank:3,athlete:"Shoma Uno",country:"Japan"} 
+        ],
+        "Women's Singles": [
+        {rank:1,athlete:"Anna Shcherbakova",country:"Russia"},
+        {rank:2,athlete:"Aleksandra Trusova",country:"Russia"},
+        {rank:3,athlete:"Kaori Sakamoto",country:"Japan"} 
+        ],
+        "Mixed Ice Dance": [
+        {rank:1,athlete:"Guillaume Cizeron/Gabriella Papadakis",country:"France"},
+        {rank:2,athlete:"Nikita Katsalapov/Viktoriya Sinitsina",country:"Russia"},
+        {rank:3,athlete:"Zach Donohue/Madison Hubbell",country:"United States"} 
+        ],
+        "Mixed Pair": [
+        {rank:1,athlete:"Han Cong/Sui Wenjing",country:"China"},
+        {rank:2,athlete:"Vladimir Morozov/Yevgeniya Tarasova",country:"Russia"},
+        {rank:3,athlete:"Aleksandr Gallyamov/Anastasiya Mishina",country:"Russia"} 
+        ],
+        "Mixed Team": [
+        {rank:1,athlete:"National Team",country:"United States"},
+        {rank:2,athlete:"National Team",country:"Japan"},
+        {rank:3,athlete:"National Team",country:"Russia"} 
+        ] 
       },
       "Freestyle Skiing": {
-       "Men's Aerials": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's Big Air": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""}
-          ],
-          "Men's Halfpipe": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's Moguls": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's Ski Cross": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's Slopestyle": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Aerials": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Big Air": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Halfpipe": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Moguls": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Ski Cross": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Slopestyle": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Mixed Team Aerials": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ] 
+        "Men's Aerials": [
+        {rank:1,athlete:"Qi Guangpu",country:"China"},
+        {rank:2,athlete:"Oleksandr Abramenko",country:"Ukraine"},
+        {rank:3,athlete:"Ilya Burov",country:"Russia"} 
+        ],
+        "Men's Big Air": [
+        {rank:1,athlete:"Birk Ruud",country:"Norway"},
+        {rank:2,athlete:"Colby Stevenson",country:"United States"},
+        {rank:3,athlete:"Henrik Harlaut",country:"Sweden"}
+        ],
+        "Men's Halfpipe": [
+        {rank:1,athlete:"Nico Porteous",country:"New Zealand"},
+        {rank:2,athlete:"David Wise",country:"United States"},
+        {rank:3,athlete:"Alex Ferreira",country:"United States"} 
+        ],
+        "Men's Moguls": [
+        {rank:1,athlete:"Walter Wallberg",country:"Sweden"},
+        {rank:2,athlete:"Mikaël Kingsbury",country:"Canada"},
+        {rank:3,athlete:"Ikuma Horishima",country:"Japan"} 
+        ],
+        "Men's Ski Cross": [
+        {rank:1,athlete:"Ryan Regez",country:"Switzerland"},
+        {rank:2,athlete:"Alex Fiva",country:"Switzerland"},
+        {rank:3,athlete:"Sergey Ridzik",country:"Russia"} 
+        ],
+        "Men's Slopestyle": [
+        {rank:1,athlete:"Alex Hall",country:"United States"},
+        {rank:2,athlete:"Nick Goepper",country:"United States"},
+        {rank:3,athlete:"Jesper Tjäder",country:"Sweden"} 
+        ],
+        "Women's Aerials": [
+        {rank:1,athlete:"Xu Mengtao",country:"China"},
+        {rank:2,athlete:"Hanna Huskova",country:"Belarus"},
+        {rank:3,athlete:"Megan Nick",country:"United States"} 
+        ],
+        "Women's Big Air": [
+        {rank:1,athlete:"Eileen Gu",country:"China"},
+        {rank:2,athlete:"Tess Ledeux",country:"France"},
+        {rank:3,athlete:"Mathilde Gremaud",country:"Switzerland"} 
+        ],
+        "Women's Halfpipe": [
+        {rank:1,athlete:"Eileen Gu",country:"China"},
+        {rank:2,athlete:"Cassie Sharpe",country:"Canada"},
+        {rank:3,athlete:"Rachael Karker",country:"Canada"} 
+        ],
+        "Women's Moguls": [
+        {rank:1,athlete:"Jakara Anthony",country:"Australia"},
+        {rank:2,athlete:"Jaelin Kauf",country:"United States"},
+        {rank:3,athlete:"Anastasiya Smirnova",country:"Russia"} 
+        ],
+        "Women's Ski Cross": [
+        {rank:1,athlete:"Sandra Näslund",country:"Sweden"},
+        {rank:2,athlete:"Marielle Thompson",country:"Canada"},
+        {rank:3,athlete:"Daniela Maier",country:"Germany"},
+        {rank:3,athlete:"Fanny Smith",country:"Switzerland"} 
+        ],
+        "Women's Slopestyle": [
+        {rank:1,athlete:"Mathilde Gremaud",country:"Switzerland"},
+        {rank:2,athlete:"Eileen Gu",country:"China"},
+        {rank:3,athlete:"Kelly Sildaru",country:"Estonia"} 
+        ],
+        "Mixed Team Aerials": [
+        {rank:1,athlete:"National Team",country:"United States"},
+        {rank:2,athlete:"National Team",country:"China"},
+        {rank:3,athlete:"National Team",country:"Canada"} 
+        ] 
       },
       "Ice Hockey": {
-       "Men's Tournament": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Tournament": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ] 
+        "Men's Tournament": [
+        {rank:1,athlete:"National Team",country:"Finland"},
+        {rank:2,athlete:"National Team",country:"Russia"},
+        {rank:3,athlete:"National Team",country:"Slovakia"} 
+        ],
+        "Women's Tournament": [
+        {rank:1,athlete:"National Team",country:"Canada"},
+        {rank:2,athlete:"National Team",country:"United States"},
+        {rank:3,athlete:"National Team",country:"Finland"} 
+        ] 
       },
       "Luge": {
         "Men's Singles": [
-        {rank:1,athlete:"",country:""},
-        {rank:2,athlete:"",country:""},
-        {rank:3,athlete:"",country:""} 
+        {rank:1,athlete:"Johannes Ludwig",country:"Germany"},
+        {rank:2,athlete:"Wolfgang Kindl",country:"Austria"},
+        {rank:3,athlete:"Dominik Fischnaller",country:"Italy"} 
         ],
         "Women's Singles": [
-        {rank:1,athlete:"",country:""},
-        {rank:2,athlete:"",country:""},
-        {rank:3,athlete:"",country:""} 
+        {rank:1,athlete:"Natalie Geisenberger",country:"Germany"},
+        {rank:2,athlete:"Anna Berreiter",country:"Germany"},
+        {rank:3,athlete:"Tatyana Ivanova",country:"Russia"} 
         ],
         "Men's Doubles": [
-        {rank:1,athlete:"",country:""},
-        {rank:2,athlete:"",country:""},
-        {rank:3,athlete:"",country:""} 
+        {rank:1,athlete:"Tobias Arlt/Tobias Wendl",country:"Germany"},
+        {rank:2,athlete:"Sascha Benecken/Toni Eggert",country:"Germany"},
+        {rank:3,athlete:"Lorenz Koller/Thomas Steu",country:"Austria"} 
         ],
         "Mixed Team Relay": [
-        {rank:1,athlete:"",country:""},
-        {rank:2,athlete:"",country:""},
-        {rank:3,athlete:"",country:""} 
+        {rank:1,athlete:"National Team",country:"Germany"},
+        {rank:2,athlete:"National Team",country:"Austria"},
+        {rank:3,athlete:"National Team",country:"Latvia"} 
         ] 
       },
       "Nordic Combined": {
         "Men's Large Hill Individual": [
-        {rank:1,athlete:"",country:""},
-        {rank:2,athlete:"",country:""},
-        {rank:3,athlete:"",country:""} 
+        {rank:1,athlete:"Jørgen Graabak",country:"Norway"},
+        {rank:2,athlete:"Jens Lurås Oftebro",country:"Norway"},
+        {rank:3,athlete:"Akito Watabe",country:"Japan"} 
         ],
         "Men's Normal Hill Individual": [
-        {rank:1,athlete:"",country:""},
-        {rank:2,athlete:"",country:""},
-        {rank:3,athlete:"",country:""} 
+        {rank:1,athlete:"Vinzenz Geiger",country:"Germany"},
+        {rank:2,athlete:"Jørgen Graabak",country:"Norway"},
+        {rank:3,athlete:"Lukas Greiderer",country:"Austria"} 
         ],
         "Men's Team": [
-        {rank:1,athlete:"",country:""},
-        {rank:2,athlete:"",country:""},
-        {rank:3,athlete:"",country:""} 
+        {rank:1,athlete:"National Team",country:"Norway"},
+        {rank:2,athlete:"National Team",country:"Germany"},
+        {rank:3,athlete:"National Team",country:"Japan"} 
         ] 
       },
       "Short-Track Speed Skating": {
         "Men's 500m": [
-        {rank:1,athlete:"",country:""},
-        {rank:2,athlete:"",country:""},
-        {rank:3,athlete:"",country:""}
+        {rank:1,athlete:"Shaoang Liu",country:"Hungary"},
+        {rank:2,athlete:"Konstantin Ivliyev",country:"Russia"},
+        {rank:3,athlete:"Steven Dubois",country:"Canada"}
         ],
         "Men's 1000m": [
-        {rank:1,athlete:"",country:""},
-        {rank:2,athlete:"",country:""},
-        {rank:3,athlete:"",country:""} 
+        {rank:1,athlete:"Ren Ziwei",country:"China"},
+        {rank:2,athlete:"Li Wenlong",country:"China"},
+        {rank:3,athlete:"Shaoang Liu",country:"Hungary"} 
         ],
         "Men's 1500m": [
-        {rank:1,athlete:"",country:""},
-        {rank:2,athlete:"",country:""},
-        {rank:3,athlete:"",country:""} 
+        {rank:1,athlete:"Hwang Dae-Heon",country:"South Korea"},
+        {rank:2,athlete:"Steven Dubois",country:"Canada"},
+        {rank:3,athlete:"Semyon Yelistratov",country:"Russia"} 
         ],
         "Men's Relay": [
-        {rank:1,athlete:"",country:""},
-        {rank:2,athlete:"",country:""},
-        {rank:3,athlete:"",country:""} 
+        {rank:1,athlete:"National Team",country:"Canada"},
+        {rank:2,athlete:"National Team",country:"South Korea"},
+        {rank:3,athlete:"National Team",country:"Italy"} 
         ],
         "Women's 500m": [
-        {rank:1,athlete:"",country:""},
-        {rank:2,athlete:"",country:""},
-        {rank:3,athlete:"",country:""} 
+        {rank:1,athlete:"Arianna Fontana",country:"Italy"},
+        {rank:2,athlete:"Suzanne Schulting",country:"Netherlands"},
+        {rank:3,athlete:"Kim Boutin",country:"Canada"} 
         ],
         "Women's 1000m": [
-        {rank:1,athlete:"",country:""},
-        {rank:2,athlete:"",country:""},
-        {rank:3,athlete:"",country:""} 
+        {rank:1,athlete:"Suzanne Schulting",country:"Netherlands"},
+        {rank:2,athlete:"Choi Min-Jeong",country:"South Korea"},
+        {rank:3,athlete:"Hanne Desmet",country:"Belgium"} 
         ],
         "Women's 1500m": [
-        {rank:1,athlete:"",country:""},
-        {rank:2,athlete:"",country:""},
-        {rank:3,athlete:"",country:""} 
+        {rank:1,athlete:"Choi Min-Jeong",country:"South Korea"},
+        {rank:2,athlete:"Arianna Fontana",country:"Italy"},
+        {rank:3,athlete:"Suzanne Schulting",country:"Netherlands"} 
         ],
         "Women's Relay": [
-        {rank:1,athlete:"",country:""},
-        {rank:2,athlete:"",country:""},
-        {rank:3,athlete:"",country:""} 
+        {rank:1,athlete:"National Team",country:"Netherlands"},
+        {rank:2,athlete:"National Team",country:"South Korea"},
+        {rank:3,athlete:"National Team",country:"China"} 
         ],
         "Mixed Relay": [
-        {rank:1,athlete:"",country:""},
-        {rank:2,athlete:"",country:""},
-        {rank:3,athlete:"",country:""} 
+        {rank:1,athlete:"National Team",country:"China"},
+        {rank:2,athlete:"National Team",country:"Italy"},
+        {rank:3,athlete:"National Team",country:"Hungary"} 
         ] 
       },
       "Skeleton": {
         "Men's Singles": [
-        {rank:1,athlete:"",country:""},
-        {rank:2,athlete:"",country:""},
-        {rank:3,athlete:"",country:""} 
+        {rank:1,athlete:"Christopher Grotheer",country:"Germany"},
+        {rank:2,athlete:"Axel Jungk",country:"Germany"},
+        {rank:3,athlete:"Yan Wengang",country:"China"} 
         ],
         "Women's Singles": [
-        {rank:1,athlete:"",country:""},
-        {rank:2,athlete:"",country:""},
-        {rank:3,athlete:"",country:""} 
+        {rank:1,athlete:"Hannah Neise",country:"Germany"},
+        {rank:2,athlete:"Jackie Narracott",country:"Australia"},
+        {rank:3,athlete:"Kimberley Bos",country:"Netherlands"} 
         ]
       },
       "Ski Jumping": {
         "Men's Large Hill Individual": [
-        {rank:1,athlete:"",country:""},
-        {rank:2,athlete:"",country:""},
-        {rank:3,athlete:"",country:""} 
+        {rank:1,athlete:"Marius Lindvik",country:"Norway"},
+        {rank:2,athlete:"Ryoyu Kobayashi",country:"Japan"},
+        {rank:3,athlete:"Karl Geiger",country:"Germany"} 
         ],
         "Men's Normal Hill Individual": [
-        {rank:1,athlete:"",country:""},
-        {rank:2,athlete:"",country:""},
-        {rank:3,athlete:"",country:""} 
+        {rank:1,athlete:"Ryoyu Kobayashi",country:"Japan"},
+        {rank:2,athlete:"Manuel Fettner",country:"Austria"},
+        {rank:3,athlete:"Dawid Kubacki",country:"Poland"} 
         ],
         "Women's Normal Hill Individual": [
-        {rank:1,athlete:"",country:""},
-        {rank:2,athlete:"",country:""},
-        {rank:3,athlete:"",country:""}
+        {rank:1,athlete:"Urša Bogataj",country:"Slovenia"},
+        {rank:2,athlete:"Katharina Althaus",country:"Germany"},
+        {rank:3,athlete:"Nika Križnar",country:"Slovenia"}
         ],
         "Men's Team": [
-        {rank:1,athlete:"",country:""},
-        {rank:2,athlete:"",country:""},
-        {rank:3,athlete:"",country:""} 
+        {rank:1,athlete:"National Team",country:"Austria"},
+        {rank:2,athlete:"National Team",country:"Slovenia"},
+        {rank:3,athlete:"National Team",country:"Germany"} 
         ],
         "Mixed Team": [
-        {rank:1,athlete:"",country:""},
-        {rank:2,athlete:"",country:""},
-        {rank:3,athlete:"",country:""} 
+        {rank:1,athlete:"National Team",country:"Slovenia"},
+        {rank:2,athlete:"National Team",country:"Russia"},
+        {rank:3,athlete:"National Team",country:"Canada"} 
         ] 
       },
       "Snowboarding": {
-       "Men's Big Air": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's Halfpipe": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's Parallel Giant Slalom": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's Slopestyle": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's Snowboard Cross": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Big Air": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Halfpipe": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Parallel Giant Slalom": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Slopestyle": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Snowboard Cross": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Mixed Team Snowboard Cross": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ] 
+        "Men's Big Air": [
+        {rank:1,athlete:"Su Yiming",country:"China"},
+        {rank:2,athlete:"Mons Røisland",country:"Norway"},
+        {rank:3,athlete:"Max Parrot",country:"Canada"} 
+        ],
+        "Men's Halfpipe": [
+        {rank:1,athlete:"Ayumu Hirano",country:"Japan"},
+        {rank:2,athlete:"Scotty James",country:"Australia"},
+        {rank:3,athlete:"Jan Scherrer",country:"Switzerland"} 
+        ],
+        "Men's Parallel Giant Slalom": [
+        {rank:1,athlete:"Benjamin Karl",country:"Austria"},
+        {rank:2,athlete:"Tim Mastnak",country:"Slovenia"},
+        {rank:3,athlete:"Vic Wild",country:"Russia"} 
+        ],
+        "Men's Slopestyle": [
+        {rank:1,athlete:"Max Parrot",country:"Canada"},
+        {rank:2,athlete:"Su Yiming",country:"China"},
+        {rank:3,athlete:"Mark McMorris",country:"Canada"} 
+        ],
+        "Men's Snowboard Cross": [
+        {rank:1,athlete:"Alessandro Hämmerle",country:"Austria"},
+        {rank:2,athlete:"Éliot Grondin",country:"Canada"},
+        {rank:3,athlete:"Omar Visintin",country:"Italy"} 
+        ],
+        "Women's Big Air": [
+        {rank:1,athlete:"Anna Gasser",country:"Austria"},
+        {rank:2,athlete:"Zoi Sadowski-Synnott",country:"New Zealand"},
+        {rank:3,athlete:"Kokomo Murase",country:"Japan"} 
+        ],
+        "Women's Halfpipe": [
+        {rank:1,athlete:"Chloe Kim",country:"United States"},
+        {rank:2,athlete:"Queralt Castellet",country:"Spain"},
+        {rank:3,athlete:"Sena Tomita",country:"Japan"} 
+        ],
+        "Women's Parallel Giant Slalom": [
+        {rank:1,athlete:"Ester Ledecká",country:"Czech Republic"},
+        {rank:2,athlete:"Daniela Ulbing",country:"Austria"},
+        {rank:3,athlete:"Gloria Kotnik",country:"Slovenia"} 
+        ],
+        "Women's Slopestyle": [
+        {rank:1,athlete:"Zoi Sadowski-Synnott",country:"New Zealand"},
+        {rank:2,athlete:"Julia Marino",country:"United States"},
+        {rank:3,athlete:"Tess Coady",country:"Australia"} 
+        ],
+        "Women's Snowboard Cross": [
+        {rank:1,athlete:"Lindsey Jacobellis",country:"United States"},
+        {rank:2,athlete:"Chloé Trespeuch",country:"France"},
+        {rank:3,athlete:"Meryeta O'Dine",country:"Canada"} 
+        ],
+        "Mixed Team Snowboard Cross": [
+        {rank:1,athlete:"Nick Baumgartner/Lindsey Jacobellis",country:"United States"},
+        {rank:2,athlete:"Omar Visintin/Michela Moioli",country:"Italy"},
+        {rank:3,athlete:"Éliot Grondin/Meryeta O'Dine",country:"Canada"} 
+        ] 
       },
       "Speed Skating": {
         "Men's 500m": [
-        {rank:1,athlete:"",country:""},
-        {rank:2,athlete:"",country:""},
-        {rank:3,athlete:"",country:""} 
+        {rank:1,athlete:"Gao Tingyu",country:"China"},
+        {rank:2,athlete:"Cha Min-Gyu",country:"South Korea"},
+        {rank:3,athlete:"Wataru Morishige",country:"Japan"} 
         ],
         "Men's 1000m": [
-        {rank:1,athlete:"",country:""},
-        {rank:2,athlete:"",country:""},
-        {rank:3,athlete:"",country:""} 
+        {rank:1,athlete:"Thomas Krol",country:"Netherlands"},
+        {rank:2,athlete:"Laurent Dubreuil",country:"Canada"},
+        {rank:3,athlete:"Håvard Holmefjord Lorentzen",country:"Norway"} 
         ],
         "Men's 1500m": [
-        {rank:1,athlete:"",country:""},
-        {rank:2,athlete:"",country:""},
-        {rank:3,athlete:"",country:""} 
+        {rank:1,athlete:"Kjeld Nuis",country:"Netherlands"},
+        {rank:2,athlete:"Thomas Krol",country:"Netherlands"},
+        {rank:3,athlete:"Kim Min-Seok",country:"South Korea"} 
         ],
         "Men's 5000m": [
-        {rank:1,athlete:"",country:""},
-        {rank:2,athlete:"",country:""},
-        {rank:3,athlete:"",country:""} 
+        {rank:1,athlete:"Nils van der Poel",country:"Sweden"},
+        {rank:2,athlete:"Patrick Roest",country:"Netherlands"},
+        {rank:3,athlete:"Hallgeir Engebråten",country:"Norway"} 
         ],
         "Men's 10000m": [
-        {rank:1,athlete:"",country:""},
-        {rank:2,athlete:"",country:""},
-        {rank:3,athlete:"",country:""} 
+        {rank:1,athlete:"Nils van der Poel",country:"Sweden"},
+        {rank:2,athlete:"Patrick Roest",country:"Netherlands"},
+        {rank:3,athlete:"Davide Ghiotto",country:"Italy"} 
         ],
         "Men's Mass Start": [
-        {rank:1,athlete:"",country:""},
-        {rank:2,athlete:"",country:""},
-        {rank:3,athlete:"",country:""} 
+        {rank:1,athlete:"Bart Swings",country:"Belgium"},
+        {rank:2,athlete:"Jeong Jae-Won",country:"South Korea"},
+        {rank:3,athlete:"Lee Seung-Hun",country:"South Korea"} 
         ],
         "Men's Team Pursuit": [
-        {rank:1,athlete:"",country:""},
-        {rank:2,athlete:"",country:""},
-        {rank:3,athlete:"",country:""} 
+        {rank:1,athlete:"National Team",country:"Norway"},
+        {rank:2,athlete:"National Team",country:"Russia"},
+        {rank:3,athlete:"National Team",country:"United States"} 
         ],
         "Women's 500m": [
-        {rank:1,athlete:"",country:""},
-        {rank:2,athlete:"",country:""},
-        {rank:3,athlete:"",country:""} 
+        {rank:1,athlete:"Erin Jackson",country:"United States"},
+        {rank:2,athlete:"Miho Takagi",country:"Japan"},
+        {rank:3,athlete:"Angelina Golikova",country:"Russia"} 
         ],
         "Women's 1000m": [
-        {rank:1,athlete:"",country:""},
-        {rank:2,athlete:"",country:""},
-        {rank:3,athlete:"",country:""} 
+        {rank:1,athlete:"Miho Takagi",country:"Japan"},
+        {rank:2,athlete:"Jutta Leerdam",country:"Netherlands"},
+        {rank:3,athlete:"Brittany Bowe",country:"United States"} 
         ],
         "Women's 1500m": [
-        {rank:1,athlete:"",country:""},
-        {rank:2,athlete:"",country:""},
-        {rank:3,athlete:"",country:""} 
+        {rank:1,athlete:"Ireen Wüst",country:"Netherlands"},
+        {rank:2,athlete:"Miho Takagi",country:"Japan"},
+        {rank:3,athlete:"Antoinette de Jong",country:"Netherlands"} 
         ],
         "Women's 3000m": [
-        {rank:1,athlete:"",country:""},
-        {rank:2,athlete:"",country:""},
-        {rank:3,athlete:"",country:""} 
+        {rank:1,athlete:"Irene Schouten",country:"Netherlands"},
+        {rank:2,athlete:"Francesca Lollobrigida",country:"Italy"},
+        {rank:3,athlete:"Isabelle Weidemann",country:"Canada"} 
         ],
         "Women's 5000m": [
-        {rank:1,athlete:"",country:""},
-        {rank:2,athlete:"",country:""},
-        {rank:3,athlete:"",country:""} 
+        {rank:1,athlete:"Irene Schouten",country:"Netherlands"},
+        {rank:2,athlete:"Isabelle Weidemann",country:"Canada"},
+        {rank:3,athlete:"Martina Sáblíková",country:"Czech Republic"} 
         ],
         "Women's Mass Start": [
-        {rank:1,athlete:"",country:""},
-        {rank:2,athlete:"",country:""},
-        {rank:3,athlete:"",country:""} 
+        {rank:1,athlete:"Irene Schouten",country:"Netherlands"},
+        {rank:2,athlete:"Ivanie Blondin",country:"Canada"},
+        {rank:3,athlete:"Francesca Lollobrigida",country:"Italy"} 
         ],
         "Women's Team Pursuit": [
-        {rank:1,athlete:"",country:""},
-        {rank:2,athlete:"",country:""},
-        {rank:3,athlete:"",country:""} 
+        {rank:1,athlete:"National Team",country:"Canada"},
+        {rank:2,athlete:"National Team",country:"Japan"},
+        {rank:3,athlete:"National Team",country:"Netherlands"} 
         ] 
       }
     },
@@ -4380,7 +4380,7 @@ const resultsData = {
           {rank:2,athlete:"",country:""},
           {rank:3,athlete:"",country:""} 
           ],
-          "Men's Mass Start": [
+          "Men's Skiathlon": [
           {rank:1,athlete:"",country:""},
           {rank:2,athlete:"",country:""},
           {rank:3,athlete:"",country:""} 
@@ -4410,7 +4410,7 @@ const resultsData = {
           {rank:2,athlete:"",country:""},
           {rank:3,athlete:"",country:""} 
           ],
-          "Women's Mass Start": [
+          "Women's Skiathlon": [
           {rank:1,athlete:"",country:""},
           {rank:2,athlete:"",country:""},
           {rank:3,athlete:"",country:""} 
