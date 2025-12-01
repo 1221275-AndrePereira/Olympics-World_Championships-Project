@@ -243,7 +243,7 @@ const resultsData = {
         {rank:3,athlete:"Tom Walsh",country:"New Zealand"}  
         ],
         "Men's Triple Jump": [
-        {rank:1,athlete:"Pedro Pablo Pichardo",country:"Portugal"},
+        {rank:1,athlete:"Pedro Pichardo",country:"Portugal"},
         {rank:2,athlete:"Zhu Yaming",country:"China"},
         {rank:3,athlete:"Hugues Zango",country:"Burkina Faso"}  
         ],
@@ -540,7 +540,7 @@ const resultsData = {
         {rank:3,athlete:"Fernando Pimenta",country:"Portugal"} 
         ],
         "Men's K2 1000m": [
-        {rank:1,athlete:"Jean van der Westhuyzen/Tom Green",country:"Australia"},
+        {rank:1,athlete:"Jean van der Westhuyzen/Thomas Green",country:"Australia"},
         {rank:2,athlete:"Jacob Schopf/Max Hoff",country:"Germany"},
         {rank:3,athlete:"Josef Dostál/Radek Šlouf",country:"Czech Republic"} 
         ],
@@ -616,7 +616,7 @@ const resultsData = {
       },
       "Cycling Mountain Bike": {
         "Men's Cross-Country": [
-        {rank:1,athlete:"Tom Pidcock",country:"Great Britain"},
+        {rank:1,athlete:"Thomas Pidcock",country:"Great Britain"},
         {rank:2,athlete:"Mathias Flückiger",country:"Switzerland"},
         {rank:3,athlete:"David Valero",country:"Spain"} 
         ],
@@ -1862,1799 +1862,1799 @@ const resultsData = {
     "2024": {
       "3x3 Basketball": {
         "Men's Tournament": [
-        {rank:1,athlete:"",country:""},
-        {rank:2,athlete:"",country:""},
-        {rank:3,athlete:"",country:""}  
+        {rank:1,athlete:"National Team",country:"Netherlands"},
+        {rank:2,athlete:"National Team",country:"France"},
+        {rank:3,athlete:"National Team",country:"Lithuania"}  
         ],
         "Women's Tournament": [
-        {rank:1,athlete:"",country:""},
-        {rank:2,athlete:"",country:""},
-        {rank:3,athlete:"",country:""}  
+        {rank:1,athlete:"National Team",country:"Germany"},
+        {rank:2,athlete:"National Team",country:"Spain"},
+        {rank:3,athlete:"National Team",country:"United States"}  
         ]
       },
       "Archery": {
         "Men's Individual": [
-        {rank:1,athlete:"",country:""},
-        {rank:2,athlete:"",country:""},
-        {rank:3,athlete:"",country:""} 
+        {rank:1,athlete:"Kim Woo-Jin",country:"South Korea"},
+        {rank:2,athlete:"Brady Ellison",country:"United States"},
+        {rank:3,athlete:"Lee Woo-Seok",country:"South Korea"} 
         ],
-          "Women's Individual": [
-        {rank:1,athlete:"",country:""},
-        {rank:2,athlete:"",country:""},
-        {rank:3,athlete:"",country:""}  
+        "Women's Individual": [
+        {rank:1,athlete:"Lim Si-Hyeon",country:"South Korea"},
+        {rank:2,athlete:"Nam Su-Hyeon",country:"South Korea"},
+        {rank:3,athlete:"Lisa Barbelin",country:"France"}  
         ],
-          "Men's Team": [
-        {rank:1,athlete:"",country:""},
-        {rank:2,athlete:"",country:""},
-        {rank:3,athlete:"",country:""}  
+        "Men's Team": [
+        {rank:1,athlete:"National Team",country:"South Korea"},
+        {rank:2,athlete:"National Team",country:"France"},
+        {rank:3,athlete:"National Team",country:"Turkey"}  
         ],
-          "Women's Team": [
-        {rank:1,athlete:"",country:""},
-        {rank:2,athlete:"",country:""},
-        {rank:3,athlete:"",country:""}  
+        "Women's Team": [
+        {rank:1,athlete:"National Team",country:"South Korea"},
+        {rank:2,athlete:"National Team",country:"China"},
+        {rank:3,athlete:"National Team",country:"Mexico"}  
         ],
-          "Mixed Team": [
-        {rank:1,athlete:"",country:""},
-        {rank:2,athlete:"",country:""},
-        {rank:3,athlete:"",country:""}  
+        "Mixed Team": [
+        {rank:1,athlete:"Kim Woo-Jin/Lim Si-Hyeon",country:"South Korea"},
+        {rank:2,athlete:"Florian Unruh/Michelle Kroppen",country:"Germany"},
+        {rank:3,athlete:"Brady Ellison/Casey Kaufhold",country:"United States"}  
          ]
       },
       "Artistic Gymnastics": {
-       "Men's Individual All-Around": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's Team All-Around": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""}  
-          ],
-          "Men's Floor": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""}  
-          ],
-          "Men's Horizontal Bar": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""},
-          {rank:3,athlete:"",country:""}   
-          ],
-          "Men's Parallel Bars": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""}  
-          ],
-          "Men's Pommel Horse": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""}  
-          ],
-          "Men's Rings": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""}  
-          ],
-          "Men's Vault": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""}  
-          ],
-          "Women's Individual All-Around": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""}  
-          ],
-          "Women's Team All-Around": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""}  
-          ],
-          "Women's Balance Beam": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""}  
-          ],
-          "Women's Floor": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""}  
-          ],
-          "Women's Uneven Bars": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""}  
-          ],
-          "Women's Vault": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""}  
-          ] 
+        "Men's Individual All-Around": [
+        {rank:1,athlete:"Shinnosuke Oka",country:"Japan"},
+        {rank:2,athlete:"Zhang Boheng",country:"China"},
+        {rank:3,athlete:"Xiao Ruoteng",country:"China"} 
+        ],
+        "Men's Team All-Around": [
+        {rank:1,athlete:"National Team",country:"Japan"},
+        {rank:2,athlete:"National Team",country:"China"},
+        {rank:3,athlete:"National Team",country:"United States"}  
+        ],
+        "Men's Floor": [
+        {rank:1,athlete:"Carlos Yulo",country:"Philippines"},
+        {rank:2,athlete:"Artem Dolgopyat",country:"Israel"},
+        {rank:3,athlete:"Jake Jarman",country:"Great Britain"}  
+        ],
+        "Men's Horizontal Bar": [
+        {rank:1,athlete:"Shinnosuke Oka",country:"Japan"},
+        {rank:2,athlete:"Ángel Barajas",country:"Colombia"},
+        {rank:3,athlete:"Zhang Boheng",country:"China"},
+        {rank:3,athlete:"Tang Chia-Hung",country:"Taiwan"}   
+        ],
+        "Men's Parallel Bars": [
+        {rank:1,athlete:"Zou Jingyuan",country:"China"},
+        {rank:2,athlete:"Illia Kovtun",country:"Ukraine"},
+        {rank:3,athlete:"Shinnosuke Oka",country:"Japan"}  
+        ],
+        "Men's Pommel Horse": [
+        {rank:1,athlete:"Rhys McClenaghan",country:"Ireland"},
+        {rank:2,athlete:"Nariman Kurbanov",country:"Kazakhstan"},
+        {rank:3,athlete:"Stephen Nedoroscik",country:"United States"}  
+        ],
+        "Men's Rings": [
+        {rank:1,athlete:"Liu Yang",country:"China"},
+        {rank:2,athlete:"Zou Jingyuan",country:"China"},
+        {rank:3,athlete:"Eleftherios Petrounias",country:"Greece"}  
+        ],
+        "Men's Vault": [
+        {rank:1,athlete:"Carlos Yulo",country:"Philippines"},
+        {rank:2,athlete:"Artur Davtyan",country:"Armenia"},
+        {rank:3,athlete:"Harry Hepworth",country:"Great Britain"}  
+        ],
+        "Women's Individual All-Around": [
+        {rank:1,athlete:"Simone Biles",country:"United States"},
+        {rank:2,athlete:"Rebeca Andrade",country:"Brazil"},
+        {rank:3,athlete:"Sunisa Lee",country:"United States"}  
+        ],
+        "Women's Team All-Around": [
+        {rank:1,athlete:"National Team",country:"United States"},
+        {rank:2,athlete:"National Team",country:"Italy"},
+        {rank:3,athlete:"National Team",country:"Brazil"}  
+        ],
+        "Women's Balance Beam": [
+        {rank:1,athlete:"Alice D'Amato",country:"Italy"},
+        {rank:2,athlete:"Zhou Yaqin",country:"China"},
+        {rank:3,athlete:"Manila Esposito",country:"Italy"}  
+        ],
+        "Women's Floor": [
+        {rank:1,athlete:"Rebeca Andrade",country:"Brazil"},
+        {rank:2,athlete:"Simone Biles",country:"United States"},
+        {rank:3,athlete:"Ana Bărbosu",country:"Romania"}  
+        ],
+        "Women's Uneven Bars": [
+        {rank:1,athlete:"Kaylia Nemour",country:"Algeria"},
+        {rank:2,athlete:"Qiu Qiyuan",country:"China"},
+        {rank:3,athlete:"Sunisa Lee",country:"United States"}  
+        ],
+        "Women's Vault": [
+        {rank:1,athlete:"Simone Biles",country:"United States"},
+        {rank:2,athlete:"Rebeca Andrade",country:"Brazil"},
+        {rank:3,athlete:"Jade Carey",country:"United States"}  
+        ] 
       },
       "Artistic Swimming": {
         "Women's Duet": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
+        {rank:1,athlete:"Wang Liuyi/Wang Qianyi",country:"China"},
+        {rank:2,athlete:"Isabelle Thorpe/Kate Shortman",country:"Great Britain"},
+        {rank:3,athlete:"Bregje de Brouwer/Noortje de Brouwer",country:"Netherlands"} 
         ],
         "Women's Team": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""}  
+        {rank:1,athlete:"National Team",country:"China"},
+        {rank:2,athlete:"National Team",country:"United States"},
+        {rank:3,athlete:"National Team",country:"Spain"}  
         ]
       },
       "Athletics": {
-      "Men's 100m": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's 200m": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's 400m": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's 800m": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's 1500m": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's 5000m": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's 10000m": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's 110m Hurdles": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's 400m Hurdles": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's 3000m Steeplechase": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's Marathon": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's 20km Race Walk": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's 4x100m Relay": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's 4x400m Relay": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's Decathlon": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's Discus Throw": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's Hammer Throw": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's High Jump": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's Javelin Throw": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's Long Jump": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's Pole Vault": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's Shot Put": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's Triple Jump": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's 100m": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""}  
-          ],
-          "Women's 200m": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's 400m": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's 800m": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's 1500m": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's 5000m": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's 10000m": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's 100m Hurdles": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's 400m Hurdles": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's 3000m Steeplechase": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""}
-          ],
-          "Women's Marathon": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's 20km Race Walk": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's 4x100m Relay": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's 4x400m Relay": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Discus Throw": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""}  
-          ],
-          "Women's Hammer Throw": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""}  
-          ],
-          "Women's Heptahlon": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""}  
-          ],
-          "Women's High Jump": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Javelin Throw": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""}  
-          ],
-          "Women's Long Jump": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""}  
-          ],
-          "Women's Pole Vault": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Shot Put": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""}  
-          ],
-          "Women's Triple Jump": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""}  
-          ],
-          "Mixed 4x400m Relay": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""}  
-          ],
-          "Mixed Team Race Walking": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ]
+        "Men's 100m": [
+        {rank:1,athlete:"Noah Lyles",country:"United States"},
+        {rank:2,athlete:"Kishane Thompson",country:"Jamaica"},
+        {rank:3,athlete:"Fred Kerley",country:"United States"} 
+        ],
+        "Men's 200m": [
+        {rank:1,athlete:"Letsile Tebogo",country:"Botswana"},
+        {rank:2,athlete:"Kenneth Bednarek",country:"United States"},
+        {rank:3,athlete:"Noah Lyles",country:"United States"} 
+        ],
+        "Men's 400m": [
+        {rank:1,athlete:"Quincy Hall",country:"United States"},
+        {rank:2,athlete:"Matthew Hudson-Smith",country:"Great Britain"},
+        {rank:3,athlete:"Muzala Samukonga",country:"Zambia"} 
+        ],
+        "Men's 800m": [
+        {rank:1,athlete:"Emmanuel Wanyonyi",country:"Kenya"},
+        {rank:2,athlete:"Marco Arop",country:"Canada"},
+        {rank:3,athlete:"Djamel Sedjati",country:"Algeria"} 
+        ],
+        "Men's 1500m": [
+        {rank:1,athlete:"Cole Hocker",country:"United States"},
+        {rank:2,athlete:"Josh Kerr",country:"Great Britain"},
+        {rank:3,athlete:"Yared Nuguse",country:"United States"} 
+        ],
+        "Men's 5000m": [
+        {rank:1,athlete:"Jakob Ingebrigtsen",country:"Norway"},
+        {rank:2,athlete:"Ronald Kwemoi",country:"Kenya"},
+        {rank:3,athlete:"Grant Fisher",country:"United States"} 
+        ],
+        "Men's 10000m": [
+        {rank:1,athlete:"Joshua Cheptegei",country:"Uganda"},
+        {rank:2,athlete:"Berihu Aregawi",country:"Ethiopia"},
+        {rank:3,athlete:"Grant Fisher",country:"United States"} 
+        ],
+        "Men's 110m Hurdles": [
+        {rank:1,athlete:"Grant Holloway",country:"United States"},
+        {rank:2,athlete:"Daniel Roberts",country:"United States"},
+        {rank:3,athlete:"Rasheed Broadbell",country:"Jamaica"} 
+        ],
+        "Men's 400m Hurdles": [
+        {rank:1,athlete:"Rai Benjamin",country:"United States"},
+        {rank:2,athlete:"Karsten Warholm",country:"Norway"},
+        {rank:3,athlete:"Alison dos Santos",country:"Brazil"} 
+        ],
+        "Men's 3000m Steeplechase": [
+        {rank:1,athlete:"Soufiane El-Bakkali",country:"Morocco"},
+        {rank:2,athlete:"Kenneth Rooks",country:"United States"},
+        {rank:3,athlete:"Abraham Kibiwot",country:"Kenya"} 
+        ],
+        "Men's Marathon": [
+        {rank:1,athlete:"Tamirat Tola",country:"Ethiopia"},
+        {rank:2,athlete:"Bashir Abdi",country:"Belgium"},
+        {rank:3,athlete:"Benson Kipruto",country:"Kenya"} 
+        ],
+        "Men's 20km Race Walk": [
+        {rank:1,athlete:"Brian Pintado",country:"Ecuador"},
+        {rank:2,athlete:"Caio Bonfim",country:"Brazil"},
+        {rank:3,athlete:"Álvaro Martín",country:"Spain"} 
+        ],
+        "Men's 4x100m Relay": [
+        {rank:1,athlete:"National Team",country:"Canada"},
+        {rank:2,athlete:"National Team",country:"South Africa"},
+        {rank:3,athlete:"National Team",country:"Great Britain"} 
+        ],
+        "Men's 4x400m Relay": [
+        {rank:1,athlete:"National Team",country:"United States"},
+        {rank:2,athlete:"National Team",country:"Botswana"},
+        {rank:3,athlete:"National Team",country:"Great Britain"} 
+        ],
+        "Men's Decathlon": [
+        {rank:1,athlete:"Markus Rooth",country:"Norway"},
+        {rank:2,athlete:"Leo Neugebauer",country:"Germany"},
+        {rank:3,athlete:"Lindon Victor",country:"Grenada"} 
+        ],
+        "Men's Discus Throw": [
+        {rank:1,athlete:"Rojé Stona",country:"Jamaica"},
+        {rank:2,athlete:"Mykolas Alekna",country:"Lithuania"},
+        {rank:3,athlete:"Matthew Denny",country:"Australia"} 
+        ],
+        "Men's Hammer Throw": [
+        {rank:1,athlete:"Ethan Katzberg",country:"Canada"},
+        {rank:2,athlete:"Bence Halász",country:"Hungary"},
+        {rank:3,athlete:"Mykhailo Kokhan",country:"Ukraine"} 
+        ],
+        "Men's High Jump": [
+        {rank:1,athlete:"Hamish Kerr",country:"New Zealand"},
+        {rank:2,athlete:"Shelby McEwen",country:"United States"},
+        {rank:3,athlete:"Mutaz Essa Barshim",country:"Qatar"} 
+        ],
+        "Men's Javelin Throw": [
+        {rank:1,athlete:"Arshad Nadeem",country:"Pakistan"},
+        {rank:2,athlete:"Neeraj Chopra",country:"India"},
+        {rank:3,athlete:"Anderson Peters",country:"Grenada"} 
+        ],
+        "Men's Long Jump": [
+        {rank:1,athlete:"Miltiadis Tentoglou",country:"Greece"},
+        {rank:2,athlete:"Wayne Pinnock",country:"Jamaica"},
+        {rank:3,athlete:"Mattia Furlani",country:"Italy"} 
+        ],
+        "Men's Pole Vault": [
+        {rank:1,athlete:"Armand Duplantis",country:"Sweden"},
+        {rank:2,athlete:"Sam Kendricks",country:"United States"},
+        {rank:3,athlete:"Emmanouil Karalis",country:"Greece"} 
+        ],
+        "Men's Shot Put": [
+        {rank:1,athlete:"Ryan Crouser",country:"United States"},
+        {rank:2,athlete:"Joe Kovacs",country:"United States"},
+        {rank:3,athlete:"Rajindra Campbell",country:"Jamaica"} 
+        ],
+        "Men's Triple Jump": [
+        {rank:1,athlete:"Jordan Díaz",country:"Spain"},
+        {rank:2,athlete:"Pedro Pichardo",country:"Portugal"},
+        {rank:3,athlete:"Andy Díaz",country:"Italy"} 
+        ],
+        "Women's 100m": [
+        {rank:1,athlete:"Julien Alfred",country:"Saint Lucia"},
+        {rank:2,athlete:"Sha'Carri Richardson",country:"United States"},
+        {rank:3,athlete:"Melissa Jefferson",country:"United States"}  
+        ],
+        "Women's 200m": [
+        {rank:1,athlete:"Gabrielle Thomas",country:"United States"},
+        {rank:2,athlete:"Julien Alfred",country:"Saint Lucia"},
+        {rank:3,athlete:"Brittany Brown",country:"United States"} 
+        ],
+        "Women's 400m": [
+        {rank:1,athlete:"Marileidy Paulino",country:"Dominican Republic"},
+        {rank:2,athlete:"Salwa Eid Naser",country:"Bahrain"},
+        {rank:3,athlete:"Natalia Kaczmarek",country:"Poland"} 
+        ],
+        "Women's 800m": [
+        {rank:1,athlete:"Keely Hodgkinson",country:"Great Britain"},
+        {rank:2,athlete:"Tsige Duguma",country:"Ethiopia"},
+        {rank:3,athlete:"Mary Moraa",country:"Kenya"} 
+        ],
+        "Women's 1500m": [
+        {rank:1,athlete:"Faith Kipyegon",country:"Kenya"},
+        {rank:2,athlete:"Jessica Jolliffe",country:"Australia"},
+        {rank:3,athlete:"Georgia Bell",country:"Great Britain"} 
+        ],
+        "Women's 5000m": [
+        {rank:1,athlete:"Beatrice Chebet",country:"Kenya"},
+        {rank:2,athlete:"Faith Kipyegon",country:"Kenya"},
+        {rank:3,athlete:"Sifan Hassan",country:"Netherlands"} 
+        ],
+        "Women's 10000m": [
+        {rank:1,athlete:"Beatrice Chebet",country:"Kenya"},
+        {rank:2,athlete:"Nadia Battocletti",country:"Italy"},
+        {rank:3,athlete:"Sifan Hassan",country:"Netherlands"} 
+        ],
+        "Women's 100m Hurdles": [
+        {rank:1,athlete:"Masai Russell",country:"United States"},
+        {rank:2,athlete:"Cyréna Samba-Mayela",country:"France"},
+        {rank:3,athlete:"Jasmine Camacho-Quinn",country:"Puerto Rico"} 
+        ],
+        "Women's 400m Hurdles": [
+        {rank:1,athlete:"Sydney McLaughlin-Levrone",country:"United States"},
+        {rank:2,athlete:"Anna Cockrell",country:"United States"},
+        {rank:3,athlete:"Femke Bol",country:"Netherlands"} 
+        ],
+        "Women's 3000m Steeplechase": [
+        {rank:1,athlete:"Winfred Yavi",country:"Bahrain"},
+        {rank:2,athlete:"Peruth Chemutai",country:"Uganda"},
+        {rank:3,athlete:"Faith Cherotich",country:"Kenya"}
+        ],
+        "Women's Marathon": [
+        {rank:1,athlete:"Sifan Hassan",country:"Netherlands"},
+        {rank:2,athlete:"Tigst Assefa",country:"Ethiopia"},
+        {rank:3,athlete:"Hellen Obiri",country:"Kenya"} 
+        ],
+        "Women's 20km Race Walk": [
+        {rank:1,athlete:"Yang Jiayu",country:"China"},
+        {rank:2,athlete:"María Pérez",country:"Spain"},
+        {rank:3,athlete:"Jemima Montag",country:"Australia"} 
+        ],
+        "Women's 4x100m Relay": [
+        {rank:1,athlete:"National Team",country:"United States"},
+        {rank:2,athlete:"National Team",country:"Great Britain"},
+        {rank:3,athlete:"National Team",country:"Germany"} 
+        ],
+        "Women's 4x400m Relay": [
+        {rank:1,athlete:"National Team",country:"United States"},
+        {rank:2,athlete:"National Team",country:"Netherlands"},
+        {rank:3,athlete:"National Team",country:"Great Britain"} 
+        ],
+        "Women's Discus Throw": [
+        {rank:1,athlete:"Valarie Allman",country:"United States"},
+        {rank:2,athlete:"Feng Bin",country:"China"},
+        {rank:3,athlete:"Sandra Elkašević",country:"Croatia"}  
+        ],
+        "Women's Hammer Throw": [
+        {rank:1,athlete:"Camryn Rogers",country:"Canada"},
+        {rank:2,athlete:"Annette Echikunwoke",country:"United States"},
+        {rank:3,athlete:"Zhao Jie",country:"China"}  
+        ],
+        "Women's Heptahlon": [
+        {rank:1,athlete:"Nafissatou Thiam",country:"Belgium"},
+        {rank:2,athlete:"Katarina Johnson-Thompson",country:"Great Britain"},
+        {rank:3,athlete:"Noor Vidts",country:"Belgium"}  
+        ],
+        "Women's High Jump": [
+        {rank:1,athlete:"Yaroslava Mahuchikh",country:"Ukraine"},
+        {rank:2,athlete:"Nicola Olyslagers",country:"Australia"},
+        {rank:3,athlete:"Iryna Herashchenko",country:"Ukraine"},
+        {rank:3,athlete:"Eleanor Patterson",country:"Australia"} 
+        ],
+        "Women's Javelin Throw": [
+        {rank:1,athlete:"Haruka Kitaguchi",country:"Japan"},
+        {rank:2,athlete:"Jo-Ané van Dyk",country:"South Africa"},
+        {rank:3,athlete:"Nikola Ogrodníková",country:"Czech Republic"}  
+        ],
+        "Women's Long Jump": [
+        {rank:1,athlete:"Tara Davis-Woodhall",country:"United States"},
+        {rank:2,athlete:"Malaika Mihambo",country:"Germany"},
+        {rank:3,athlete:"Jasmine Moore",country:"United States"}  
+        ],
+        "Women's Pole Vault": [
+        {rank:1,athlete:"Nina Kennedy",country:"Australia"},
+        {rank:2,athlete:"Katie Moon",country:"United States"},
+        {rank:3,athlete:"Alysha Newman",country:"Canada"} 
+        ],
+        "Women's Shot Put": [
+        {rank:1,athlete:"Yemisi Ogunleye",country:"Germany"},
+        {rank:2,athlete:"Maddi Wesche",country:"New Zealand"},
+        {rank:3,athlete:"Song Jiayuan",country:"China"}  
+        ],
+        "Women's Triple Jump": [
+        {rank:1,athlete:"Thea LaFond",country:"Dominica"},
+        {rank:2,athlete:"Shanieka Ricketts",country:"Jamaica"},
+        {rank:3,athlete:"Jasmine Moore",country:"United States"}  
+        ],
+        "Mixed 4x400m Relay": [
+        {rank:1,athlete:"National Team",country:"Netherlands"},
+        {rank:2,athlete:"National Team",country:"United States"},
+        {rank:3,athlete:"National Team",country:"Great Britain"}  
+        ],
+        "Mixed Team Race Walking": [
+        {rank:1,athlete:"Álvaro Martín/María Pérez",country:"Spain"},
+        {rank:2,athlete:"Brian Pintado/Glenda Morejón",country:"Ecuador"},
+        {rank:3,athlete:"Rhydian Cowley/Jemima Montag",country:"Australia"} 
+        ]
       },
       "Badminton": {
-       "Men's Singles": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Singles": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's Doubles": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Doubles": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Mixed Doubles": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ] 
+        "Men's Singles": [ 
+        {rank:1,athlete:"Viktor Axelsen",country:"Denmark"},
+        {rank:2,athlete:"Kunlavut Vitidsarn",country:"Thailand"},
+        {rank:3,athlete:"Lee Zii Jia",country:"Malaysia"} 
+        ],
+        "Women's Singles": [
+        {rank:1,athlete:"An Se-Young",country:"South Korea"},
+        {rank:2,athlete:"He Bingjiao",country:"China"},
+        {rank:3,athlete:"Gregoria Mariska Tunjung",country:"Indonesia"} 
+        ],
+        "Men's Doubles": [ 
+        {rank:1,athlete:"Lee Yang/Wang Chi-Lin",country:"Taiwan"},
+        {rank:2,athlete:"Liang Weikeng/Wang Chang",country:"China"},
+        {rank:3,athlete:"Aaron Chia/Soh Wooi Yik",country:"Malaysia"} 
+        ],
+        "Women's Doubles": [ 
+        {rank:1,athlete:"Chen Qingchen/Jia Yifan",country:"China"},
+        {rank:2,athlete:"Liu Shengshu/Tan Ning",country:"China"},
+        {rank:3,athlete:"Chiharu Shida/Nami Matsuyama",country:"Japan"} 
+        ],
+        "Mixed Doubles": [ 
+        {rank:1,athlete:"Zheng Siwei/Huang Yaqiong",country:"China"},
+        {rank:2,athlete:"Kim Won-Ho/Jeong Na-Eun",country:"South Korea"},
+        {rank:3,athlete:"Yuta Watanabe/Arisa Higashino",country:"Japan"} 
+        ] 
       },
       "Basketball": {
-       "Men's Tournament": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
+        "Men's Tournament": [ 
+        {rank:1,athlete:"National Team",country:"United States"},
+        {rank:2,athlete:"National Team",country:"France"},
+        {rank:3,athlete:"National Team",country:"Serbia"} 
         ],
-          "Women's Tournament": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
+        "Women's Tournament": [ 
+        {rank:1,athlete:"National Team",country:"United States"},
+        {rank:2,athlete:"National Team",country:"France"},
+        {rank:3,athlete:"National Team",country:"Australia"} 
         ] 
       },
       "Beach Volleyball": {
         "Men's Tournament": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Tournament": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ]  
+        {rank:1,athlete:"David Åhman/Jonatan Hellvig",country:"Sweden"},
+        {rank:2,athlete:"Clemens Wickler/Nils Ehlers",country:"Germany"},
+        {rank:3,athlete:"Anders Mol/Christian Sørum",country:"Norway"} 
+        ],
+        "Women's Tournament": [ 
+        {rank:1,athlete:"Ana Patrícia Ramos/Eduarda Lisboa",country:"Brazil"},
+        {rank:2,athlete:"Brandie Wilkerson/Melissa Humana-Paredes",country:"Canada"},
+        {rank:3,athlete:"Nina Betschart-Brunner/Tanja Hüberli",country:"Switzerland"} 
+        ]  
       },
       "Boxing": {
-       "Men's 51kg": [ //Flyweight Category
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's 57kg": [ //Featherweight Category
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's 63.5kg": [ //Light-Welterweight Category
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's 71kg": [ //Light-Middleweight Category
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's 80kg": [ //Light-Heavyweight Category
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's 92kg": [ //Heavyweight Category
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's +92kg": [ //Super-Heavyweight Category
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's 50kg": [ //Light-Flyweight Category
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's 54kg": [ //Bantamweight Category
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's 57kg": [ //Featherweight Category
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's 60kg": [ //Lightweight Category
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's 66kg": [ //Welterweight Category
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's 75kg": [ //Middleweight Category
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ] 
+        "Men's 51kg": [ //Flyweight Category
+        {rank:1,athlete:"Hasanboy Dusmatov",country:"Uzbekistan"},
+        {rank:2,athlete:"Billal Bennama",country:"France"},
+        {rank:3,athlete:"David de Pina",country:"Cape Verde"},
+        {rank:3,athlete:"Junior Alcántara",country:"Dominican Republic"} 
+        ],
+        "Men's 57kg": [ //Featherweight Category
+        {rank:1,athlete:"Abdumalik Khalokov",country:"Uzbekistan"},
+        {rank:2,athlete:"Munarbek Seitbek",country:"Kyrgyzstan"},
+        {rank:3,athlete:"Charlie Senior",country:"Australia"},
+        {rank:3,athlete:"Javier Ibáñez",country:"Bulgaria"} 
+        ],
+        "Men's 63.5kg": [ //Light-Welterweight Category
+        {rank:1,athlete:"Erislandy Álvarez",country:"Cuba"},
+        {rank:2,athlete:"Sofiane Oumiha",country:"France"},
+        {rank:3,athlete:"Lasha Guruli",country:"Georgia"},
+        {rank:3,athlete:"Wyatt Sanford",country:"Canada"} 
+        ],
+        "Men's 71kg": [ //Light-Middleweight Category
+        {rank:1,athlete:"Asadkhuja Muydinkhujaev",country:"Uzbekistan"},
+        {rank:2,athlete:"Marco Verde",country:"Mexico"},
+        {rank:3,athlete:"Omari Jones",country:"United States"},
+        {rank:3,athlete:"Lewis Richardson",country:"Great Britain"} 
+        ],
+        "Men's 80kg": [ //Light-Heavyweight Category
+        {rank:1,athlete:"Oleksandr Khyzhniak",country:"Ukraine"},
+        {rank:2,athlete:"Nurbek Oralbay",country:"Kazakhstan"},
+        {rank:3,athlete:"Arlen López",country:"Cuba"},
+        {rank:3,athlete:"Cristian Pinales",country:"Dominican Republic"} 
+        ],
+        "Men's 92kg": [ //Heavyweight Category
+        {rank:1,athlete:"Lazizbek Mullojonov",country:"Uzbekistan"},
+        {rank:2,athlete:"Loren Alfonso",country:"Azerbaijan"},
+        {rank:3,athlete:"Davlat Boltaev",country:"Tajikistan"},
+        {rank:3,athlete:"Enmanuel Reyes",country:"Spain"} 
+        ],
+        "Men's +92kg": [ //Super-Heavyweight Category
+        {rank:1,athlete:"Bakhodir Dzhalolov",country:"Uzbekistan"},
+        {rank:2,athlete:"Ayoub Ghadfa",country:"Spain"},
+        {rank:3,athlete:"Nelvie Tiafack",country:"Germany"},
+        {rank:3,athlete:"Djamili-Dini Aboudou",country:"France"} 
+        ],
+        "Women's 50kg": [ //Light-Flyweight Category
+        {rank:1,athlete:"Wu Yu",country:"China"},
+        {rank:2,athlete:"Buse Naz Çakıroğlu",country:"Turkey"},
+        {rank:3,athlete:"Nazym Kyzaibay",country:"Kazakhstan"},
+        {rank:3,athlete:"Aira Villegas",country:"Philippines"} 
+        ],
+        "Women's 54kg": [ //Bantamweight Category
+        {rank:1,athlete:"Chang Yuan",country:"China"},
+        {rank:2,athlete:"Hatice Akbaş",country:"Turkey"},
+        {rank:3,athlete:"Pang Chol-Mi",country:"North Korea"},
+        {rank:3,athlete:"Im Ae-Ji",country:"South Korea"} 
+        ],
+        "Women's 57kg": [ //Featherweight Category
+        {rank:1,athlete:"Lin Yu-Ting",country:"Taiwan"},
+        {rank:2,athlete:"Julia Szeremeta",country:"Poland"},
+        {rank:3,athlete:"Esra Yıldız-Kahraman",country:"Turkey"},
+        {rank:3,athlete:"Nesthy Petecio",country:"Philippines"} 
+        ],
+        "Women's 60kg": [ //Lightweight Category
+        {rank:1,athlete:"Kellie Harrington",country:"Ireland"},
+        {rank:2,athlete:"Yang Wenlu",country:"China"},
+        {rank:3,athlete:"Beatriz Ferreira",country:"Brazil"},
+        {rank:3,athlete:"Wu Shih-Yi",country:"Taiwan"} 
+        ],
+        "Women's 66kg": [ //Welterweight Category
+        {rank:1,athlete:"Imane Khelif",country:"Algeria"},
+        {rank:2,athlete:"Yang Liu",country:"China"},
+        {rank:3,athlete:"Janjaem Suwannapheng",country:"Thailand"},
+        {rank:3,athlete:"Chen Nien-Chin",country:"Taiwan"} 
+        ],
+        "Women's 75kg": [ //Middleweight Category
+        {rank:1,athlete:"Li Qian",country:"China"},
+        {rank:2,athlete:"Atheyna Bylon",country:"Panama"},
+        {rank:3,athlete:"Caitlin Parker",country:"Australia"},
+        {rank:3,athlete:"Cindy Ngamba",country:"Refugee Team"} 
+        ] 
       },
       "Breaking": {
-       "Men's Tournament": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Tournament": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ] 
+        "Men's Tournament": [ 
+        {rank:1,athlete:"Philip Kim",country:"Canada"},
+        {rank:2,athlete:"Danis Civil",country:"France"},
+        {rank:3,athlete:"Victor Montalvo",country:"United States"} 
+        ],
+        "Women's Tournament": [ 
+        {rank:1,athlete:"Ami Yuasa",country:"Japan"},
+        {rank:2,athlete:"Dominika Banevič",country:"Lithuania"},
+        {rank:3,athlete:"Liu Qingyi",country:"China"} 
+        ] 
       },
       "Canoeing Slalom": {
-       "Men's K1 Slalom": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's C1 Slalom": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's Extreme Kayak Slalom": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's K1 Slalom": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's C1 Slalom": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Extreme Kayak Slalom": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ] 
+        "Men's K1 Slalom": [
+        {rank:1,athlete:"Giovanni De Gennaro",country:"Italy"},
+        {rank:2,athlete:"Titouan Castryck",country:"France"},
+        {rank:3,athlete:"Pau Echaniz",country:"Spain"} 
+        ],
+        "Men's C1 Slalom": [
+        {rank:1,athlete:"Nicolas Gestin",country:"France"},
+        {rank:2,athlete:"Adam Burgess",country:"Great Britain"},
+        {rank:3,athlete:"Matej Beňuš",country:"Slovakia"} 
+        ],
+        "Men's Extreme Kayak Slalom": [
+        {rank:1,athlete:"Finn Butcher",country:"New Zealand"},
+        {rank:2,athlete:"Joe Clarke",country:"Great Britain"},
+        {rank:3,athlete:"Noah Hegge",country:"Germany"} 
+        ],
+        "Women's K1 Slalom": [
+        {rank:1,athlete:"Jessica Fox",country:"Australia"},
+        {rank:2,athlete:"Klaudia Zwolińska",country:"Poland"},
+        {rank:3,athlete:"Kimberley Woods",country:"Great Britain"} 
+        ],
+        "Women's C1 Slalom": [
+        {rank:1,athlete:"Jessica Fox",country:"Australia"},
+        {rank:2,athlete:"Elena Lilik",country:"Germany"},
+        {rank:3,athlete:"Evy Leibfarth",country:"United States"} 
+        ],
+        "Women's Extreme Kayak Slalom": [
+        {rank:1,athlete:"Noemie Fox",country:"Australia"},
+        {rank:2,athlete:"Angèle Hug",country:"France"},
+        {rank:3,athlete:"Kimberley Woods",country:"Great Britain"} 
+        ] 
       },
       "Canoeing Sprint": {
-       "Men's K1 1000m": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's K2 500m": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's K4 500m": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's C1 1000m": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's C2 500m": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's K1 500m": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's K2 500m": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's K4 500m": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's C1 200m": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's C2 500m": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ] 
+        "Men's K1 1000m": [
+        {rank:1,athlete:"Josef Dostál",country:"Czech Republic"},
+        {rank:2,athlete:"Ádám Varga",country:"Hungary"},
+        {rank:3,athlete:"Bálint Kopasz",country:"Hungary"} 
+        ],
+        "Men's K2 500m": [
+        {rank:1,athlete:"Jacob Schopf/Max Lemke",country:"Germany"},
+        {rank:2,athlete:"Bence Nádas/Sándor Tótka",country:"Hungary"},
+        {rank:3,athlete:"Jean van der Westhuyzen/Thomas Green",country:"Australia"} 
+        ],
+        "Men's K4 500m": [
+        {rank:1,athlete:"National Team",country:"Germany"},
+        {rank:2,athlete:"National Team",country:"Australia"},
+        {rank:3,athlete:"National Team",country:"Spain"} 
+        ],
+        "Men's C1 1000m": [
+        {rank:1,athlete:"Martin Fuksa",country:"Czech Republic"},
+        {rank:2,athlete:"Isaquias Queiroz",country:"Brazil"},
+        {rank:3,athlete:"Serghei Tarnovschi",country:"Moldova"} 
+        ],
+        "Men's C2 500m": [
+        {rank:1,athlete:"Ji Bowen/Liu Hao",country:"China"},
+        {rank:2,athlete:"Carlo Tacchini/Gabriele Casadei",country:"Italy"},
+        {rank:3,athlete:"Diego Domínguez/Joan Moreno",country:"Spain"} 
+        ],
+        "Women's K1 500m": [
+        {rank:1,athlete:"Lisa Carrington",country:"New Zealand"},
+        {rank:2,athlete:"Tamara Csipes",country:"Hungary"},
+        {rank:3,athlete:"Emma Jørgensen",country:"Denmark"} 
+        ],
+        "Women's K2 500m": [
+        {rank:1,athlete:"Alicia Hoskin/Lisa Carrington",country:"New Zealand"},
+        {rank:2,athlete:"Alida Dóra Gazsó/Tamara Csipes",country:"Hungary"},
+        {rank:3,athlete:"Jule Hake/Pauline Paszek",country:"Germany"},
+        {rank:3,athlete:"Noémi Pupp/Sára Fojt",country:"Hungary"} 
+        ],
+        "Women's K4 500m": [
+        {rank:1,athlete:"National Team",country:"New Zealand"},
+        {rank:2,athlete:"National Team",country:"Germany"},
+        {rank:3,athlete:"National Team",country:"Hungary"} 
+        ],
+        "Women's C1 200m": [
+        {rank:1,athlete:"Katie Vincent",country:"Canada"},
+        {rank:2,athlete:"Nevin Harrison",country:"United States"},
+        {rank:3,athlete:"Yarisleidis Cirilo",country:"Cuba"} 
+        ],
+        "Women's C2 500m": [
+        {rank:1,athlete:"Sun Mengya/Xu Shixiao",country:"China"},
+        {rank:2,athlete:"Anastasiya Rybachok/Liudmyla Luzan",country:"Ukraine"},
+        {rank:3,athlete:"Katie Vincent/Sloan Mackenzie",country:"Canada"} 
+        ] 
       },
       "Cycling BMX Freestyle": {
-       "Men's Park": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Park": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ] 
+        "Men's Park": [
+        {rank:1,athlete:"José Torres Gil",country:"Argentina"},
+        {rank:2,athlete:"Kieran Reilly",country:"Great Britain"},
+        {rank:3,athlete:"Anthony Jeanjean",country:"France"} 
+        ],
+        "Women's Park": [
+        {rank:1,athlete:"Deng Yawen",country:"China"},
+        {rank:2,athlete:"Perris Benegas",country:"United States"},
+        {rank:3,athlete:"Natalya Diehm",country:"Australia"} 
+        ] 
       },
       "Cycling BMX Racing": {
-       "Men's Racing": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Racing": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ] 
+        "Men's Racing": [
+        {rank:1,athlete:"Joris Daudet",country:"France"},
+        {rank:2,athlete:"Sylvain André",country:"France"},
+        {rank:3,athlete:"Romain Mahieu",country:"France"} 
+        ],
+        "Women's Racing": [
+        {rank:1,athlete:"Saya Sakakibara",country:"Australia"},
+        {rank:2,athlete:"Manon Veenstra",country:"Netherlands"},
+        {rank:3,athlete:"Zoé Claessens",country:"Switzerland"} 
+        ] 
       },
       "Cycling Mountain Bike": {
-       "Men's Cross-Country": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Cross-Country": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ] 
+        "Men's Cross-Country": [
+        {rank:1,athlete:"Thomas Pidcock",country:"Great Britain"},
+        {rank:2,athlete:"Victor Koretzky",country:"France"},
+        {rank:3,athlete:"Alan Hatherly",country:"South Africa"} 
+        ],
+        "Women's Cross-Country": [
+        {rank:1,athlete:"Pauline Ferrand-Prévot",country:"France"},
+        {rank:2,athlete:"Haley Batten",country:"United States"},
+        {rank:3,athlete:"Jenny Rissveds",country:"Sweden"} 
+        ] 
       },
       "Cycling Road": {
-       "Men's Road Race": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""}
-          ],
-          "Men's Time-Trial": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""}
-          ],
-          "Women's Road Race": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""}
-          ],
-          "Women's Time-Trial": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""}
-          ] 
+        "Men's Road Race": [
+        {rank:1,athlete:"Remco Evenepoel",country:"Belgium"},
+        {rank:2,athlete:"Valentin Madouas",country:"France"},
+        {rank:3,athlete:"Christophe Laporte",country:"France"}
+        ],
+        "Men's Time-Trial": [
+        {rank:1,athlete:"Remco Evenepoel",country:"Belgium"},
+        {rank:2,athlete:"Filippo Ganna",country:"Italy"},
+        {rank:3,athlete:"Wout Van Aert",country:"Belgium"}
+        ],
+        "Women's Road Race": [
+        {rank:1,athlete:"Kristen Faulkner",country:"United States"},
+        {rank:2,athlete:"Marianne Vos",country:"Netherlands"},
+        {rank:3,athlete:"Lotte Kopecky",country:"Belgium"}
+        ],
+        "Women's Time-Trial": [
+        {rank:1,athlete:"Grace Brown",country:"Australia"},
+        {rank:2,athlete:"Anna Henderson",country:"Great Britain"},
+        {rank:3,athlete:"Chloé Dygert",country:"United States"}
+        ] 
       },
       "Cycling Track": {
-       "Men's Individual Sprint": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's Keirin": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's Team Sprint": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's Team Pursuit": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's Madison": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's Omnium": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Individual Sprint": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Keirin": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Team Sprint": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Team Pursuit": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""}  
-          ],
-          "Women's Madison": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Omnium": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ] 
+        "Men's Individual Sprint": [
+        {rank:1,athlete:"Harrie Lavreysen",country:"Netherlands"},
+        {rank:2,athlete:"Matthew Richardson",country:"Australia"},
+        {rank:3,athlete:"Jack Carlin",country:"Great Britain"} 
+        ],
+        "Men's Keirin": [
+        {rank:1,athlete:"Harrie Lavreysen",country:"Netherlands"},
+        {rank:2,athlete:"Matthew Richardson",country:"Australia"},
+        {rank:3,athlete:"Matthew Glaetzer",country:"Australia"} 
+        ],
+        "Men's Team Sprint": [
+        {rank:1,athlete:"National Team",country:"Netherlands"},
+        {rank:2,athlete:"National Team",country:"Great Britain"},
+        {rank:3,athlete:"National Team",country:"Australia"} 
+        ],
+        "Men's Team Pursuit": [
+        {rank:1,athlete:"National Team",country:"Australia"},
+        {rank:2,athlete:"National Team",country:"Great Britain"},
+        {rank:3,athlete:"National Team",country:"Italy"} 
+        ],
+        "Men's Madison": [
+        {rank:1,athlete:"Iúri Leitão/Rui Oliveira",country:"Portugal"},
+        {rank:2,athlete:"Elia Viviani/Simone Consonni",country:"Italy"},
+        {rank:3,athlete:"Michael Mørkøv/Niklas Larsen",country:"Denmark"} 
+        ],
+        "Men's Omnium": [
+        {rank:1,athlete:"Benjamin Thomas",country:"France"},
+        {rank:2,athlete:"Iúri Leitão",country:"Portugal"},
+        {rank:3,athlete:"Fabio Van den Bossche",country:"Belgium"} 
+        ],
+        "Women's Individual Sprint": [
+        {rank:1,athlete:"Ellesse Andrews",country:"New Zealand"},
+        {rank:2,athlete:"Lea-Sophie Friedrich",country:"Germany"},
+        {rank:3,athlete:"Emma Finucane",country:"Great Britain"} 
+        ],
+        "Women's Keirin": [
+        {rank:1,athlete:"Ellesse Andrews",country:"New Zealand"},
+        {rank:2,athlete:"Hetty van de Wouw",country:"Netherlands"},
+        {rank:3,athlete:"Emma Finucane",country:"Great Britain"} 
+        ],
+        "Women's Team Sprint": [
+        {rank:1,athlete:"National Team",country:"Great Britain"},
+        {rank:2,athlete:"National Team",country:"New Zealand"},
+        {rank:3,athlete:"National Team",country:"Germany"} 
+        ],
+        "Women's Team Pursuit": [
+        {rank:1,athlete:"National Team",country:"United States"},
+        {rank:2,athlete:"National Team",country:"New Zealand"},
+        {rank:3,athlete:"National Team",country:"Great Britain"}  
+        ],
+        "Women's Madison": [
+        {rank:1,athlete:"Chiara Consonni/Vittoria Guazzini",country:"Italy"},
+        {rank:2,athlete:"Elinor Barker/Neah Evans",country:"Great Britain"},
+        {rank:3,athlete:"Lisa van Belle/Maike van der Duin",country:"Netherlands"} 
+        ],
+        "Women's Omnium": [
+        {rank:1,athlete:"Jennifer Valente",country:"United States"},
+        {rank:2,athlete:"Daria Pikulik",country:"Poland"},
+        {rank:3,athlete:"Ally Wollaston",country:"New Zealand"} 
+        ] 
       },
       "Diving": {
-       "Men's Springboard": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's Platform": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""}  
-          ],
-          "Men's Synchronized Springboard": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's Synchronized Platform": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Springboard": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Platform": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Synchronized Springboard": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Synchronized Platform": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ] 
+        "Men's Springboard": [
+        {rank:1,athlete:"Xie Siyi",country:"China"},
+        {rank:2,athlete:"Wang Zongyuan",country:"China"},
+        {rank:3,athlete:"Osmar Olvera",country:"Mexico"} 
+        ],
+        "Men's Platform": [
+        {rank:1,athlete:"Cao Yuan",country:"China"},
+        {rank:2,athlete:"Rikuto Tamai",country:"Japan"},
+        {rank:3,athlete:"Noah Williams",country:"Great Britain"}  
+        ],
+        "Men's Synchronized Springboard": [
+        {rank:1,athlete:"Long Daoyi/Wang Zongyuan",country:"China"},
+        {rank:2,athlete:"Juan Manuel Celaya/Osmar Olvera",country:"Mexico"},
+        {rank:3,athlete:"Anthony Harding/Jack Laugher",country:"Great Britain"} 
+        ],
+        "Men's Synchronized Platform": [
+        {rank:1,athlete:"Lian Junjie/Yang Hao",country:"China"},
+        {rank:2,athlete:"Noah Williams/Tom Daley",country:"Great Britain"},
+        {rank:3,athlete:"Nathan Zsombor-Murray/Rylan Wiens",country:"Canada"} 
+        ],
+        "Women's Springboard": [
+        {rank:1,athlete:"Chen Yiwen",country:"China"},
+        {rank:2,athlete:"Maddison Keeney",country:"Australia"},
+        {rank:3,athlete:"Chang Yani",country:"China"} 
+        ],
+        "Women's Platform": [
+        {rank:1,athlete:"Quan Hongchan",country:"China"},
+        {rank:2,athlete:"Chen Yuxi",country:"China"},
+        {rank:3,athlete:"Kim Mi-Rae",country:"North Korea"} 
+        ],
+        "Women's Synchronized Springboard": [
+        {rank:1,athlete:"Chang Yani/Chen Yiwen",country:"China"},
+        {rank:2,athlete:"Kassidy Cook/Sarah Bacon",country:"United States"},
+        {rank:3,athlete:"Scarlett Mew Jensen/Yasmin Harper",country:"Great Britain"} 
+        ],
+        "Women's Synchronized Platform": [
+        {rank:1,athlete:"Chen Yuxi/Quan Hongchan",country:"China"},
+        {rank:2,athlete:"Jo Jin-Mi/Kim Mi-Rae",country:"North Korea"},
+        {rank:3,athlete:"Andrea Spendolini-Sirieix/Lois Toulson",country:"Great Britain"} 
+        ] 
       },
       "Equestrian Dressage": {
-       "Individual Dressage": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Team Dressage": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""}  
-          ] 
+        "Individual Dressage": [
+        {rank:1,athlete:"Jessica von Bredow-Werndl",country:"Germany"},
+        {rank:2,athlete:"Isabell Werth",country:"Germany"},
+        {rank:3,athlete:"Charlotte Fry",country:"Great Britain"} 
+        ],
+        "Team Dressage": [
+        {rank:1,athlete:"National Team",country:"Germany"},
+        {rank:2,athlete:"National Team",country:"Denmark"},
+        {rank:3,athlete:"National Team",country:"Great Britain"}  
+        ] 
       },
       "Equestrian Eventing": {
-       "Individual Eventing": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Team Eventing": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""}  
-          ] 
+        "Individual Eventing": [
+        {rank:1,athlete:"Michael Jung",country:"Germany"},
+        {rank:2,athlete:"Christopher Burton",country:"Australia"},
+        {rank:3,athlete:"Laura Collett",country:"Great Britain"} 
+        ],
+        "Team Eventing": [
+        {rank:1,athlete:"National Team",country:"Great Britain"},
+        {rank:2,athlete:"National Team",country:"France"},
+        {rank:3,athlete:"National Team",country:"Japan"}  
+        ] 
       },
       "Equestrian Jumping": {
-       "Individual Jumping": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Team Jumping": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""}  
-          ] 
+        "Individual Jumping": [
+        {rank:1,athlete:"Christian Kukuk",country:"Germany"},
+        {rank:2,athlete:"Steve Guerdat",country:"Switzerland"},
+        {rank:3,athlete:"Maikel van der Vleuten",country:"Netherlands"} 
+        ],
+        "Team Jumping": [
+        {rank:1,athlete:"National Team",country:"Great Britain"},
+        {rank:2,athlete:"National Team",country:"United States"},
+        {rank:3,athlete:"National Team",country:"France"}  
+        ] 
       },
       "Fencing": {
-       "Men's Individual Épée": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's Individual Foil": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""}  
-          ],
-          "Men's Individual Sabre": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's Team Épée": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""}
-          ],
-          "Men's Team Foil": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""}  
-          ],
-          "Men's Team Sabre": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Individual Épée": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Individual Foil": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""}  
-          ],
-          "Women's Individual Sabre": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Team Épée": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Team Foil": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""}  
-          ],
-          "Women's Team Sabre": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ] 
+        "Men's Individual Épée": [
+        {rank:1,athlete:"Koki Kano",country:"Japan"},
+        {rank:2,athlete:"Yannick Borel",country:"France"},
+        {rank:3,athlete:"Mohamed El-Sayed",country:"Egypt"} 
+        ],
+        "Men's Individual Foil": [
+        {rank:1,athlete:"Edgar Cheung",country:"Hong Kong"},
+        {rank:2,athlete:"Filippo Macchi",country:"Italy"},
+        {rank:3,athlete:"Nick Itkin",country:"United States"}  
+        ],
+        "Men's Individual Sabre": [
+        {rank:1,athlete:"Oh Sang-Uk",country:"South Korea"},
+        {rank:2,athlete:"Fares Ferjani",country:"Tunisia"},
+        {rank:3,athlete:"Luigi Samele",country:"Italy"} 
+        ],
+        "Men's Team Épée": [
+        {rank:1,athlete:"National Team",country:"Hungary"},
+        {rank:2,athlete:"National Team",country:"Japan"},
+        {rank:3,athlete:"National Team",country:"Czech Republic"}
+        ],
+        "Men's Team Foil": [
+        {rank:1,athlete:"National Team",country:"Japan"},
+        {rank:2,athlete:"National Team",country:"Italy"},
+        {rank:3,athlete:"National Team",country:"France"}  
+        ],
+        "Men's Team Sabre": [
+        {rank:1,athlete:"National Team",country:"South Korea"},
+        {rank:2,athlete:"National Team",country:"Hungary"},
+        {rank:3,athlete:"National Team",country:"France"} 
+        ],
+        "Women's Individual Épée": [
+        {rank:1,athlete:"Vivian Kong",country:"Hong Kong"},
+        {rank:2,athlete:"Auriane Mallo-Breton",country:"France"},
+        {rank:3,athlete:"Eszter Muhari",country:"Hungary"} 
+        ],
+        "Women's Individual Foil": [
+        {rank:1,athlete:"Lee Kiefer",country:"United States"},
+        {rank:2,athlete:"Lauren Scruggs",country:"United States"},
+        {rank:3,athlete:"Eleanor Harvey",country:"Canada"}  
+        ],
+        "Women's Individual Sabre": [
+        {rank:1,athlete:"Manon Apithy-Brunet",country:"France"},
+        {rank:2,athlete:"Sara Balzer",country:"France"},
+        {rank:3,athlete:"Olha Kharlan",country:"Ukraine"} 
+        ],
+        "Women's Team Épée": [
+        {rank:1,athlete:"National Team",country:"Italy"},
+        {rank:2,athlete:"National Team",country:"France"},
+        {rank:3,athlete:"National Team",country:"Poland"} 
+        ],
+        "Women's Team Foil": [
+        {rank:1,athlete:"National Team",country:"United States"},
+        {rank:2,athlete:"National Team",country:"Italy"},
+        {rank:3,athlete:"National Team",country:"Japan"}  
+        ],
+        "Women's Team Sabre": [
+        {rank:1,athlete:"National Team",country:"Ukraine"},
+        {rank:2,athlete:"National Team",country:"South Korea"},
+        {rank:3,athlete:"National Team",country:"Japan"} 
+        ] 
       },
       "Field Hockey": {
-       "Men's Tournament": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Tournament": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ] 
+        "Men's Tournament": [ 
+        {rank:1,athlete:"National Team",country:"Netherlands"},
+        {rank:2,athlete:"National Team",country:"Germany"},
+        {rank:3,athlete:"National Team",country:"India"} 
+        ],
+        "Women's Tournament": [ 
+        {rank:1,athlete:"National Team",country:"Netherlands"},
+        {rank:2,athlete:"National Team",country:"China"},
+        {rank:3,athlete:"National Team",country:"Argentina"} 
+        ] 
       },
       "Football": {
-       "Men's Tournament": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Tournament": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ] 
+        "Men's Tournament": [ 
+        {rank:1,athlete:"National Team",country:"Spain"},
+        {rank:2,athlete:"National Team",country:"France"},
+        {rank:3,athlete:"National Team",country:"Morocco"} 
+        ],
+        "Women's Tournament": [ 
+        {rank:1,athlete:"National Team",country:"United States"},
+        {rank:2,athlete:"National Team",country:"Brazil"},
+        {rank:3,athlete:"National Team",country:"Germany"} 
+        ] 
       },
       "Golf": {
-       "Men's Individual": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Individual": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ] 
+        "Men's Individual": [ 
+        {rank:1,athlete:"Scottie Scheffler",country:"United States"},
+        {rank:2,athlete:"Tommy Fleetwood",country:"Great Britain"},
+        {rank:3,athlete:"Hideki Matsuyama",country:"Japan"} 
+        ],
+        "Women's Individual": [ 
+        {rank:1,athlete:"Lydia Ko",country:"New Zealand"},
+        {rank:2,athlete:"Esther Henseleit",country:"Germany"},
+        {rank:3,athlete:"Janet Lin",country:"China"} 
+        ] 
       },
       "Handball": {
-       "Men's Tournament": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Tournament": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ] 
+        "Men's Tournament": [ 
+        {rank:1,athlete:"National Team",country:"Denmark"},
+        {rank:2,athlete:"National Team",country:"Germany"},
+        {rank:3,athlete:"National Team",country:"Spain"} 
+        ],
+        "Women's Tournament": [ 
+        {rank:1,athlete:"National Team",country:"Norway"},
+        {rank:2,athlete:"National Team",country:"France"},
+        {rank:3,athlete:"National Team",country:"Denmark"} 
+        ] 
       },
       "Judo": {
-       "Men's 60kg": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""},
-          {rank:3,athlete:"",country:""}
-          ],
-          "Men's 66kg": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""},
-          {rank:3,athlete:"",country:""}
-          ],
-          "Men's 73kg": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""},
-          {rank:3,athlete:"",country:""}
-          ],
-          "Men's 81kg": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""},
-          {rank:3,athlete:"",country:""}
-          ],
-          "Men's 90kg": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's 100kg": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""},
-          {rank:3,athlete:"",country:""}
-          ],
-          "Men's +100kg": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""},
-          {rank:3,athlete:"",country:""}   
-          ],
-          "Women's 48kg": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's 52kg": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""},
-          {rank:3,athlete:"",country:""}
-          ],
-          "Women's 57kg": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's 63kg": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's 70kg": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""},
-          {rank:3,athlete:"",country:""}
-          ],
-          "Women's 78kg": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""},
-          {rank:3,athlete:"",country:""}
-          ],
-          "Women's +78kg": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Mixed Team": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""},
-          {rank:3,athlete:"",country:""}  
-          ] 
+        "Men's 60kg": [ 
+        {rank:1,athlete:"Yeldos Smetov",country:"Kazakhstan"},
+        {rank:2,athlete:"Luka Mkheidze",country:"France"},
+        {rank:3,athlete:"Ryuju Nagayama",country:"Japan"},
+        {rank:3,athlete:"Francisco Garrigós",country:"Spain"}
+        ],
+        "Men's 66kg": [ 
+        {rank:1,athlete:"Hifumi Abe",country:"Japan"},
+        {rank:2,athlete:"Willian Lima",country:"Brazil"},
+        {rank:3,athlete:"Denis Vieru",country:"Moldova"},
+        {rank:3,athlete:"Gusman Kyrgyzbayev",country:"Kazakhstan"}
+        ],
+        "Men's 73kg": [ 
+        {rank:1,athlete:"Hidayat Heydarov",country:"Azerbaijan"},
+        {rank:2,athlete:"Joan-Benjamin Gaba",country:"France"},
+        {rank:3,athlete:"Adil Osmanov",country:"Moldova"},
+        {rank:3,athlete:"Soichi Hashimoto",country:"Japan"}
+        ],
+        "Men's 81kg": [ 
+        {rank:1,athlete:"Takanori Nagase",country:"Japan"},
+        {rank:2,athlete:"Tato Grigalashvili",country:"Georgia"},
+        {rank:3,athlete:"Lee Joon-Hwan",country:"South Korea"},
+        {rank:3,athlete:"Somon Makhmadbekov",country:"Tajikistan"}
+        ],
+        "Men's 90kg": [ 
+        {rank:1,athlete:"Lasha Bekauri",country:"Georgia"},
+        {rank:2,athlete:"Sanshiro Murao",country:"Japan"},
+        {rank:3,athlete:"Maxime-Gaël Ngayap Hambou",country:"France"},
+        {rank:3,athlete:"Theodoros Tselidis",country:"Greece"} 
+        ],
+        "Men's 100kg": [ 
+        {rank:1,athlete:"Zelym Kotsoiev",country:"Azerbaijan"},
+        {rank:2,athlete:"Ilia Sulamanidze",country:"Georgia"},
+        {rank:3,athlete:"Peter Paltchik",country:"Israel"},
+        {rank:3,athlete:"Muzaffarbek Turoboyev",country:"Uzbekistan"}
+        ],
+        "Men's +100kg": [ 
+        {rank:1,athlete:"Teddy Riner",country:"France"},
+        {rank:2,athlete:"Kim Min-Jong",country:"South Korea"},
+        {rank:3,athlete:"Temur Rakhimov",country:"Tajikistan"},
+        {rank:3,athlete:"Alisher Yusupov",country:"Uzbekistan"}   
+        ],
+        "Women's 48kg": [ 
+        {rank:1,athlete:"Natsumi Tsunoda",country:"Japan"},
+        {rank:2,athlete:"Bavuudorjiin Baasankhüü",country:"Mongolia"},
+        {rank:3,athlete:"Shirine Boukli",country:"France"},
+        {rank:3,athlete:"Tara Babulfath",country:"Sweden"} 
+        ],
+        "Women's 52kg": [ 
+        {rank:1,athlete:"Diyora Keldiyorova",country:"Uzbekistan"},
+        {rank:2,athlete:"Distria Krasniqi",country:"Kosovo"},
+        {rank:3,athlete:"Larissa Pimenta",country:"Brazil"},
+        {rank:3,athlete:"Amandine Buchard",country:"France"}
+        ],
+        "Women's 57kg": [ 
+        {rank:1,athlete:"Christa Deguchi",country:"Canada"},
+        {rank:2,athlete:"Huh Mi-Mi",country:"South Korea"},
+        {rank:3,athlete:"Haruka Funakubo",country:"Japan"},
+        {rank:3,athlete:"Sarah-Léonie Cysique",country:"France"} 
+        ],
+        "Women's 63kg": [ 
+        {rank:1,athlete:"Andreja Leški",country:"Slovenia"},
+        {rank:2,athlete:"Prisca Awiti",country:"Mexico"},
+        {rank:3,athlete:"Clarisse Agbegnenou",country:"France"},
+        {rank:3,athlete:"Laura Fazliu",country:"Kosovo"} 
+        ],
+        "Women's 70kg": [ 
+        {rank:1,athlete:"Barbara Matić",country:"Croatia"},
+        {rank:2,athlete:"Miriam Butkereit",country:"Germany"},
+        {rank:3,athlete:"Michaela Polleres",country:"Austria"},
+        {rank:3,athlete:"Gabriella Willems",country:"Belgium"}
+        ],
+        "Women's 78kg": [ 
+        {rank:1,athlete:"Alice Bellandi",country:"Italy"},
+        {rank:2,athlete:"Inbar Lanir",country:"Israel"},
+        {rank:3,athlete:"Ma Zhenzhao",country:"China"},
+        {rank:3,athlete:"Patrícia Sampaio",country:"Portugal"}
+        ],
+        "Women's +78kg": [ 
+        {rank:1,athlete:"Beatriz Souza",country:"Brazil"},
+        {rank:2,athlete:"Raz Hershko",country:"Israel"},
+        {rank:3,athlete:"Kim Ha-Yun",country:"South Korea"},
+        {rank:3,athlete:"Romane Dicko",country:"France"} 
+        ],
+        "Mixed Team": [ 
+        {rank:1,athlete:"National Team",country:"France"},
+        {rank:2,athlete:"National Team",country:"Japan"},
+        {rank:3,athlete:"National Team",country:"Brazil"},
+        {rank:3,athlete:"National Team",country:"South Korea"}  
+        ] 
       },
       "Marathon Swimming": {
-       "Men's 10km": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's 10km": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""}  
-          ] 
+        "Men's 10km": [
+        {rank:1,athlete:"Kristóf Rasovszky",country:"Hungary"},
+        {rank:2,athlete:"Oliver Klemet",country:"Germany"},
+        {rank:3,athlete:"Dávid Betlehem",country:"Hungary"} 
+        ],
+        "Women's 10km": [
+        {rank:1,athlete:"Sharon van Rouwendaal",country:"Netherlands"},
+        {rank:2,athlete:"Moesha Johnson",country:"Australia"},
+        {rank:3,athlete:"Ginevra Tadeucci",country:"Italy"}  
+        ] 
       },
       "Modern Pentathlon": {
-       "Men's Individual": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Individual": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""}  
-          ] 
+        "Men's Individual": [
+        {rank:1,athlete:"Ahmed El-Gendy",country:"Egypt"},
+        {rank:2,athlete:"Taishu Sato",country:"Japan"},
+        {rank:3,athlete:"Giorgio Malan",country:"Italy"} 
+        ],
+        "Women's Individual": [
+        {rank:1,athlete:"Michelle Gulyás",country:"Hungary"},
+        {rank:2,athlete:"Élodie Clouvel",country:"France"},
+        {rank:3,athlete:"Seong Seung-Min",country:"South Korea"}  
+        ] 
       },
       "Rhythmic Gymnastics": {
-       "Women's Individual All-Around": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Group All-Around": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""}  
-          ] 
+        "Women's Individual All-Around": [
+        {rank:1,athlete:"Darja Varfolomeev",country:"Germany"},
+        {rank:2,athlete:"Boryana Kaleyn",country:"Bulgaria"},
+        {rank:3,athlete:"Sofia Raffaeli",country:"Italy"} 
+        ],
+        "Women's Group All-Around": [
+        {rank:1,athlete:"National Team",country:"China"},
+        {rank:2,athlete:"National Team",country:"Israel"},
+        {rank:3,athlete:"National Team",country:"Italy"}  
+        ] 
       },
       "Rowing": {
-       "Men's Single Sculls": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's Double Sculls": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's Quadruple Sculls": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's Eight": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's Pair": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's Four": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's Lightweight Double Sculls": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Single Sculls": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Double Sculls": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Quadruple Sculls": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Eight": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Pair": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Four": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Lightweight Double Sculls": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ] 
+        "Men's Single Sculls": [
+        {rank:1,athlete:"Oliver Zeidler",country:"Germany"},
+        {rank:2,athlete:"Yauheni Zalaty",country:"Belarus"},
+        {rank:3,athlete:"Simon van Dorp",country:"Netherlands"} 
+        ],
+        "Men's Double Sculls": [
+        {rank:1,athlete:"Andrei-Sebastian Cornea/Marian Enache",country:"Romania"},
+        {rank:2,athlete:"Melvin Twellaar/Stef Broenink",country:"Netherlands"},
+        {rank:3,athlete:"Daire Lynch/Philip Doyle",country:"Ireland"} 
+        ],
+        "Men's Quadruple Sculls": [
+        {rank:1,athlete:"National Team",country:"Netherlands"},
+        {rank:2,athlete:"National Team",country:"Italy"},
+        {rank:3,athlete:"National Team",country:"Poland"} 
+        ],
+        "Men's Eight": [
+        {rank:1,athlete:"National Team",country:"Great Britain"},
+        {rank:2,athlete:"National Team",country:"Netherlands"},
+        {rank:3,athlete:"National Team",country:"United States"} 
+        ],
+        "Men's Pair": [
+        {rank:1,athlete:"Martin Sinković/Valent Sinković",country:"Croatia"},
+        {rank:2,athlete:"Oliver Wynne-Griffith/Tom George",country:"Great Britain"},
+        {rank:3,athlete:"Andrin Gulich/Roman Röösli",country:"Switzerland"} 
+        ],
+        "Men's Four": [
+        {rank:1,athlete:"National Team",country:"United States"},
+        {rank:2,athlete:"National Team",country:"New Zealand"},
+        {rank:3,athlete:"National Team",country:"Great Britain"} 
+        ],
+        "Men's Lightweight Double Sculls": [
+        {rank:1,athlete:"Fintan McCarthy/Paul O'Donovan",country:"Ireland"},
+        {rank:2,athlete:"Gabriel Soares/Stefano Oppo",country:"Italy"},
+        {rank:3,athlete:"Antonios Papakonstantinou/Petros Gkaidatzis",country:"Greece"} 
+        ],
+        "Women's Single Sculls": [
+        {rank:1,athlete:"Karolien Florijn",country:"Netherlands"},
+        {rank:2,athlete:"Emma Twigg",country:"New Zealand"},
+        {rank:3,athlete:"Viktorija Senkutė",country:"Lithuania"} 
+        ],
+        "Women's Double Sculls": [
+        {rank:1,athlete:"Brooke Francis/Lucy Spoors",country:"New Zealand"},
+        {rank:2,athlete:"Ancuța Bodnar/Simona Radiș",country:"Romania"},
+        {rank:3,athlete:"Mathilda Hodgkins-Byrne/Rebecca Wilde",country:"Great Britain"} 
+        ],
+        "Women's Quadruple Sculls": [
+        {rank:1,athlete:"National Team",country:"Great Britain"},
+        {rank:2,athlete:"National Team",country:"Netherlands"},
+        {rank:3,athlete:"National Team",country:"Germany"} 
+        ],
+        "Women's Eight": [
+        {rank:1,athlete:"National Team",country:"Romania"},
+        {rank:2,athlete:"National Team",country:"Canada"},
+        {rank:3,athlete:"National Team",country:"Great Britain"} 
+        ],
+        "Women's Pair": [
+        {rank:1,athlete:"Veronique Meester/Ymkje Clevering",country:"Netherlands"},
+        {rank:2,athlete:"Ioana Vrînceanu/Roxana Anghel",country:"Romania"},
+        {rank:3,athlete:"Annabelle McIntyre/Jessica Morrison",country:"Australia"} 
+        ],
+        "Women's Four": [
+        {rank:1,athlete:"National Team",country:"Netherlands"},
+        {rank:2,athlete:"National Team",country:"Great Britain"},
+        {rank:3,athlete:"National Team",country:"New Zealand"} 
+        ],
+        "Women's Lightweight Double Sculls": [
+        {rank:1,athlete:"Emily Craig/Imogen Grant",country:"Great Britain"},
+        {rank:2,athlete:"Gianina van Groningen/Ionela Lehaci-Cozmiuc",country:"Romania"},
+        {rank:3,athlete:"Milena Kontou/Zoí Fitsiou",country:"Greece"} 
+        ] 
       },
       "Rugby Sevens": {
-       "Men's Tournament": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""}
-          ],
-          "Women's Tournament": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ] 
+        "Men's Tournament": [
+        {rank:1,athlete:"National Team",country:"France"},
+        {rank:2,athlete:"National Team",country:"Fiji"},
+        {rank:3,athlete:"National Team",country:"South Africa"}
+        ],
+        "Women's Tournament": [
+        {rank:1,athlete:"National Team",country:"New Zealand"},
+        {rank:2,athlete:"National Team",country:"Canada"},
+        {rank:3,athlete:"National Team",country:"United States"} 
+        ] 
       },
       "Sailing": {
-       "Men's Formula Kite": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's ILCA7": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's iQFoil": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's 49er": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Formula Kite": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's ILCA6": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's iQFoil": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's 49erFX": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""}  
-          ],
-          "Mixed 470": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Mixed Nacra-17": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ] 
+        "Men's Formula Kite": [
+        {rank:1,athlete:"Valentin Bontus",country:"Austria"},
+        {rank:2,athlete:"Toni Vodišek",country:"Slovenia"},
+        {rank:3,athlete:"Maximilian Maeder",country:"Singapore"} 
+        ],
+        "Men's ILCA7": [
+        {rank:1,athlete:"Matthew Wearn",country:"Australia"},
+        {rank:2,athlete:"Pavlos Kontides",country:"Cyprus"},
+        {rank:3,athlete:"Stefano Peschiera",country:"Peru"} 
+        ],
+        "Men's iQFoil": [
+        {rank:1,athlete:"Tom Reuveny",country:"Israel"},
+        {rank:2,athlete:"Grae Morris",country:"Australia"},
+        {rank:3,athlete:"Luuc van Opzeeland",country:"Netherlands"} 
+        ],
+        "Men's 49er": [
+        {rank:1,athlete:"Diego Botín/Florián Trittel",country:"Spain"},
+        {rank:2,athlete:"Isaac McHardie/William McKenzie",country:"New Zealand"},
+        {rank:3,athlete:"Hans Henken/Ian Barrows",country:"United States"} 
+        ],
+        "Women's Formula Kite": [
+        {rank:1,athlete:"Ellie Aldridge",country:"Great Britain"},
+        {rank:2,athlete:"Lauriane Nolot",country:"France"},
+        {rank:3,athlete:"Annelous Lammerts",country:"Netherlands"} 
+        ],
+        "Women's ILCA6": [
+        {rank:1,athlete:"Marit Bouwmeester",country:"Netherlands"},
+        {rank:2,athlete:"Anne-Marie Rindom",country:"Denmark"},
+        {rank:3,athlete:"Line Høst",country:"Norway"} 
+        ],
+        "Women's iQFoil": [
+        {rank:1,athlete:"Marta Maggetti",country:"Italy"},
+        {rank:2,athlete:"Sharon Kantor",country:"Israel"},
+        {rank:3,athlete:"Emma Wilson",country:"Great Britain"} 
+        ],
+        "Women's 49erFX": [
+        {rank:1,athlete:"Annette Duetz/Odile van Aanholt",country:"Netherlands"},
+        {rank:2,athlete:"Rebecca Netzler/Vilma Bobeck",country:"Sweden"},
+        {rank:3,athlete:"Charline Picon/Sarah Steyaert",country:"France"}  
+        ],
+        "Mixed 470": [
+        {rank:1,athlete:"Lukas Mähr/Lara Vadlau",country:"Austria"},
+        {rank:2,athlete:"Keiju Okada/Miho Yoshioka",country:"Japan"},
+        {rank:3,athlete:"Anton Dahlberg/Lovisa Karlsson",country:"Sweden"} 
+        ],
+        "Mixed Nacra-17": [
+        {rank:1,athlete:"Ruggero Tita/Caterina Banti",country:"Italy"},
+        {rank:2,athlete:"Mateo Majdalani/Eugenia Bosco",country:"Argentina"},
+        {rank:3,athlete:"Micah Wilkinson/Erica Dawson",country:"New Zealand"} 
+        ] 
       },
       "Shooting": {
-       "Men's 10m Air Rifle": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's 50m Rifle 3 Positions": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's 10m Air Pistol": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's 25m Rapid Fire Pistol": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's Skeet": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's Trap": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's 10m Air Rifle": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's 50m Rifle 3 Positions": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's 10m Air Pistol": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's 25m Pistol": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Skeet": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Trap": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Mixed 10m Air Rifle": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Mixed 10m Air Pistol": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Mixed Skeet": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ] 
+        "Men's 10m Air Rifle": [
+        {rank:1,athlete:"Sheng Lihao",country:"China"},
+        {rank:2,athlete:"Victor Lindgren",country:"Sweden"},
+        {rank:3,athlete:"Miran Maričić",country:"Croatia"} 
+        ],
+        "Men's 50m Rifle 3 Positions": [
+        {rank:1,athlete:"Liu Yukun",country:"China"},
+        {rank:2,athlete:"Serhiy Kulish",country:"Ukraine"},
+        {rank:3,athlete:"Swapnil Kusale",country:"India"} 
+        ],
+        "Men's 10m Air Pistol": [
+        {rank:1,athlete:"Xie Yu",country:"China"},
+        {rank:2,athlete:"Federico Maldini",country:"Italy"},
+        {rank:3,athlete:"Paolo Monna",country:"Italy"} 
+        ],
+        "Men's 25m Rapid Fire Pistol": [
+        {rank:1,athlete:"Li Yuehong",country:"China"},
+        {rank:2,athlete:"Cho Yeong-Jae",country:"South Korea"},
+        {rank:3,athlete:"Wang Xinjie",country:"China"} 
+        ],
+        "Men's Skeet": [
+        {rank:1,athlete:"Vincent Hancock",country:"United States"},
+        {rank:2,athlete:"Conner Prince",country:"United States"},
+        {rank:3,athlete:"Lee Meng-Yuan",country:"Taiwan"} 
+        ],
+        "Men's Trap": [
+        {rank:1,athlete:"Nathan Hales",country:"Great Britain"},
+        {rank:2,athlete:"Qi Ying",country:"China"},
+        {rank:3,athlete:"Jean-Pierre Brol",country:"Guatemala"} 
+        ],
+        "Women's 10m Air Rifle": [
+        {rank:1,athlete:"Ban Hyo-Jin",country:"South Korea"},
+        {rank:2,athlete:"Huang Yuting",country:"China"},
+        {rank:3,athlete:"Audrey Gogniat",country:"Switzerland"} 
+        ],
+        "Women's 50m Rifle 3 Positions": [
+        {rank:1,athlete:"Chiara Leone",country:"Switzerland"},
+        {rank:2,athlete:"Sagen Maddalena",country:"United States"},
+        {rank:3,athlete:"Zhang Qiongyue",country:"China"} 
+        ],
+        "Women's 10m Air Pistol": [
+        {rank:1,athlete:"Oh Ye-Jin",country:"South Korea"},
+        {rank:2,athlete:"Kim Ye-Ji",country:"South Korea"},
+        {rank:3,athlete:"Manu Bhaker",country:"India"} 
+        ],
+        "Women's 25m Pistol": [
+        {rank:1,athlete:"Yang Ji-In",country:"South Korea"},
+        {rank:2,athlete:"Camille Jedrzejewski",country:"France"},
+        {rank:3,athlete:"Veronika Major",country:"Hungary"} 
+        ],
+        "Women's Skeet": [
+        {rank:1,athlete:"Francisca Crovetto",country:"Chile"},
+        {rank:2,athlete:"Amber Rutter",country:"Great Britain"},
+        {rank:3,athlete:"Austen Smith",country:"United States"} 
+        ],
+        "Women's Trap": [
+        {rank:1,athlete:"Adriana Ruano",country:"Guatemala"},
+        {rank:2,athlete:"Silvana Stanco",country:"Italy"},
+        {rank:3,athlete:"Penny Smith",country:"Australia"} 
+        ],
+        "Mixed 10m Air Rifle": [
+        {rank:1,athlete:"Sheng Lihao/Huang Yuting",country:"China"},
+        {rank:2,athlete:"Park Ha-Jun/Keum Ji-Hyeon",country:"South Korea"},
+        {rank:3,athlete:"Islam Satpayev/Aleksandra Le",country:"Kazakhstan"} 
+        ],
+        "Mixed 10m Air Pistol": [
+        {rank:1,athlete:"Damir Mikec/Zorana Arunović",country:"Serbia"},
+        {rank:2,athlete:"Yusuf Dikeç/İlayda Tarhan",country:"Turkey"},
+        {rank:3,athlete:"Sarabjot Singh/Manu Bhaker",country:"India"} 
+        ],
+        "Mixed Skeet": [
+        {rank:1,athlete:"Gabriele Rossetti/Diana Bacosi",country:"Italy"},
+        {rank:2,athlete:"Vincent Hancock/Austen Smith",country:"United States"},
+        {rank:3,athlete:"Lyu Jianlin/Jiang Yiting",country:"China"} 
+        ] 
       },
       "Skateboarding": {
-       "Men's Park": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's Street": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Park": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Street": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ] 
+        "Men's Park": [
+        {rank:1,athlete:"Keegan Palmer",country:"Australia"},
+        {rank:2,athlete:"Tom Schaar",country:"United States"},
+        {rank:3,athlete:"Augusto Akio",country:"Brazil"} 
+        ],
+        "Men's Street": [
+        {rank:1,athlete:"Yuto Horigome",country:"Japan"},
+        {rank:2,athlete:"Jagger Eaton",country:"United States"},
+        {rank:3,athlete:"Nyjah Huston",country:"United States"} 
+        ],
+        "Women's Park": [
+        {rank:1,athlete:"Arisa Trew",country:"Australia"},
+        {rank:2,athlete:"Kokona Hiraki",country:"Japan"},
+        {rank:3,athlete:"Sky Brown",country:"Great Britain"} 
+        ],
+        "Women's Street": [
+        {rank:1,athlete:"Coco Yoshizawa",country:"Japan"},
+        {rank:2,athlete:"Liz Akama",country:"Japan"},
+        {rank:3,athlete:"Rayssa Leal",country:"Brazil"} 
+        ] 
       },
       "Sport Climbing": {
-       "Men's Boulder & Lead": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's Speed": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Boulder & Lead": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Speed": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ] 
+        "Men's Boulder & Lead": [ 
+        {rank:1,athlete:"Toby Roberts",country:"Great Britain"},
+        {rank:2,athlete:"Sorato Anraku",country:"Japan"},
+        {rank:3,athlete:"Jakob Schubert",country:"Austria"} 
+        ],
+        "Men's Speed": [ 
+        {rank:1,athlete:"Veddriq Leonardo",country:"Indonesia"},
+        {rank:2,athlete:"Wu Peng",country:"China"},
+        {rank:3,athlete:"Sam Watson",country:"United States"} 
+        ],
+        "Women's Boulder & Lead": [ 
+        {rank:1,athlete:"Janja Garnbret",country:"Slovenia"},
+        {rank:2,athlete:"Brooke Raboutou",country:"United States"},
+        {rank:3,athlete:"Jessica Pilz",country:"Austria"} 
+        ],
+        "Women's Speed": [ 
+        {rank:1,athlete:"Aleksandra Mirosław",country:"Poland"},
+        {rank:2,athlete:"Deng Lijuan",country:"China"},
+        {rank:3,athlete:"Aleksandra Kałucka",country:"Poland"} 
+        ] 
       },
       "Surfing": {
-       "Men's Shortboard": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Shortboard": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ] 
+        "Men's Shortboard": [ 
+        {rank:1,athlete:"Kauli Vaast",country:"France"},
+        {rank:2,athlete:"Jack Robinson",country:"Australia"},
+        {rank:3,athlete:"Gabriel Medina",country:"Brazil"} 
+        ],
+        "Women's Shortboard": [ 
+        {rank:1,athlete:"Caroline Marks",country:"United States"},
+        {rank:2,athlete:"Tatiana Weston-Webb",country:"Brazil"},
+        {rank:3,athlete:"Johanne Defay",country:"France"} 
+        ] 
       },
       "Swimming": {
-       "Men's 50m Freestyle": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's 100m Freestyle": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's 200m Freestyle": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's 400m Freestyle": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's 800m Freestyle": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's 1500m Freestyle": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's 100m Backstroke": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's 200m Backstroke": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's 100m Breaststroke": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:2,athlete:"",country:""} 
-          ],
-          "Men's 200m Breaststroke": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's 100m Butterfly": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's 200m Butterfly": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's 200m Medley": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's 400m Medley": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's 4x100m Freestyle Relay": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's 4x200m Freestyle Relay": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's 4x100m Medley Relay": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's 50m Freestyle": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's 100m Freestyle": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's 200m Freestyle": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's 400m Freestyle": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's 800m Freestyle": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's 1500m Freestyle": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's 100m Backstroke": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's 200m Backstroke": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's 100m Breaststroke": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's 200m Breaststroke": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's 100m Butterfly": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's 200m Butterfly": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's 200m Medley": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's 400m Medley": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's 4x100m Freestyle Relay": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's 4x200m Freestyle Relay": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's 4x100m Medley Relay": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Mixed 4x100m Medley Relay": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ] 
+        "Men's 50m Freestyle": [ 
+        {rank:1,athlete:"Cameron McEvoy",country:"Australia"},
+        {rank:2,athlete:"Ben Proud",country:"Great Britain"},
+        {rank:3,athlete:"Florent Manaudou",country:"France"} 
+        ],
+        "Men's 100m Freestyle": [ 
+        {rank:1,athlete:"Pan Zhanle",country:"China"},
+        {rank:2,athlete:"Kyle Chalmers",country:"Australia"},
+        {rank:3,athlete:"David Popovici",country:"Romania"} 
+        ],
+        "Men's 200m Freestyle": [ 
+        {rank:1,athlete:"David Popovici",country:"Romania"},
+        {rank:2,athlete:"Matt Richards",country:"Great Britain"},
+        {rank:3,athlete:"Luke Hobson",country:"United States"} 
+        ],
+        "Men's 400m Freestyle": [ 
+        {rank:1,athlete:"Lukas Märtens",country:"Germany"},
+        {rank:2,athlete:"Elijah Winnington",country:"Australia"},
+        {rank:3,athlete:"Kim Woo-Min",country:"South Korea"} 
+        ],
+        "Men's 800m Freestyle": [ 
+        {rank:1,athlete:"Daniel Wiffen",country:"Ireland"},
+        {rank:2,athlete:"Bobby Finke",country:"United States"},
+        {rank:3,athlete:"Gregorio Paltrinieri",country:"Italy"} 
+        ],
+        "Men's 1500m Freestyle": [ 
+        {rank:1,athlete:"Bobby Finke",country:"United States"},
+        {rank:2,athlete:"Gregorio Paltrinieri",country:"Italy"},
+        {rank:3,athlete:"Daniel Wiffen",country:"Ireland"} 
+        ],
+        "Men's 100m Backstroke": [ 
+        {rank:1,athlete:"Thomas Ceccon",country:"Italy"},
+        {rank:2,athlete:"Xu Jiayu",country:"China"},
+        {rank:3,athlete:"Ryan Murphy",country:"United States"} 
+        ],
+        "Men's 200m Backstroke": [ 
+        {rank:1,athlete:"Hubert Kós",country:"Hungary"},
+        {rank:2,athlete:"Apostolos Christou",country:"Greece"},
+        {rank:3,athlete:"Roman Mityukov",country:"Switzerland"} 
+        ],
+        "Men's 100m Breaststroke": [ 
+        {rank:1,athlete:"Nicolò Martinenghi",country:"Italy"},
+        {rank:2,athlete:"Adam Peaty",country:"Great Britain"},
+        {rank:2,athlete:"Nic Fink",country:"United States"} 
+        ],
+        "Men's 200m Breaststroke": [ 
+        {rank:1,athlete:"Léon Marchand",country:"France"},
+        {rank:2,athlete:"Zac Stubblety-Cook",country:"Australia"},
+        {rank:3,athlete:"Caspar Corbeau",country:"Netherlands"} 
+        ],
+        "Men's 100m Butterfly": [ 
+        {rank:1,athlete:"Kristóf Milák",country:"Hungary"},
+        {rank:2,athlete:"Joshua Liendo",country:"Canada"},
+        {rank:3,athlete:"Ilya Kharun",country:"Canada"} 
+        ],
+        "Men's 200m Butterfly": [ 
+        {rank:1,athlete:"Léon Marchand",country:"France"},
+        {rank:2,athlete:"Kristóf Milák",country:"Hungary"},
+        {rank:3,athlete:"Ilya Kharun",country:"Canada"} 
+        ],
+        "Men's 200m Medley": [ 
+        {rank:1,athlete:"Léon Marchand",country:"France"},
+        {rank:2,athlete:"Duncan Scott",country:"Great Britain"},
+        {rank:3,athlete:"Wang Shun",country:"China"} 
+        ],
+        "Men's 400m Medley": [ 
+        {rank:1,athlete:"Léon Marchand",country:"France"},
+        {rank:2,athlete:"Tomoyuki Matsushita",country:"Japan"},
+        {rank:3,athlete:"Carson Foster",country:"United States"} 
+        ],
+        "Men's 4x100m Freestyle Relay": [ 
+        {rank:1,athlete:"National Team",country:"United States"},
+        {rank:2,athlete:"National Team",country:"Australia"},
+        {rank:3,athlete:"National Team",country:"Italy"} 
+        ],
+        "Men's 4x200m Freestyle Relay": [ 
+        {rank:1,athlete:"National Team",country:"Great Britain"},
+        {rank:2,athlete:"National Team",country:"United States"},
+        {rank:3,athlete:"National Team",country:"Australia"} 
+        ],
+        "Men's 4x100m Medley Relay": [ 
+        {rank:1,athlete:"National Team",country:"China"},
+        {rank:2,athlete:"National Team",country:"United States"},
+        {rank:3,athlete:"National Team",country:"France"} 
+        ],
+        "Women's 50m Freestyle": [ 
+        {rank:1,athlete:"Sarah Sjöström",country:"Sweden"},
+        {rank:2,athlete:"Meg Harris",country:"Australia"},
+        {rank:3,athlete:"Zhang Yufei",country:"China"} 
+        ],
+        "Women's 100m Freestyle": [ 
+        {rank:1,athlete:"Sarah Sjöström",country:"Sweden"},
+        {rank:2,athlete:"Torri Huske",country:"United States"},
+        {rank:3,athlete:"Siobhán Haughey",country:"Hong Kong"} 
+        ],
+        "Women's 200m Freestyle": [ 
+        {rank:1,athlete:"Mollie O'Callaghan",country:"Australia"},
+        {rank:2,athlete:"Ariarne Titmus",country:"Australia"},
+        {rank:3,athlete:"Siobhán Haughey",country:"Hong Kong"} 
+        ],
+        "Women's 400m Freestyle": [ 
+        {rank:1,athlete:"Ariarne Titmus",country:"Australia"},
+        {rank:2,athlete:"Summer McIntosh",country:"Canada"},
+        {rank:3,athlete:"Katie Ledecky",country:"United States"} 
+        ],
+        "Women's 800m Freestyle": [ 
+        {rank:1,athlete:"Katie Ledecky",country:"United States"},
+        {rank:2,athlete:"Ariarne Titmus",country:"Australia"},
+        {rank:3,athlete:"Paige Madden",country:"United States"} 
+        ],
+        "Women's 1500m Freestyle": [ 
+        {rank:1,athlete:"Katie Ledecky",country:"United States"},
+        {rank:2,athlete:"Anastasiya Kirpichnikova",country:"France"},
+        {rank:3,athlete:"Isabel Gose",country:"Germany"} 
+        ],
+        "Women's 100m Backstroke": [ 
+        {rank:1,athlete:"Kaylee McKeown",country:"Australia"},
+        {rank:2,athlete:"Regan Smith",country:"United States"},
+        {rank:3,athlete:"Katharine Berkoff",country:"United States"} 
+        ],
+        "Women's 200m Backstroke": [ 
+        {rank:1,athlete:"Kaylee McKeown",country:"Australia"},
+        {rank:2,athlete:"Regan Smith",country:"United States"},
+        {rank:3,athlete:"Kylie Masse",country:"Canada"} 
+        ],
+        "Women's 100m Breaststroke": [ 
+        {rank:1,athlete:"Tatjana Smith",country:"South Africa"},
+        {rank:2,athlete:"Tang Qianting",country:"China"},
+        {rank:3,athlete:"Mona McSharry",country:"Ireland"} 
+        ],
+        "Women's 200m Breaststroke": [ 
+        {rank:1,athlete:"Kate Douglass",country:"United States"},
+        {rank:2,athlete:"Tatjana Smith",country:"South Africa"},
+        {rank:3,athlete:"Tes Schouten",country:"Netherlands"} 
+        ],
+        "Women's 100m Butterfly": [ 
+        {rank:1,athlete:"Torri Huske",country:"United States"},
+        {rank:2,athlete:"Gretchen Walsh",country:"United States"},
+        {rank:3,athlete:"Zhang Yufei",country:"China"} 
+        ],
+        "Women's 200m Butterfly": [ 
+        {rank:1,athlete:"Summer McIntosh",country:"Canada"},
+        {rank:2,athlete:"Regan Smith",country:"United States"},
+        {rank:3,athlete:"Zhang Yufei",country:"China"} 
+        ],
+        "Women's 200m Medley": [ 
+        {rank:1,athlete:"Summer McIntosh",country:"Canada"},
+        {rank:2,athlete:"Kate Douglass",country:"United States"},
+        {rank:3,athlete:"Kaylee McKeown",country:"Australia"} 
+        ],
+        "Women's 400m Medley": [ 
+        {rank:1,athlete:"Summer McIntosh",country:"Canada"},
+        {rank:2,athlete:"Katie Grimes",country:"United States"},
+        {rank:3,athlete:"Emma Weyant",country:"United States"} 
+        ],
+        "Women's 4x100m Freestyle Relay": [ 
+        {rank:1,athlete:"National Team",country:"Australia"},
+        {rank:2,athlete:"National Team",country:"United States"},
+        {rank:3,athlete:"National Team",country:"China"} 
+        ],
+        "Women's 4x200m Freestyle Relay": [ 
+        {rank:1,athlete:"National Team",country:"Australia"},
+        {rank:2,athlete:"National Team",country:"United States"},
+        {rank:3,athlete:"National Team",country:"China"} 
+        ],
+        "Women's 4x100m Medley Relay": [ 
+        {rank:1,athlete:"National Team",country:"United States"},
+        {rank:2,athlete:"National Team",country:"Australia"},
+        {rank:3,athlete:"National Team",country:"China"} 
+        ],
+        "Mixed 4x100m Medley Relay": [ 
+        {rank:1,athlete:"National Team",country:"United States"},
+        {rank:2,athlete:"National Team",country:"China"},
+        {rank:3,athlete:"National Team",country:"Australia"} 
+        ] 
       },
       "Table Tennis": {
-       "Men's Singles": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Singles": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's Team": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""}  
-          ],
-          "Women's Team": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Mixed Doubles": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ] 
+        "Men's Singles": [ 
+        {rank:1,athlete:"Fan Zhendong",country:"China"},
+        {rank:2,athlete:"Truls Möregårdh",country:"Sweden"},
+        {rank:3,athlete:"Félix Lebrun",country:"France"} 
+        ],
+        "Women's Singles": [ 
+        {rank:1,athlete:"Chen Meng",country:"China"},
+        {rank:2,athlete:"Sun Yingsha",country:"China"},
+        {rank:3,athlete:"Hina Hayata",country:"Japan"} 
+        ],
+        "Men's Team": [ 
+        {rank:1,athlete:"National Team",country:"China"},
+        {rank:2,athlete:"National Team",country:"Sweden"},
+        {rank:3,athlete:"National Team",country:"France"}  
+        ],
+        "Women's Team": [ 
+        {rank:1,athlete:"National Team",country:"China"},
+        {rank:2,athlete:"National Team",country:"Japan"},
+        {rank:3,athlete:"National Team",country:"South Korea"} 
+        ],
+        "Mixed Doubles": [ 
+        {rank:1,athlete:"Wang Chuqin/Sun Yingsha",country:"China"},
+        {rank:2,athlete:"Ri Jong-Sik/Kim Kum-Yong",country:"North Korea"},
+        {rank:3,athlete:"Lim Jong-Hoon/Shin Yu-Bin",country:"South Korea"} 
+        ] 
       },
       "Taekwondo": {
-       "Men's 58kg": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's 68kg": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's 80kg": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's +80kg": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's 49kg": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's 57kg": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's 67kg": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's +67kg": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""},
-          {rank:3,athlete:"",country:""}
-          ] 
+        "Men's 58kg": [ 
+        {rank:1,athlete:"Park Tae-Joon",country:"South Korea"},
+        {rank:2,athlete:"Gashim Magomedov",country:"Azerbaijan"},
+        {rank:3,athlete:"Cyrian Ravet",country:"France"},
+        {rank:3,athlete:"Mohamed Khalil Jendoubi",country:"Tunisia"} 
+        ],
+        "Men's 68kg": [ 
+        {rank:1,athlete:"Ulugbek Rashitov",country:"Uzbekistan"},
+        {rank:2,athlete:"Zaid Mustafa",country:"Jordan"},
+        {rank:3,athlete:"Liang Yushuai",country:"China"},
+        {rank:3,athlete:"Edival Pontes",country:"Brazil"} 
+        ],
+        "Men's 80kg": [ 
+        {rank:1,athlete:"Firas Katoussi",country:"Tunisia"},
+        {rank:2,athlete:"Mehran Barkhordari",country:"Iran"},
+        {rank:3,athlete:"Edi Hrnic",country:"Denmark"},
+        {rank:3,athlete:"Simone Alessio",country:"Italy"} 
+        ],
+        "Men's +80kg": [
+        {rank:1,athlete:"Arian Salimi",country:"Iran"},
+        {rank:2,athlete:"Caden Cunningham",country:"Great Britain"},
+        {rank:3,athlete:"Cheick Sallah Cissé",country:"Ivory Coast"},
+        {rank:3,athlete:"Rafael Alba",country:"Cuba"} 
+        ],
+        "Women's 49kg": [ 
+        {rank:1,athlete:"Panipak Wongpattanakit",country:"Thailand"},
+        {rank:2,athlete:"Guo Qing",country:"China"},
+        {rank:3,athlete:"Lena Stojković",country:"Croatia"},
+        {rank:3,athlete:"Mobina Nematzadeh",country:"Iran"} 
+        ],
+        "Women's 57kg": [ 
+        {rank:1,athlete:"Kim Yu-Jin",country:"South Korea"},
+        {rank:2,athlete:"Nahid Kiyani",country:"Iran"},
+        {rank:3,athlete:"Skylar Park",country:"Canada"},
+        {rank:3,athlete:"Kimia Alizadeh",country:"Bulgaria"} 
+        ],
+        "Women's 67kg": [ 
+        {rank:1,athlete:"Viviana Márton",country:"Hungary"},
+        {rank:2,athlete:"Aleksandra Perišić",country:"Serbia"},
+        {rank:3,athlete:"Sarah Chaâri",country:"Belgium"},
+        {rank:3,athlete:"Kristina Teachout",country:"United States"} 
+        ],
+        "Women's +67kg": [
+        {rank:1,athlete:"Althéa Laurin",country:"France"},
+        {rank:2,athlete:"Svetlana Osipova",country:"Uzbekistan"},
+        {rank:3,athlete:"Nafia Kuş Aydın",country:"Turkey"},
+        {rank:3,athlete:"Lee Da-Bin",country:"South Korea"}
+        ] 
       },
       "Tennis": {
-       "Men's Singles": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Singles": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's Doubles": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Doubles": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Mixed Doubles": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ] 
+        "Men's Singles": [ 
+        {rank:1,athlete:"Novak Djokovic",country:"Serbia"},
+        {rank:2,athlete:"Carlos Alcaraz",country:"Spain"},
+        {rank:3,athlete:"Lorenzo Musetti",country:"Italy"} 
+        ],
+        "Women's Singles": [ 
+        {rank:1,athlete:"Zheng Qinwen",country:"China"},
+        {rank:2,athlete:"Donna Vekić",country:"Croatia"},
+        {rank:3,athlete:"Iga Świątek",country:"Poland"} 
+        ],
+        "Men's Doubles": [ 
+        {rank:1,athlete:"John Peers/Matthew Ebden",country:"Australia"},
+        {rank:2,athlete:"Austin Krajicek/Rajeev Ram",country:"United States"},
+        {rank:3,athlete:"Taylor Fritz/Tommy Paul",country:"United States"} 
+        ],
+        "Women's Doubles": [ 
+        {rank:1,athlete:"Jasmine Paolini/Sara Errani",country:"Italy"},
+        {rank:2,athlete:"Diana Shnayder/Mirra Andreyeva",country:"Russia"},
+        {rank:3,athlete:"Cristina Bucșa/Sara Sorribes",country:"Spain"} 
+        ],
+        "Mixed Doubles": [ 
+        {rank:1,athlete:"Tomáš Macháč/Kateřina Siniaková",country:"Czech Republic"},
+        {rank:2,athlete:"Zhang Zhizhen/Wang Xinyu",country:"China"},
+        {rank:3,athlete:"Félix Auger-Aliassime/Gabriela Dabrowski",country:"Canada"} 
+        ] 
       },
       "Trampolining": {
-       "Men's Individual": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Individual": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ] 
+        "Men's Individual": [ 
+        {rank:1,athlete:"Ivan Litvinovich",country:"Belarus"},
+        {rank:2,athlete:"Wang Zisai",country:"China"},
+        {rank:3,athlete:"Yan Langyu",country:"China"} 
+        ],
+        "Women's Individual": [ 
+        {rank:1,athlete:"Bryony Page",country:"Great Britain"},
+        {rank:2,athlete:"Viyaleta Bardzilouskaya",country:"Belarus"},
+        {rank:3,athlete:"Sophiane Méthot",country:"Canada"} 
+        ] 
       },
       "Triathlon": {
-       "Men's Individual": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Individual": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""}
-          ],
-          "Mixed Relay": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ] 
+        "Men's Individual": [ 
+        {rank:1,athlete:"Alex Yee",country:"Great Britain"},
+        {rank:2,athlete:"Hayden Wilde",country:"New Zealand"},
+        {rank:3,athlete:"Léo Bergère",country:"France"} 
+        ],
+        "Women's Individual": [ 
+        {rank:1,athlete:"Cassandre Beaugrand",country:"France"},
+        {rank:2,athlete:"Julie Derron",country:"Switzerland"},
+        {rank:3,athlete:"Beth Potter",country:"Great Britain"}
+        ],
+        "Mixed Relay": [ 
+        {rank:1,athlete:"National Team",country:"Germany"},
+        {rank:2,athlete:"National Team",country:"United States"},
+        {rank:3,athlete:"National Team",country:"Great Britain"} 
+        ] 
       },
       "Volleyball": {
-       "Men's Tournament": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Tournament": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ] 
+        "Men's Tournament": [ 
+        {rank:1,athlete:"National Team",country:"France"},
+        {rank:2,athlete:"National Team",country:"Poland"},
+        {rank:3,athlete:"National Team",country:"United States"} 
+        ],
+        "Women's Tournament": [ 
+        {rank:1,athlete:"National Team",country:"Italy"},
+        {rank:2,athlete:"National Team",country:"United States"},
+        {rank:3,athlete:"National Team",country:"Brazil"} 
+        ] 
       },
       "Water Polo": {
-       "Men's Tournament": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's Tournament": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ] 
+        "Men's Tournament": [ 
+        {rank:1,athlete:"National Team",country:"Serbia"},
+        {rank:2,athlete:"National Team",country:"Croatia"},
+        {rank:3,athlete:"National Team",country:"United States"} 
+        ],
+        "Women's Tournament": [ 
+        {rank:1,athlete:"National Team",country:"Spain"},
+        {rank:2,athlete:"National Team",country:"Australia"},
+        {rank:3,athlete:"National Team",country:"Netherlands"} 
+        ] 
       },
       "Weightlifting": {
-       "Men's 61kg": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's 73kg": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's 89kg": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's 102kg": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's +102kg": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's 49kg": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's 59kg": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's 71kg": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's 81kg": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's +81kg": [
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ] 
+        "Men's 61kg": [ 
+        {rank:1,athlete:"Li Fabin",country:"China"},
+        {rank:2,athlete:"Theerapong Silachai",country:"Thailand"},
+        {rank:3,athlete:"Hampton Morris",country:"United States"} 
+        ],
+        "Men's 73kg": [ 
+        {rank:1,athlete:"Rizki Juniansyah",country:"Indonesia"},
+        {rank:2,athlete:"Weeraphon Wichuma",country:"Thailand"},
+        {rank:3,athlete:"Bozhidar Dimitrov Andreev",country:"Bulgaria"} 
+        ],
+        "Men's 89kg": [ 
+        {rank:1,athlete:"Karlos Nasar",country:"Bulgaria"},
+        {rank:2,athlete:"Yeison López",country:"Colombia"},
+        {rank:3,athlete:"Antonino Pizzolato",country:"Italy"} 
+        ],
+        "Men's 102kg": [ 
+        {rank:1,athlete:"Liu Huanhua",country:"China"},
+        {rank:2,athlete:"Akbar Djuraev",country:"Uzbekistan"},
+        {rank:3,athlete:"Yauhen Tsikhantsou",country:"Belarus"} 
+        ],
+        "Men's +102kg": [
+        {rank:1,athlete:"Lasha Talakhadze",country:"Georgia"},
+        {rank:2,athlete:"Varazdat Lalayan",country:"Armenia"},
+        {rank:3,athlete:"Gor Minasyan",country:"Bahrain"} 
+        ],
+        "Women's 49kg": [ 
+        {rank:1,athlete:"Hou Zhihui",country:"China"},
+        {rank:2,athlete:"Mihaela Cambei",country:"Romania"},
+        {rank:3,athlete:"Surodchana Khambao",country:"Thailand"} 
+        ],
+        "Women's 59kg": [ 
+        {rank:1,athlete:"Luo Shifang",country:"China"},
+        {rank:2,athlete:"Maude Charron",country:"Canada"},
+        {rank:3,athlete:"Kuo Hsing-Chun",country:"Taiwan"} 
+        ],
+        "Women's 71kg": [ 
+        {rank:1,athlete:"Olivia Reeves",country:"United States"},
+        {rank:2,athlete:"Mari Sánchez",country:"Colombia"},
+        {rank:3,athlete:"Angie Palacios",country:"Ecuador"} 
+        ],
+        "Women's 81kg": [ 
+        {rank:1,athlete:"Solfrid Koanda",country:"Norway"},
+        {rank:2,athlete:"Sara Samir",country:"Egypt"},
+        {rank:3,athlete:"Neisi Dajomes",country:"Ecuador"} 
+        ],
+        "Women's +81kg": [
+        {rank:1,athlete:"Li Wenwen",country:"China"},
+        {rank:2,athlete:"Park Hye-Jeong",country:"South Korea"},
+        {rank:3,athlete:"Emily Campbell",country:"Great Britain"} 
+        ] 
       },
       "Wrestling": {
-       "Men's 57kg Freestyle": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's 65kg Freestyle": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""},
-          {rank:3,athlete:"",country:""}  
-          ],
-          "Men's 74kg Freestyle": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's 86kg Freestyle": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's 97kg Freestyle": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's 125kg Freestyle": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's 60kg Greco-Roman": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's 67kg Greco-Roman": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's 77kg Greco-Roman": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's 87kg Greco-Roman": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's 97kg Greco-Roman": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Men's 130kg Greco-Roman": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's 50kg Freestyle": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's 53kg Freestyle": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's 57kg Freestyle": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's 62kg Freestyle": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's 68kg Freestyle": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ],
-          "Women's 76kg Freestyle": [ 
-          {rank:1,athlete:"",country:""},
-          {rank:2,athlete:"",country:""},
-          {rank:3,athlete:"",country:""},
-          {rank:3,athlete:"",country:""} 
-          ] 
+        "Men's 57kg Freestyle": [ 
+        {rank:1,athlete:"Rei Higuchi",country:"Japan"},
+        {rank:2,athlete:"Spencer Lee",country:"United States"},
+        {rank:3,athlete:"Aman Sehrawat",country:"India"},
+        {rank:3,athlete:"Gulomjon Abdullaev",country:"Uzbekistan"} 
+        ],
+        "Men's 65kg Freestyle": [ 
+        {rank:1,athlete:"Kotaro Kiyooka",country:"Japan"},
+        {rank:2,athlete:"Rahman Amouzad",country:"Iran"},
+        {rank:3,athlete:"Islam Dudaev",country:"Albania"},
+        {rank:3,athlete:"Sebastián Rivera",country:"Puerto Rico"}  
+        ],
+        "Men's 74kg Freestyle": [ 
+        {rank:1,athlete:"Razambek Zhamalov",country:"Uzbekistan"},
+        {rank:2,athlete:"Daichi Takatani",country:"Japan"},
+        {rank:3,athlete:"Chermen Valiev",country:"Albania"},
+        {rank:3,athlete:"Kyle Dake",country:"United States"} 
+        ],
+        "Men's 86kg Freestyle": [ 
+        {rank:1,athlete:"Magomed Ramazanov",country:"Bulgaria"},
+        {rank:2,athlete:"Hassan Yazdani",country:"Iran"},
+        {rank:3,athlete:"Aaron Brooks",country:"United States"},
+        {rank:3,athlete:"Dauren Kurugliyev",country:"Greece"} 
+        ],
+        "Men's 97kg Freestyle": [ 
+        {rank:1,athlete:"Akhmed Tazhudinov",country:"Bahrain"},
+        {rank:2,athlete:"Givi Matcharashvili",country:"Georgia"},
+        {rank:3,athlete:"Magomedkhan Magomedov",country:"Azerbaijan"},
+        {rank:3,athlete:"Amirali Azarpira",country:"Iran"} 
+        ],
+        "Men's 125kg Freestyle": [ 
+        {rank:1,athlete:"Geno Petriashvili",country:"Georgia"},
+        {rank:2,athlete:"Amir Hossein Zare",country:"Iran"},
+        {rank:3,athlete:"Taha Akgül",country:"Turkey"},
+        {rank:3,athlete:"Giorgi Meshvildishvili",country:"Azerbaijan"} 
+        ],
+        "Men's 60kg Greco-Roman": [ 
+        {rank:1,athlete:"Kenichiro Fumita",country:"Japan"},
+        {rank:2,athlete:"Cao Liguo",country:"China"},
+        {rank:3,athlete:"Zholoman Sharshenbekov",country:"Kyrgyzstan"},
+        {rank:3,athlete:"Ri Se-Ung",country:"North Korea"} 
+        ],
+        "Men's 67kg Greco-Roman": [ 
+        {rank:1,athlete:"Saeid Esmaeili",country:"Iran"},
+        {rank:2,athlete:"Parviz Nasibov",country:"Ukraine"},
+        {rank:3,athlete:"Hasrat Jafarov",country:"Azerbaijan"},
+        {rank:3,athlete:"Luis Alberto Orta",country:"Cuba"} 
+        ],
+        "Men's 77kg Greco-Roman": [ 
+        {rank:1,athlete:"Nao Kusaka",country:"Japan"},
+        {rank:2,athlete:"Demeu Zhadrayev",country:"Kazakhstan"},
+        {rank:3,athlete:"Malkhas Amoyan",country:"Armenia"},
+        {rank:3,athlete:"Akzhol Makhmudov",country:"Kyrgyzstan"} 
+        ],
+        "Men's 87kg Greco-Roman": [ 
+        {rank:1,athlete:"Semen Novikov",country:"Bulgaria"},
+        {rank:2,athlete:"Alireza Mohmadipiani",country:"Iran"},
+        {rank:3,athlete:"Zhan Beleniuk",country:"Ukraine"},
+        {rank:3,athlete:"Turpal Bisultanov",country:"Denmark"} 
+        ],
+        "Men's 97kg Greco-Roman": [ 
+        {rank:1,athlete:"Mohammadhadi Saravi",country:"Iran"},
+        {rank:2,athlete:"Artur Aleksanyan",country:"Armenia"},
+        {rank:3,athlete:"Gabriel Rosillo",country:"Cuba"},
+        {rank:3,athlete:"Uzur Dzhuzupbekov",country:"Kyrgyzstan"} 
+        ],
+        "Men's 130kg Greco-Roman": [ 
+        {rank:1,athlete:"Mijaín López",country:"Cuba"},
+        {rank:2,athlete:"Yasmani Acosta",country:"Chile"},
+        {rank:3,athlete:"Meng Lingzhe",country:"China"},
+        {rank:3,athlete:"Amin Mirzazadeh",country:"Iran"} 
+        ],
+        "Women's 50kg Freestyle": [ 
+        {rank:1,athlete:"Sarah Hildebrandt",country:"United States"},
+        {rank:2,athlete:"Yusneylys Guzmán",country:"Cuba"},
+        {rank:3,athlete:"Feng Ziqi",country:"China"},
+        {rank:3,athlete:"Yui Susaki",country:"Japan"} 
+        ],
+        "Women's 53kg Freestyle": [ 
+        {rank:1,athlete:"Akari Fujinami",country:"Japan"},
+        {rank:2,athlete:"Lucía Yépez",country:"Ecuador"},
+        {rank:3,athlete:"Pang Qianyu",country:"China"},
+        {rank:3,athlete:"Choe Hyo-Gyong",country:"North Korea"} 
+        ],
+        "Women's 57kg Freestyle": [ 
+        {rank:1,athlete:"Tsugumi Sakurai",country:"Japan"},
+        {rank:2,athlete:"Anastasia Nichita",country:"Moldova"},
+        {rank:3,athlete:"Hong Kexin",country:"China"},
+        {rank:3,athlete:"Helen Maroulis",country:"United States"} 
+        ],
+        "Women's 62kg Freestyle": [ 
+        {rank:1,athlete:"Sakura Motoki",country:"Japan"},
+        {rank:2,athlete:"Iryna Koliadenko",country:"Ukraine"},
+        {rank:3,athlete:"Aysuluu Tynybekova",country:"Kyrgyzstan"},
+        {rank:3,athlete:"Grace Bullen",country:"Norway"} 
+        ],
+        "Women's 68kg Freestyle": [ 
+        {rank:1,athlete:"Amit Elor",country:"United States"},
+        {rank:2,athlete:"Meerim Zhumanazarova",country:"Kyrgyzstan"},
+        {rank:3,athlete:"Buse Tosun-Çavuşoğlu",country:"Turkey"},
+        {rank:3,athlete:"Nonoka Ozaki",country:"Japan"} 
+        ],
+        "Women's 76kg Freestyle": [ 
+        {rank:1,athlete:"Yuka Kagami",country:"Japan"},
+        {rank:2,athlete:"Kennedy Blades",country:"United States"},
+        {rank:3,athlete:"Milaimys Marín",country:"Cuba"},
+        {rank:3,athlete:"Tatiana Rentería",country:"Colombia"} 
+        ] 
       }
     }
   },
