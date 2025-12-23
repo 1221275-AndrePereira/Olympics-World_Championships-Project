@@ -10872,7 +10872,9 @@ const resultsData = {
         },
         "2025 Women's Handball World Championship": { //Germany/Netherlands
           "Women's Tournament": [ 
-           
+          {rank:1,athlete:"National Team",country:"Norway"},
+          {rank:2,athlete:"National Team",country:"Germany"},
+          {rank:3,athlete:"National Team",country:"France"} 
           ]
         }
       },
@@ -11595,7 +11597,9 @@ const resultsData = {
         },
         "2025 Table Tennis - Mixed Team World Championships": { //Chengdu, China
           "Mixed Team": [ 
-           
+          {rank:1,athlete:"National Team",country:"China"},
+          {rank:2,athlete:"National Team",country:"Japan"},
+          {rank:3,athlete:"National Team",country:"Germany"} 
           ]
         },
       },
