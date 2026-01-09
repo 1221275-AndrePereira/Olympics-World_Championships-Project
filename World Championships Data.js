@@ -10852,13 +10852,19 @@ const resultsData = {
         },
         "2025 Golf World Rankings": {
           "Men's Individual": [ 
-           
+          {rank:1,athlete:"Scottie Scheffler",country:"United States"},
+          {rank:2,athlete:"Rory McIlroy",country:"Ireland"},
+          {rank:3,athlete:"Tommy Fleetwood",country:"Great Britain"} 
           ],
           "Women's Individual": [ 
-           
+          {rank:1,athlete:"Jeeno Thitikul",country:"Thailand"},
+          {rank:2,athlete:"Nelly Korda",country:"United States"},
+          {rank:3,athlete:"Minjee Lee",country:"Australia"} 
           ],
           "Mixed Team": [ 
-           
+          {rank:1,athlete:"Scottie Scheffler/Nelly Korda",country:"United States"},
+          {rank:2,athlete:"Sadom Kaewkanjana/Jeeno Thitikul",country:"Thailand"},
+          {rank:3,athlete:"Tommy Fleetwood/Charley Hull",country:"Great Britain"} 
           ]
         }
       },
@@ -11685,19 +11691,29 @@ const resultsData = {
         },
         "2025 Tennis World Rankings": {
           "Men's Singles": [ 
-           
+          {rank:1,athlete:"Carlos Alcaraz",country:"Spain"},
+          {rank:2,athlete:"Jannik Sinner",country:"Italy"},
+          {rank:3,athlete:"Alexander Zverev",country:"Germany"} 
           ],
           "Women's Singles": [ 
-           
+          {rank:1,athlete:"Aryna Sabalenka",country:"Belarus"},
+          {rank:2,athlete:"Iga Świątek",country:"Poland"},
+          {rank:3,athlete:"Coco Gauff",country:"United States"} 
           ],
           "Men's Doubles": [ 
-           
+          {rank:1,athlete:"Julian Cash/Lloyd Glasspool",country:"Great Britain"},
+          {rank:2,athlete:"Henry Patten/Neal Skupski",country:"Great Britain"},
+          {rank:3,athlete:"Mate Pavić/Nikola Mektić",country:"Croatia"} 
           ],
           "Women's Doubles": [ 
-           
+          {rank:1,athlete:"Jasmine Paolini/Sara Errani",country:"Italy"},
+          {rank:2,athlete:"Nicole Melichar-Martinez/Taylor Townsend",country:"United States"},
+          {rank:3,athlete:"Diana Shnayder/Veronika Kudermetova",country:"Russia"} 
           ],
           "Mixed Doubles": [ 
-           
+          {rank:1,athlete:"Christian Harrison/Taylor Townsend",country:"United States"},
+          {rank:2,athlete:"Andrea Vavassori/Jasmine Paolini",country:"Italy"},
+          {rank:3,athlete:"Simone Bolelli/Sara Errani",country:"Italy"} 
           ]
         }
       },
