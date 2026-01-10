@@ -9842,6 +9842,18 @@ const resultsData = {
           {rank:2,athlete:"National Team",country:"Mongolia"},
           {rank:3,athlete:"National Team",country:"Canada"} 
           ]
+        },
+        "2026 3x3 Basketball World Championships": { //Warsaw, Poland
+          "Men's Tournament": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}
+          ],
+          "Women's Tournament": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ]
         }
       },
       "Archery": {
@@ -9939,6 +9951,79 @@ const resultsData = {
           {rank:1,athlete:"Angelina Melnikova",country:"Russia"},
           {rank:2,athlete:"Lia Monica Fontaine",country:"Canada"},
           {rank:3,athlete:"Joscelyn Roberson",country:"United States"}  
+          ]
+        },
+        "2026 Artistic Gymnastics World Championships": { //Rotterdam, Netherlands
+          "Men's Individual All-Around": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}   
+          ],
+          "Men's Team All-Around": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}   
+          ],
+          "Men's Floor": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}  
+          ],
+          "Men's Horizontal Bar": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}   
+          ],
+          "Men's Parallel Bars": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}  
+          ],
+          "Men's Pommel Horse": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}  
+          ],
+          "Men's Rings": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}   
+          ],
+          "Men's Vault": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}  
+          ],
+          "Women's Individual All-Around": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}  
+          ],
+          "Women's Team All-Around": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}   
+          ],
+          "Women's Balance Beam": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}  
+          ],
+          "Women's Floor": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}
+          ],
+          "Women's Uneven Bars": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}  
+          ],
+          "Women's Vault": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}  
           ]
         }
       },
@@ -10202,6 +10287,38 @@ const resultsData = {
           {rank:2,athlete:"National Team",country:"Jamaica"},
           {rank:3,athlete:"National Team",country:"Great Britain"}    
           ]
+        },
+        "2026 Athletics World Relays": {//Gaborone, Botswana
+          "Men's 4x100m Relay": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Men's 4x400m Relay": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Women's 4x100m Relay": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Women's 4x400m Relay": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Mixed 4x100m Relay": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}    
+          ],
+          "Mixed 4x400m Relay": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}    
+          ]
         }
       },
       "Badminton": {
@@ -10236,14 +10353,57 @@ const resultsData = {
           {rank:3,athlete:"Thom Gicquel/Delphine Delrue",country:"France"}, 
           {rank:3,athlete:"Guo Xinwa/Chen Fanghui",country:"China"} 
           ],
+        },
+        "2026 Badminton World Championships": { //New Delhi, India
+          "Men's Singles": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}, 
+          {rank:3,athlete:"",country:""}
+          ],
+          "Women's Singles": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}, 
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Men's Doubles": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}, 
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Women's Doubles": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}, 
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Mixed Doubles": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}, 
+          {rank:3,athlete:"",country:""} 
+          ],
         }
       },
       "Baseball": {
-
+        "2026 World Baseball Classic": { //Tokyo, Japan/San Juan, Puerto Rico/Houston, United States/Miami, United States
+          "Men's Tournament": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ]
+        }
       },
       "Basketball": {
-
-        
+        "2026 Women's Basketball World Championship": { //Berlin, Germany
+          "Women's Tournament": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ]
+        },
       },
       "Beach Volleyball": {
         "2025 Beach Volleyball World Championship": { //Adelaide, Australia
@@ -10379,6 +10539,38 @@ const resultsData = {
           {rank:2,athlete:"Camille Prigent",country:"France"},
           {rank:3,athlete:"Klaudia Zwolińska",country:"Poland"} 
           ]
+        },
+        "2026 Canoeing Slalom World Championships": { //Oklahoma City, United States
+          "Men's K1 Slalom": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Men's C1 Slalom": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Men's Extreme Kayak Slalom": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Women's K1 Slalom": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Women's C1 Slalom": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Women's Extreme Kayak Slalom": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ]
         }
       },
       "Canoeing Sprint": {
@@ -10433,6 +10625,58 @@ const resultsData = {
           {rank:2,athlete:"Katie Vincent/Zoe Wojtyk",country:"Canada"},
           {rank:3,athlete:"Àngels Moreno/Viktoriya Yarchevska",country:"Spain"}   
           ]
+        },
+        "2026 Canoeing Sprint World Championships": { //Poznań, Poland
+          "Men's K1 1000m": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Men's K2 500m": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}  
+          ],
+          "Men's K4 500m": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}    
+          ],
+          "Men's C1 1000m": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Men's C2 500m": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}   
+          ],
+          "Women's K1 500m": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Women's K2 500m": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Women's K4 500m": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}
+          ],
+          "Women's C1 200m": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}  
+          ],
+          "Women's C2 500m": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}   
+          ]
         }
       },
       "Cricket": {
@@ -10441,6 +10685,20 @@ const resultsData = {
           {rank:1,athlete:"National Team",country:"New Zealand"},
           {rank:2,athlete:"National Team",country:"South Africa"},
           {rank:3,athlete:"National Team",country:"Australia"}  
+          ]
+        },
+        "2026 Men's Cricket World Championship": { //India/Sri Lanka
+          "Men's Tournament": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}  
+          ]
+        },
+        "2026 Women's Cricket World Championship": { //Great Britain
+          "Women's Tournament": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}  
           ]
         }
       },
@@ -10468,6 +10726,18 @@ const resultsData = {
           {rank:2,athlete:"Sun Jiaqi",country:"China"},
           {rank:3,athlete:"Fan Xiaotong",country:"China"} 
           ]
+        },
+        "2026 Cycling BMX Freestyle World Championships": { //Riyadh, Saudi Arabia
+          "Men's Park": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}   
+          ],
+          "Women's Park": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}  
+          ]
         }
       },
       "Cycling BMX Racing": {
@@ -10481,6 +10751,18 @@ const resultsData = {
           {rank:1,athlete:"Beth Shriever",country:"Great Britain"},
           {rank:2,athlete:"Saya Sakakibara",country:"Australia"},
           {rank:3,athlete:"Judy Baauw",country:"Netherlands"}  
+          ]
+        },
+        "2026 Cycling BMX Racing World Championships": { //Brisbane, Australia
+          "Men's Racing": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Women's Racing": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}  
           ]
         }
       },
@@ -10507,6 +10789,18 @@ const resultsData = {
           {rank:1,athlete:"Jenny Rissveds",country:"Sweden"},
           {rank:2,athlete:"Samara Maxwell",country:"New Zealand"},
           {rank:3,athlete:"Alessandra Keller",country:"Switzerland"} 
+          ]
+        },
+        "2026 Cycling Mountain Bike World Championships": { //Val di Sole, Italy
+          "Men's Cross-Country": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}
+          ],
+          "Women's Cross-Country": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
           ]
         }
       },
@@ -10553,6 +10847,28 @@ const resultsData = {
           {rank:1,athlete:"Marlen Reusser",country:"Switzerland"},
           {rank:2,athlete:"Anna van der Breggen",country:"Netherlands"},
           {rank:3,athlete:"Demi Vollering",country:"Netherlands"} 
+          ]
+        },
+        "2026 Cycling Road World Championships": { //Montreal, Canada
+          "Men's Road Race": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Men's Time-Trial": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Women's Road Race": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Women's Time-Trial": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
           ]
         }
       },
@@ -10680,6 +10996,68 @@ const resultsData = {
           {rank:2,athlete:"Marion Borras",country:"France"},
           {rank:3,athlete:"Amalie Dideriksen",country:"Denmark"} 
           ]
+        },
+        "2026 Cycling Track World Championships": { //Shanghai, China
+          "Men's Individual Sprint": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Men's Keirin": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Men's Team Sprint": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Men's Team Pursuit": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}
+          ],
+          "Men's Madison": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Men's Omnium": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Women's Individual Sprint": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Women's Keirin": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Women's Team Sprint": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Women's Team Pursuit": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Women's Madison": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Women's Omnium": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ]
         }
       },
       "Diving": {
@@ -10727,13 +11105,46 @@ const resultsData = {
         }
       },
       "Equestrian Dressage": {
-
+        "2026 Equestrian Dressage World Championships": { //Aachen, Germany
+          "Individual Dressage": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Team Dressage": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}  
+          ]
+        }
       },
       "Equestrian Eventing": {
-
+        "2026 Equestrian Eventing World Championships": { //Aachen, Germany
+          "Individual Eventing": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Team Eventing": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}  
+          ]
+        }
       },
       "Equestrian Jumping": {
-
+        "2026 Equestrian Jumping World Championships": { //Aachen, Germany
+          "Individual Jumping": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Team Jumping": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}  
+          ]
+        }
       },
       "Fencing": {
         "2025 Fencing World Championships": { //Tbilisi, Georgia
@@ -10803,10 +11214,91 @@ const resultsData = {
           {rank:2,athlete:"National Team",country:"South Korea"},
           {rank:3,athlete:"National Team",country:"Hungary"}  
           ]
+        },
+        "2026 Fencing World Championships": { //Hong Kong, Hong Kong
+          "Men's Individual Épée": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}    
+          ],
+          "Men's Individual Foil": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}   
+          ],
+          "Men's Individual Sabre": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}    
+          ],
+          "Men's Team Épée": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}  
+          ],
+          "Men's Team Foil": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}   
+          ],
+          "Men's Team Sabre": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}  
+          ],
+          "Women's Individual Épée": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Women's Individual Foil": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}   
+          ],
+          "Women's Individual Sabre": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Women's Team Épée": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}  
+          ],
+          "Women's Team Foil": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}   
+          ],
+          "Women's Team Sabre": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}   
+          ]
         }
       },
       "Field Hockey": {
-
+        "2026 Men's Field Hockey World Cup": { //Amstelveen, Netherlands/Wavre, Belgium
+          "Men's Tournament": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ]
+        },
+        "2026 Women's Field Hockey World Cup": { //Amstelveen, Netherlands/Wavre, Belgium
+          "Women's Tournament": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ]
+        }
       },
       "Flag Football": {
         "2024 Flag Football World Championships": { //Lahti, Finland
@@ -10827,10 +11319,28 @@ const resultsData = {
           {rank:2,athlete:"National Team",country:"United States"},
           {rank:3,athlete:"National Team",country:"Canada"}  
           ]
-        }
+        },
+        "2026 Flag Football World Championships": { //Düsseldorf, Germany
+          "Men's Tournament": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}
+          ],
+          "Women's Tournament": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ]
+        },
       },
       "Football": {
-
+        "2026 Men's Football World Championship": { //Canada/Mexico/United States
+          "Men's Tournament": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ]
+        },
       },
       "Golf": {
         "2024 Golf World Rankings": {
@@ -10865,6 +11375,23 @@ const resultsData = {
           {rank:1,athlete:"Scottie Scheffler/Nelly Korda",country:"United States"},
           {rank:2,athlete:"Sadom Kaewkanjana/Jeeno Thitikul",country:"Thailand"},
           {rank:3,athlete:"Tommy Fleetwood/Charley Hull",country:"Great Britain"} 
+          ]
+        },
+        "2026 Golf World Rankings": {
+          "Men's Individual": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}  
+          ],
+          "Women's Individual": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}   
+          ],
+          "Mixed Team": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}   
           ]
         }
       },
@@ -10976,10 +11503,108 @@ const resultsData = {
           {rank:3,athlete:"National Team",country:"Germany"},
           {rank:3,athlete:"National Team",country:"Japan"}  
           ]
+        },
+        "2026 Judo World Championships": { //Baku, Azerbaijan
+          "Men's 60kg": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}  
+          ],
+          "Men's 66kg": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}   
+          ],
+          "Men's 73kg": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}   
+          ],
+          "Men's 81kg": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}   
+          ],
+          "Men's 90kg": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Men's 100kg": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}  
+          ],
+          "Men's +100kg": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}  
+          ],
+          "Women's 48kg": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}  
+          ],
+          "Women's 52kg": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Women's 57kg": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}  
+          ],
+          "Women's 63kg": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}  
+          ],
+          "Women's 70kg": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}   
+          ],
+          "Women's 78kg": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}  
+          ],
+          "Women's +78kg": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}  
+          ],
+          "Mixed Team": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}  
+          ]
         }
       },
       "Lacrosse": {
-
+        "2026 Women's Lacrosse World Championship": { //Tokyo, Japan
+          "Women's Tournament": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ]
+        }
       },
       "Marathon Swimming": {
         "2025 Aquatics World Championships": { //Singapore, Singapore
@@ -11007,6 +11632,18 @@ const resultsData = {
           {rank:2,athlete:"Blanka Guzi",country:"Hungary"},
           {rank:3,athlete:"Aurora Tognetti",country:"Italy"}  
           ]
+        },
+        "2026 Modern Pentathlon World Championships": { //
+          "Men's Individual": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Women's Individual": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}  
+          ]
         }
       },
       "Rhythmic Gymnastics": {
@@ -11020,6 +11657,18 @@ const resultsData = {
           {rank:1,athlete:"National Team",country:"Japan"},
           {rank:2,athlete:"National Team",country:"Brazil"},
           {rank:3,athlete:"National Team",country:"Spain"}   
+          ]
+        },
+        "2026 Rhythmic Gymnastics World Championships": { //Frankfurt, Germany
+          "Women's Individual All-Around": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}  
+          ],
+          "Women's Group All-Around": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}   
           ]
         }
       },
@@ -11119,10 +11768,100 @@ const resultsData = {
           {rank:2,athlete:"Christopher Bak/Sera Busse",country:"United States"},
           {rank:3,athlete:"Antoine Lefebvre/Chloé Briard",country:"France"} 
           ]
+        },
+        "2026 Rowing World Championships": { //Amsterdam, Netherlands
+          "Men's Single Sculls": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}
+          ],
+          "Men's Double Sculls": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Men's Quadruple Sculls": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Men's Eight": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Men's Pair": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Men's Four": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Women's Single Sculls": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Women's Double Sculls": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Women's Quadruple Sculls": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Women's Eight": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Women's Pair": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Women's Four": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ]
+        },
+        "2026 Rowing - Coastal Beach Sprint World Finals": { //Qingdao, China
+          "Men's Coastal Beach Sprint Solo": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}  
+          ],
+          "Women's Coastal Beach Sprint Solo": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Mixed Coastal Beach Sprint Double Sculls": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}
+          ]
         }
       },
       "Rugby Sevens": {
-
+        "2026 Rugby Sevens World Championships": { //Bordeaux, France
+          "Men's Tournament": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Women's Tournament": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ]
+        }
       },
       "Sailing": {
         "2025 Sailing World Championships": {
@@ -11175,6 +11914,58 @@ const resultsData = {
           {rank:1,athlete:"John Gimson/Anna Burnet",country:"Great Britain"},
           {rank:2,athlete:"Gianluigi Ugolini/Maria Giubilei",country:"Italy"},
           {rank:3,athlete:"Willemijn Offerman/Scipio Houtman",country:"Netherlands"}
+          ]
+        },
+        "2026 Sailing World Championships": {
+          "Men's Formula Kite": [ //Viana do Castelo, Portugal
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}
+          ],
+          "Men's ILCA7": [ //Dún Laoghaire, Ireland
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}   
+          ],
+          "Men's iQFoil": [ //Weymouth, Great Britain
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}   
+          ],
+          "Men's 49er": [ //Quiberon, France
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}
+          ],
+          "Women's Formula Kite": [ //Viana do Castelo, Portugal
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}  
+          ],
+          "Women's ILCA6": [ //Dún Laoghaire, Ireland
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}  
+          ],
+          "Women's iQFoil": [ //Weymouth, Great Britain
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}    
+          ],
+          "Women's 49erFX": [ //Quiberon, France
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Mixed 470": [ //Enoshima, Japan
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}  
+          ],
+          "Mixed Nacra-17": [ //Quiberon, France
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}
           ]
         }
       },
@@ -11257,6 +12048,83 @@ const resultsData = {
           {rank:2,athlete:"Samrat Rana/Esha Singh",country:"India"},
           {rank:3,athlete:"Hong Su-Hyeon/Oh Ye-Jin",country:"South Korea"} 
           ],
+        },
+        "2026 Shooting World Championships": { //Doha, Qatar
+          "Men's 10m Air Rifle": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Men's 50m Rifle 3 Positions": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Men's 10m Air Pistol": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Men's 25m Rapid Fire Pistol": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}  
+          ],
+          "Men's Skeet": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Men's Trap": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Women's 10m Air Rifle": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Women's 50m Rifle 3 Positions": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Women's 10m Air Pistol": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Women's 25m Pistol": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Women's Skeet": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Women's Trap": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Mixed 10m Air Rifle": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Mixed 10m Air Pistol": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Mixed Trap": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ]
         }
       },
       "Skateboarding": {
@@ -11280,6 +12148,28 @@ const resultsData = {
           {rank:1,athlete:"Rayssa Leal",country:"Brazil"},
           {rank:2,athlete:"Momiji Nishiya",country:"Japan"},
           {rank:3,athlete:"Miyu Ito",country:"Japan"}  
+          ]
+        },
+        "2026 Skateboarding World Championships": { //Asunción, Paraguay
+          "Men's Park": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Men's Street": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}  
+          ],
+          "Women's Park": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}  
+          ],
+          "Women's Street": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}  
           ]
         }
       },
@@ -11334,6 +12224,20 @@ const resultsData = {
           {rank:3,athlete:"Nouran Gohar",country:"Egypt"},
           {rank:3,athlete:"Olivia Weaver",country:"United States"}   
           ]
+        },
+        "2026 Squash World Championships": { //Giza, Egypt
+          "Men's Singles": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}     
+          ],
+          "Women's Singles": [
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}   
+          ]
         }
       },
       "Surfing": {
@@ -11347,6 +12251,18 @@ const resultsData = {
           {rank:1,athlete:"Janire González",country:"Spain"},
           {rank:2,athlete:"Yolanda Hopkins",country:"Portugal"},
           {rank:3,athlete:"Sally Fitzgibbons",country:"Australia"} 
+          ]
+        },
+        "2026 Surfing World Championships": { //
+          "Men's Shortboard": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Women's Shortboard": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
           ]
         }
       },
@@ -11608,6 +12524,13 @@ const resultsData = {
           {rank:3,athlete:"National Team",country:"Germany"} 
           ]
         },
+        "2026 Table Tennis - Mixed Team World Championships": { //Chengdu, China
+          "Mixed Team": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ]
+        }
       },
       "Taekwondo": {
         "2025 Taekwondo World Championships": { //Wuxi, China
@@ -11715,6 +12638,33 @@ const resultsData = {
           {rank:2,athlete:"Andrea Vavassori/Jasmine Paolini",country:"Italy"},
           {rank:3,athlete:"Simone Bolelli/Sara Errani",country:"Italy"} 
           ]
+        },
+        "2026 Tennis World Rankings": {
+          "Men's Singles": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Women's Singles": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Men's Doubles": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Women's Doubles": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}  
+          ],
+          "Mixed Doubles": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ]
         }
       },
       "Trampolining": {
@@ -11728,6 +12678,18 @@ const resultsData = {
           {rank:1,athlete:"Hu Yicheng",country:"China"},
           {rank:2,athlete:"Hikaru Mori",country:"Japan"},
           {rank:3,athlete:"Sophiane Méthot",country:"Canada"} 
+          ]
+        },
+        "2026 Trampoline Gymnastics World Championships": { //Nanjing, China
+          "Men's Individual": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Women's Individual": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
           ]
         }
       },
@@ -11763,6 +12725,25 @@ const resultsData = {
           {rank:3,athlete:"Beth Potter",country:"Great Britain"} 
           ]
         },
+        "2026 Triathlon - Mixed Relay World Championships": { //Hamburg, Germany
+          "Mixed Relay": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}   
+          ]
+        },
+        "2026 Triathlon World Championships": { //Pontevedra, Spain
+          "Men's Individual": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Women's Individual": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""} 
+          ]
+        }
       },
       "Volleyball": {
         "2025 Men's Volleyball World Championship": { //Philippines
@@ -11855,6 +12836,68 @@ const resultsData = {
           {rank:1,athlete:"Park Hye-Jeong",country:"South Korea"},
           {rank:2,athlete:"Marifélix Sarría",country:"Cuba"},
           {rank:3,athlete:"Mary Theisen-Lappen",country:"United States"}  
+          ]
+        },
+        "2026 Weightlifting World Championships": { //Ningbo, China
+          "Men's 65kg": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}  
+          ],
+          "Men's 75kg": [ //79kg
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}  
+          ],
+          "Men's 85kg": [ //88kg
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}   
+          ],
+          "Men's 95kg": [ //94kg
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}  
+          ],
+          "Men's 110kg": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}   
+          ],
+          "Men's +110kg": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}   
+          ],
+          "Women's 53kg": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}  
+          ],
+          "Women's 61kg": [ //63kg
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}  
+          ],
+          "Women's 69kg": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}   
+          ],
+          "Women's 77kg": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}   
+          ],
+          "Women's 86kg": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}   
+          ],
+          "Women's +86kg": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}  
           ]
         }
       },
@@ -11967,6 +13010,116 @@ const resultsData = {
           {rank:2,athlete:"Aipei Medet Kyzy",country:"Kyrgyzstan"},
           {rank:3,athlete:"Kylie Welker",country:"United States"}, 
           {rank:3,athlete:"Milaimys Marín",country:"Cuba"} 
+          ]
+        },
+        "2026 Wrestling World Championships": { //Manama, Bahrain
+          "Men's 57kg Freestyle": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}, 
+          {rank:3,athlete:"",country:""}
+          ],
+          "Men's 65kg Freestyle": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}, 
+          {rank:3,athlete:"",country:""}
+          ],
+          "Men's 74kg Freestyle": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}, 
+          {rank:3,athlete:"",country:""}
+          ],
+          "Men's 86kg Freestyle": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}, 
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Men's 97kg Freestyle": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}, 
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Men's 125kg Freestyle": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}, 
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Men's 60kg Greco-Roman": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}, 
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Men's 67kg Greco-Roman": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}, 
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Men's 77kg Greco-Roman": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}, 
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Men's 87kg Greco-Roman": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}, 
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Men's 97kg Greco-Roman": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}, 
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Men's 130kg Greco-Roman": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}, 
+          {rank:3,athlete:"",country:""}
+          ],
+          "Women's 50kg Freestyle": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}, 
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Women's 53kg Freestyle": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}, 
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Women's 57kg Freestyle": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}, 
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Women's 62kg Freestyle": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}, 
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Women's 68kg Freestyle": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}, 
+          {rank:3,athlete:"",country:""} 
+          ],
+          "Women's 76kg Freestyle": [ 
+          {rank:1,athlete:"",country:""},
+          {rank:2,athlete:"",country:""},
+          {rank:3,athlete:"",country:""}, 
+          {rank:3,athlete:"",country:""} 
           ]
         }
       }
