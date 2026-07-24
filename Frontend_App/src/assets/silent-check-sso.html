@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Keycloak Silent Check</title>
+  </head>
+  <body>
+    <script>
+      // Minimal page used by Keycloak silent SSO iframe check.
+      // It simply posts its URL back to the parent window so the Keycloak adapter can continue.
+      (function () {
+        try {
+          if (window.parent) {
+            // Post the current location back to the parent window. Keycloak listens for this message.
+            window.parent.postMessage(location.href, window.location.origin);
+          }
+        } catch (e) {
+          // ignore
+        }
+      })();
+    </script>
+  </body>
+</html>

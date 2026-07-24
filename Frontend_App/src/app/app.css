@@ -1,0 +1,33 @@
+:root {
+  --ink-900: #0f1319;
+  --ink-800: #171d26;
+  --ink-700: #232b37;
+  --ink-600: #313c4a;
+  --ink-400: #7c8896;
+  --ink-300: #a4aeba;
+  --ink-100: #eef1f4;
+ 
+  --accent-gold: #f2b134;
+  --accent-teal: #3aafa9;
+ 
+  --font-display: 'Space Grotesk', 'Segoe UI', sans-serif;
+  --font-body: 'Inter', 'Segoe UI', sans-serif;
+  --font-mono: 'IBM Plex Mono', 'Courier New', monospace;
+}
+ 
+* {
+  box-sizing: border-box;
+}
+ 
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--ink-900);
+  font-family: var(--font-body);
+}
+ 
+body {
+  background-image:
+    radial-gradient(circle at 15% 0%, rgba(58, 175, 169, 0.08), transparent 40%),
+    radial-gradient(circle at 85% 20%, rgba(242, 177, 52, 0.06), transparent 45%);
+}
