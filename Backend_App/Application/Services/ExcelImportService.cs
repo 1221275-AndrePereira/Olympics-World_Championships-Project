@@ -1,6 +1,7 @@
 using ClosedXML.Excel;
 using Backend_App.Domain.Model;
 using Backend_App.DataModel.Repository;
+using Microsoft.Extensions.Logging;
  
 namespace Backend_App.Application.Services;
  
@@ -35,15 +36,23 @@ public class ExcelImportService
     {
         _logger = logger;
     }
- 
+
+    /// <summary>Safely reads a cell's string value, handling unsupported formula types gracefully.</summary>
+    private static string SafeGetString(IXLCell cell)
+    {
+        try
+        {
+            return cell.GetString().Trim();
+        }
+        catch (NotImplementedException)
+        {
+            // ClosedXML doesn't support structured references; return empty string
+            return string.Empty;
+        }
+    }
+
     public void Import(string excelFilePath, AppDbContext db)
     {
-        if (!File.Exists(excelFilePath))
-        {
-            _logger.LogWarning("Excel file not found at {Path}; skipping import.", excelFilePath);
-            return;
-        }
- 
         using var workbook = new XLWorkbook(excelFilePath);
  
         foreach (var ws in workbook.Worksheets)
@@ -75,7 +84,7 @@ public class ExcelImportService
  
         for (int c = 1; c <= lastCol; c++)
         {
-            var header = headerRow.Cell(c).GetString().Trim();
+            var header = SafeGetString(headerRow.Cell(c));
             if (header.Equals("Country", StringComparison.OrdinalIgnoreCase))
             {
                 countryCol = c;
@@ -108,10 +117,10 @@ public class ExcelImportService
         for (int r = 2; r <= usedRange.RowCount(); r++)
         {
             var row = usedRange.Row(r);
-            var country = row.Cell(countryCol).GetString().Trim();
+            var country = SafeGetString(row.Cell(countryCol));
             if (string.IsNullOrWhiteSpace(country)) continue;
  
-            var name = row.Cell(nameCol).GetString().Trim();
+            var name = SafeGetString(row.Cell(nameCol));
             string? entryName = string.IsNullOrWhiteSpace(name) ? null : name;
  
             foreach (var (col, eventName) in eventColumns)
@@ -144,7 +153,7 @@ public class ExcelImportService
         var columnIndex = new Dictionary<string, int>(StringComparer.OrdinalIgnoreCase);
         for (int c = 1; c <= usedRange.ColumnCount(); c++)
         {
-            var header = headerRow.Cell(c).GetString().Trim();
+            var header = SafeGetString(headerRow.Cell(c));
             if (!string.IsNullOrWhiteSpace(header) && !columnIndex.ContainsKey(header))
                 columnIndex[header] = c;
  
@@ -159,7 +168,7 @@ public class ExcelImportService
         for (int r = 2; r <= usedRange.RowCount(); r++)
         {
             var row = usedRange.Row(r);
-            var country = row.Cell(Col("Country")).GetString().Trim();
+            var country = SafeGetString(row.Cell(Col("Country")));
             if (string.IsNullOrWhiteSpace(country)) continue;
  
             db.CountrySummaries.Add(new CountrySummary
@@ -168,7 +177,7 @@ public class ExcelImportService
                 Country = country,
                 TotalQuotas = GetInt(row, Col("Total Quotas")),
                 TotalEvents = GetInt(row, Col("Total Events")),
-                BestOlympicGames = row.Cell(Col("Best Olympic Games")).GetString().Trim(),
+                BestOlympicGames = SafeGetString(row.Cell(Col("Best Olympic Games"))),
                 SummerOlympicsQuotas = GetInt(row, Col("Summer Olympics Quotas")),
                 WinterOlympicsQuotas = GetInt(row, Col("Winter Olympics Quotas")),
                 TotalGoldMedals = GetInt(row, Col("Total Gold Medals")),
@@ -200,7 +209,7 @@ public class ExcelImportService
  
         for (int c = 1; c <= usedRange.ColumnCount(); c++)
         {
-            var header = headerRow.Cell(c).GetString().Trim();
+            var header = SafeGetString(headerRow.Cell(c));
             if (header.Equals("Country", StringComparison.OrdinalIgnoreCase))
             {
                 countryCol = c;
@@ -217,7 +226,7 @@ public class ExcelImportService
         for (int r = 2; r <= usedRange.RowCount(); r++)
         {
             var row = usedRange.Row(r);
-            var country = row.Cell(countryCol).GetString().Trim();
+            var country = SafeGetString(row.Cell(countryCol));
             if (string.IsNullOrWhiteSpace(country)) continue;
  
             foreach (var (col, sport) in sportColumns)

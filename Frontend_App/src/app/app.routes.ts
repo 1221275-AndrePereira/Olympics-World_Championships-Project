@@ -1,6 +1,5 @@
 import { Routes } from '@angular/router';
-import { Dashboard } from './page/dashboard/dashboard';
-import { TeamComponent } from './components/team/team';
+import { QuotaBoardComponent } from './components/quota-board/quota-board';
 export const routes: Routes = [
     
     {
@@ -11,10 +10,7 @@ export const routes: Routes = [
     },
     
     {
-        path: 'dashboard', component: Dashboard
-    },
-    {
-        path: 'team/team', component: TeamComponent  
+        path: 'dashboard', component: QuotaBoardComponent
     },
     { path: '**', redirectTo: 'dashboard' }
 ];

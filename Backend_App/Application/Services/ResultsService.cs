@@ -160,7 +160,7 @@ public class ResultsService : IResultsService
     }
  
     private static List<CountryMedalDto> ProjectAndSortMedalists(
-        List<Models.ClassificationEntry> entries, int year, string? athleteSearch, string sortBy)
+        List<Backend_App.Domain.Model.ClassificationEntry> entries, int year, string? athleteSearch, string sortBy)
     {
         var medalists = entries.Select(e => new CountryMedalDto
         {

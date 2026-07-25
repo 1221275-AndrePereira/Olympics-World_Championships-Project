@@ -9,7 +9,7 @@ import {
 } from '../models/classification.model';
  
 
-const API_BASE = 'http://localhost:5142/api';
+const API_BASE = 'http://localhost:5005/api';
  
 @Injectable({ providedIn: 'root' })
 export class ClassificationService {
