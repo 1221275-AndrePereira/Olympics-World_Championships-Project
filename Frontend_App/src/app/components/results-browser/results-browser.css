@@ -1,0 +1,227 @@
+:host {
+  display: block;
+  color: var(--ink-100);
+}
+ 
+.browser {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+ 
+.browser__header {
+  border-bottom: 2px solid var(--ink-700);
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+ 
+.browser__eyebrow {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-teal);
+}
+ 
+.browser__title h1 {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 700;
+  margin: 4px 0 0;
+  letter-spacing: -0.01em;
+}
+ 
+/* Controls */
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: flex-end;
+  background: var(--ink-800);
+  border: 1px solid var(--ink-700);
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 14px;
+}
+ 
+.controls--secondary {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+ 
+.controls__field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 150px;
+}
+ 
+.controls__field--grow {
+  flex: 1 1 220px;
+}
+ 
+.controls__field label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-400);
+}
+ 
+.controls__buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-left: auto;
+}
+ 
+select, input[type='text'] {
+  background: var(--ink-900);
+  border: 1px solid var(--ink-600);
+  color: var(--ink-100);
+  border-radius: 6px;
+  padding: 9px 10px;
+  font-family: var(--font-body);
+  font-size: 14px;
+}
+ 
+select:focus, input:focus {
+  outline: 2px solid var(--accent-teal);
+  outline-offset: 1px;
+}
+ 
+button {
+  background: var(--accent-teal);
+  color: #05201e;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 16px;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+}
+ 
+button:hover {
+  filter: brightness(1.08);
+}
+ 
+.status {
+  background: rgba(214, 92, 92, 0.12);
+  border: 1px solid rgba(214, 92, 92, 0.4);
+  color: #e7a3a3;
+  padding: 10px 14px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+ 
+/* Table */
+.table-wrap {
+  position: relative;
+  border: 1px solid var(--ink-700);
+  border-radius: 10px;
+  overflow: hidden;
+}
+ 
+table.results {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+ 
+.results thead th {
+  text-align: left;
+  background: var(--ink-800);
+  color: var(--ink-400);
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--ink-700);
+}
+ 
+.results td {
+  padding: 11px 14px;
+  border-bottom: 1px solid var(--ink-800);
+  vertical-align: middle;
+}
+ 
+.results tbody tr:hover {
+  background: var(--ink-800);
+}
+ 
+.results tr.clickable {
+  cursor: pointer;
+}
+ 
+.results tr.is-pending td {
+  color: var(--ink-400);
+}
+ 
+.results .rank {
+  font-family: var(--font-mono);
+  font-size: 16px;
+  width: 60px;
+}
+ 
+.flag {
+  width: 22px;
+  height: 16px;
+  object-fit: cover;
+  border-radius: 2px;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+ 
+.sport-icon {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+ 
+.badge {
+  display: inline-block;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  margin-left: 8px;
+  border-radius: 100px;
+  background: rgba(242, 177, 52, 0.14);
+  color: var(--accent-gold);
+  border: 1px solid rgba(242, 177, 52, 0.35);
+}
+ 
+.empty {
+  text-align: center;
+  color: var(--ink-400);
+  padding: 32px 0;
+}
+ 
+.loading {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(15, 19, 25, 0.6);
+  font-family: var(--font-mono);
+  color: var(--accent-teal);
+}
+ 
+.back-row {
+  margin-top: 16px;
+  text-align: center;
+}
+ 
+.back-row button {
+  background: transparent;
+  border: 1px solid var(--ink-600);
+  color: var(--ink-300);
+}
+ 
+.back-row button:hover {
+  border-color: var(--accent-teal);
+  color: var(--accent-teal);
+}

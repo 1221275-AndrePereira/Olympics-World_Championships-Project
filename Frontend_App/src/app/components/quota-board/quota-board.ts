@@ -103,7 +103,7 @@ export class QuotaBoardComponent implements OnInit {
           this.loading.set(false);
         },
         error: () => {
-          this.error.set('Could not reach the API. Is the backend running on http://localhost:5142?');
+          this.error.set('Could not reach the API. Is the backend running on http://localhost:5005?');
           this.loading.set(false);
         }
       });

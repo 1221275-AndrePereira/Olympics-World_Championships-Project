@@ -1,0 +1,138 @@
+<div class="browser">
+ 
+  <header class="browser__header">
+    <div class="browser__title">
+      <span class="browser__eyebrow">Results &amp; Medals</span>
+      <h1>Olympic Games Results Browser</h1>
+    </div>
+  </header>
+ 
+  <section class="controls">
+    <div class="controls__field">
+      <label for="season">Season</label>
+      <select id="season" [(ngModel)]="selectedSeason" (ngModelChange)="onSeasonChange()">
+        <option *ngFor="let s of seasons()" [value]="s">{{ s }}</option>
+      </select>
+    </div>
+ 
+    <div class="controls__field">
+      <label for="year">Year</label>
+      <select id="year" [(ngModel)]="selectedYear">
+        <option *ngFor="let y of years()" [value]="y">{{ y }}</option>
+      </select>
+    </div>
+ 
+    <div class="controls__field">
+      <label for="sport">Sport</label>
+      <select id="sport" [(ngModel)]="selectedSport" (ngModelChange)="onSportChange()">
+        <option *ngFor="let s of sports()" [value]="s">{{ s }}</option>
+      </select>
+    </div>
+ 
+    <div class="controls__field controls__field--grow">
+      <label for="event">Event</label>
+      <select id="event" [(ngModel)]="selectedEventKey" (ngModelChange)="onEventChange()">
+        <option *ngFor="let e of events()" [value]="e.key">{{ e.label }}</option>
+      </select>
+    </div>
+ 
+    <div class="controls__buttons">
+      <button (click)="loadResults()">Load Results</button>
+      <button (click)="showMedalTable()">Show Medal Table</button>
+      <button (click)="showAllTimeMedalTable()">Show All-Time Medal Table</button>
+    </div>
+  </section>
+ 
+  <section class="controls controls--secondary">
+    <div class="controls__field controls__field--grow">
+      <label for="athleteSearch">Search athlete</label>
+      <input id="athleteSearch" type="text" placeholder="Athlete / team name" [(ngModel)]="athleteSearch" (ngModelChange)="onSearchChanged()" />
+    </div>
+    <div class="controls__field controls__field--grow">
+      <label for="countrySearch">Search country</label>
+      <input id="countrySearch" type="text" placeholder="Country" [(ngModel)]="countrySearch" (ngModelChange)="onSearchChanged()" />
+    </div>
+    <div class="controls__field">
+      <label for="sortBy">Sort by</label>
+      <select id="sortBy" [(ngModel)]="sortBy" (ngModelChange)="onSortChanged()">
+        <option value="rank">Rank</option>
+        <option value="athlete">Athlete</option>
+        <option value="country">Country</option>
+      </select>
+    </div>
+  </section>
+ 
+  <div class="status" *ngIf="error() as e">{{ e }}</div>
+ 
+  <section class="table-wrap">
+ 
+    <!-- Event results -->
+    <table class="results" *ngIf="view() === 'results'">
+      <thead>
+        <tr><th>Rank</th><th>Athlete / Team</th><th>Country</th></tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let r of resultRows()" [class.is-pending]="r.isPending">
+          <td class="rank">{{ r.isPending ? '—' : medalEmoji(r.rank) }}</td>
+          <td><strong>{{ r.athlete }}</strong></td>
+          <td>
+            <img *ngIf="flagUrl(r.country) as url" class="flag" [src]="url" [alt]="r.country" />
+            {{ r.country }}
+            <span *ngIf="r.isPending" class="badge">quota held</span>
+          </td>
+        </tr>
+        <tr *ngIf="resultRows().length === 0"><td colspan="3" class="empty">No results for this event yet.</td></tr>
+      </tbody>
+    </table>
+ 
+    <!-- Medal table (current Games or all-time) -->
+    <table class="results" *ngIf="view() === 'medalTable' || view() === 'allTimeMedalTable'">
+      <thead>
+        <tr><th>Country</th><th>&#129351; Gold</th><th>&#129352; Silver</th><th>&#129353; Bronze</th><th>Total</th></tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let m of medalRows()" (click)="drillIntoCountry(m.country)" class="clickable">
+          <td>
+            <img *ngIf="flagUrl(m.country) as url" class="flag" [src]="url" [alt]="m.country" />
+            {{ m.country }}
+          </td>
+          <td>{{ m.gold }}</td>
+          <td>{{ m.silver }}</td>
+          <td>{{ m.bronze }}</td>
+          <td>{{ m.total }}</td>
+        </tr>
+        <tr *ngIf="medalRows().length === 0"><td colspan="5" class="empty">No medal data yet.</td></tr>
+      </tbody>
+    </table>
+ 
+    <!-- Country medalist drill-down -->
+    <table class="results" *ngIf="view() === 'countryMedalists' || view() === 'allTimeCountryMedalists'">
+      <thead>
+        <tr><th>Rank</th><th>Athlete / Team</th><th>Sport</th><th>Event</th><th>Country</th></tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let r of countryMedalRows()">
+          <td class="rank">{{ medalEmoji(r.rank) }}</td>
+          <td><strong>{{ r.athlete }}</strong></td>
+          <td>
+            <img *ngIf="sportIcon(r.sport) as url" class="sport-icon" [src]="url" [alt]="r.sport" />
+            {{ r.sport }}
+          </td>
+          <td>{{ r.category }} &ndash; {{ r.event }}</td>
+          <td>
+            <img *ngIf="flagUrl(r.country) as url" class="flag" [src]="url" [alt]="r.country" />
+            {{ r.country }}
+          </td>
+        </tr>
+        <tr *ngIf="countryMedalRows().length === 0"><td colspan="5" class="empty">No medalists found.</td></tr>
+      </tbody>
+    </table>
+ 
+    <div class="loading" *ngIf="loading()">Loading&hellip;</div>
+  </section>
+ 
+  <div class="back-row" *ngIf="view() === 'countryMedalists' || view() === 'allTimeCountryMedalists'">
+    <button (click)="backToMedalTable()">&larr; Back to medal table</button>
+  </div>
+ 
+</div>
