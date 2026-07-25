@@ -15,7 +15,7 @@ public class ResultsService : IResultsService
     private static readonly Dictionary<string, int> SeasonYearMap = new(StringComparer.OrdinalIgnoreCase)
     {
         ["Summer"] = 2024,
-        ["Winter"] = 2026 
+        ["Winter"] = 2026  
     };
  
     private readonly IClassificationRepository _repo;

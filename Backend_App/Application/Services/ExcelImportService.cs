@@ -1,6 +1,6 @@
 using ClosedXML.Excel;
 using Backend_App.Domain.Model;
-using Backend_App.DataModel.Model;
+using Backend_App.DataModel.Repository;
  
 namespace Backend_App.Application.Services;
  
@@ -174,7 +174,15 @@ public class ExcelImportService
                 TotalGoldMedals = GetInt(row, Col("Total Gold Medals")),
                 TotalSilverMedals = GetInt(row, Col("Total Silver Medals")),
                 TotalBronzeMedals = GetInt(row, Col("Total Bronze Medals")),
-                TotalMedals = GetInt(row, Col("Total Medals"))
+                TotalMedals = GetInt(row, Col("Total Medals")),
+                SummerGoldMedals = GetInt(row, Col("Summer Gold Medals")),
+                SummerSilverMedals = GetInt(row, Col("Summer Silver Medals")),
+                SummerBronzeMedals = GetInt(row, Col("Summer Bronze Medals")),
+                SummerTotalMedals = GetInt(row, Col("Summer Total Medals")),
+                WinterGoldMedals = GetInt(row, Col("Winter Gold Medals")),
+                WinterSilverMedals = GetInt(row, Col("Winter Silver Medals")),
+                WinterBronzeMedals = GetInt(row, Col("Winter Bronze Medals")),
+                WinterTotalMedals = GetInt(row, Col("Winter Total Medals"))
             });
         }
     }
@@ -228,13 +236,13 @@ public class ExcelImportService
         }
     }
  
-    /// 
+    /// <summary>
     /// Splits a sheet name like "Athletics Male Athletes" into ("Athletics", "Male Athletes").
     /// Excel sheet names are capped at 31 characters, so several names in this workbook have
     /// their "Athletes" suffix truncated (e.g. "CrossCountry Skiing Female Athl"). Rather than
     /// matching the full suffix, we split on where the "Male"/"Female" token starts and
     /// normalize whatever trailing fragment remains.
-    /// 
+    /// </summary>
     private static (string Sport, string Category) SplitSheetName(string sheetName)
     {
         if (sheetName.EndsWith("Teams", StringComparison.OrdinalIgnoreCase))

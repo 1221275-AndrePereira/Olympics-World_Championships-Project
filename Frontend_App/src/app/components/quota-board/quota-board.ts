@@ -6,13 +6,13 @@ import { ClassificationEntry, PagedResult, SportSummary } from '../../models/cla
 import { ClassificationService } from '../../services/classification.service';
  
 @Component({
-  selector: 'app-root',
+  selector: 'quota-board',
   standalone: true,
   imports: [CommonModule, FormsModule],
-  templateUrl: './app.html',
-  styleUrl: './app.css'
+  templateUrl: './quota-board.html',
+  styleUrl: './quota-board.css'
 })
-export class AppComponent implements OnInit {
+export class QuotaBoardComponent implements OnInit {
   sports = signal<SportSummary[]>([]);
   countries = signal<string[]>([]);
   result = signal<PagedResult<ClassificationEntry> | null>(null);

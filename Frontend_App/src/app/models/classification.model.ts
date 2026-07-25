@@ -33,3 +33,38 @@ export interface EntriesFilter {
   page: number;
   pageSize: number;
 }
+ 
+// --- Results Browser -------------------------------------------------
+ 
+export interface EventOption {
+  key: string;
+  label: string;
+}
+ 
+export interface ResultRow {
+  rank: number;
+  isPending: boolean;
+  athlete: string;
+  country: string;
+}
+ 
+export interface MedalTally {
+  country: string;
+  gold: number;
+  silver: number;
+  bronze: number;
+  total: number;
+}
+ 
+export interface CountryMedal {
+  year: number;
+  sport: string;
+  category: string;
+  event: string;
+  athlete: string;
+  rank: number;
+  country: string;
+}
+ 
+export type SortBy = 'rank' | 'athlete' | 'country';
+export type ResultsView = 'results' | 'medalTable' | 'allTimeMedalTable' | 'countryMedalists' | 'allTimeCountryMedalists';

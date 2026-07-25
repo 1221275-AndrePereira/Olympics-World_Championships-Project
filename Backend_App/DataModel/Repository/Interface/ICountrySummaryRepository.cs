@@ -1,4 +1,4 @@
-using Backend_App.DataModel.Model;
+using Backend_App.Domain.Model;
  
 namespace Backend_App.DataModel.Repository;
  
