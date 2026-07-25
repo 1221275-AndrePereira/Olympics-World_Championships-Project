@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 
-using DataModel.Repository;
+using Backend_App.DataModel.Repository;
 
-namespace Domain
+namespace Backend_App.WebApi
 {
 	public class Startup
 	{
@@ -20,7 +20,7 @@ namespace Domain
 			services
 				.AddEndpointsApiExplorer()
 				.AddSwaggerGen()
-				.AddDbContext<AbsanteeContext>(options =>
+				.AddDbContext<AppDbContext>(options =>
 				{
 					options.UseSqlServer(Configuration["ConnectionString"],
 							b => b.MigrationsAssembly("DataModel"));
