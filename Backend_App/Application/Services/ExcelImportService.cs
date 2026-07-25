@@ -1,11 +1,11 @@
 using ClosedXML.Excel;
-using Backend_App.Application.Data;
-using Backend_App.Application.Models;
+using Backend_App.Domain.Model;
+using Backend_App.DataModel.Model;
  
 namespace Backend_App.Application.Services;
  
 /// 
-/// Reads the Tokyo2020_Beijing2022.xlsx workbook and loads it into the database.
+/// Reads the workbook and loads it into the database.
 /// Runs once at startup if the database is empty (see Program.cs).
 ///
 /// Sheet handling:
