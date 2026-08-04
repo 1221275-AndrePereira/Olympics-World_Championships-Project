@@ -31,6 +31,7 @@ export class ResultsBrowserComponent implements OnInit {
  
   athleteSearch = '';
   countrySearch = '';
+  yearSearch = '';
   sortBy: SortBy = 'rank';
  
   view = signal<View>('results');
@@ -56,7 +57,7 @@ export class ResultsBrowserComponent implements OnInit {
         this.seasons.set(seasons);
         if (seasons.length) {
           this.selectedSeason = seasons[0];
-          this.onSeasonChange(true);
+          this.onSeasonChange(this.selectedSeason);
         }
       },
       error: () => this.error.set('Could not reach the API. Is the backend running on http://localhost:5005?')
@@ -65,32 +66,28 @@ export class ResultsBrowserComponent implements OnInit {
  
   // --- cascading selects -------------------------------------------------
  
-  onSeasonChange(initial = false): void {
+  onSeasonChange(season: string): void {
+    this.selectedSeason = season;
     this.api.getYears(this.selectedSeason).subscribe((years) => {
       this.years.set(years);
       this.selectedYear = years[0] ?? null;
-    });
-    this.api.getSports(this.selectedSeason).subscribe((sports) => {
-      this.sports.set(sports);
-      this.selectedSport = sports[0] ?? '';
-      this.onSportChange(initial);
+      this.loadSportsAndResults();
     });
   }
- 
-  onSportChange(initial = false): void {
-    if (!this.selectedSport) {
-      this.events.set([]);
-      this.selectedEventKey = '';
-      return;
-    }
-    this.api.getEvents(this.selectedSeason, this.selectedSport).subscribe((events) => {
-      this.events.set(events);
-      this.selectedEventKey = events[0]?.key ?? '';
-      if (initial) this.loadResults();
-    });
+
+  onYearChange(year: number): void {
+    this.selectedYear = Number(year);
+    this.loadSportsAndResults();
   }
  
-  onEventChange(): void {
+  onSportChange(sport: string): void {
+    this.selectedSport = sport;
+    this.selectedEventKey = '';
+    this.loadEventsAndResults();
+  }
+ 
+  onEventChange(eventKey: string): void {
+    this.selectedEventKey = eventKey;
     this.loadResults();
   }
  
@@ -102,7 +99,7 @@ export class ResultsBrowserComponent implements OnInit {
     this.loading.set(true);
     this.error.set(null);
     this.api
-      .getResults(this.selectedSeason, this.selectedSport, this.selectedEventKey, this.athleteSearch, this.countrySearch, this.sortBy)
+      .getResults(this.selectedSeason, this.selectedYear ?? 0, this.selectedSport, this.selectedEventKey, this.athleteSearch, this.countrySearch, this.sortBy)
       .subscribe({
         next: (rows) => { this.resultRows.set(rows); this.loading.set(false); },
         error: () => { this.error.set('Could not load results.'); this.loading.set(false); }
@@ -139,8 +136,8 @@ export class ResultsBrowserComponent implements OnInit {
     this.error.set(null);
  
     const request$ = fromAllTime
-      ? this.api.getAllTimeCountryMedalists(this.selectedSeason, country, this.athleteSearch, this.sortBy)
-      : this.api.getCountryMedalists(this.selectedSeason, this.selectedYear!, country, this.athleteSearch, this.sortBy);
+      ? this.api.getAllTimeCountryMedalists(this.selectedSeason, country, this.athleteSearch, this.yearSearch, this.sortBy)
+      : this.api.getCountryMedalists(this.selectedSeason, this.selectedYear!, country, this.athleteSearch, this.yearSearch, this.sortBy);
  
     this.view.set(fromAllTime ? 'allTimeCountryMedalists' : 'countryMedalists');
  
@@ -175,6 +172,41 @@ export class ResultsBrowserComponent implements OnInit {
         break;
       // medal tables aren't filtered by athlete/country search in the original app
     }
+  }
+
+  private loadEventsAndResults(initial = false): void {
+    if (!this.selectedSeason || this.selectedYear == null || !this.selectedSport) {
+      this.events.set([]);
+      this.selectedEventKey = '';
+      return;
+    }
+
+    this.api.getEvents(this.selectedSeason, this.selectedYear, this.selectedSport).subscribe((events) => {
+      this.events.set(events);
+      this.selectedEventKey = events[0]?.key ?? '';
+      if (this.selectedEventKey) {
+        this.loadResults();
+      } else {
+        this.resultRows.set([]);
+      }
+    });
+  }
+
+  private loadSportsAndResults(): void {
+    if (!this.selectedSeason || this.selectedYear == null) {
+      this.sports.set([]);
+      this.selectedSport = '';
+      this.events.set([]);
+      this.selectedEventKey = '';
+      this.resultRows.set([]);
+      return;
+    }
+
+    this.api.getSports(this.selectedSeason, this.selectedYear).subscribe((sports) => {
+      this.sports.set(sports);
+      this.selectedSport = sports.includes(this.selectedSport) ? this.selectedSport : (sports[0] ?? '');
+      this.loadEventsAndResults();
+    });
   }
  
   // --- template helpers -------------------------------------------------

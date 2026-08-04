@@ -15,11 +15,16 @@ public class ClassificationRepository : IClassificationRepository
         await _db.ClassificationEntries.AsNoTracking()
             .Select(e => e.Country).Distinct().OrderBy(c => c).ToListAsync();
  
-    public async Task<List<(string Category, string Event)>> GetEventOptionsAsync(string season, string sport)
+    public async Task<List<(string Category, string Event)>> GetEventOptionsAsync(string season, string sport, int? year = null)
     {
-        var pairs = await _db.ClassificationEntries.AsNoTracking()
+        var query = _db.ClassificationEntries.AsNoTracking()
             .Include(e => e.SportSheet)
-            .Where(e => e.SportSheet!.Season == season && e.SportSheet.Sport == sport)
+            .Where(e => e.SportSheet!.Season == season && e.SportSheet.Sport == sport);
+
+        if (year.HasValue)
+            query = query.Where(e => e.SportSheet!.Year == year.Value);
+
+        var pairs = await query
             .Select(e => new { e.SportSheet!.Category, e.Event })
             .Distinct()
             .OrderBy(e => e.Category).ThenBy(e => e.Event)
@@ -28,10 +33,11 @@ public class ClassificationRepository : IClassificationRepository
         return pairs.Select(p => (p.Category, p.Event)).ToList();
     }
  
-    public async Task<List<ClassificationEntry>> GetEntriesForEventAsync(string season, string sport, string category, string @event) =>
+    public async Task<List<ClassificationEntry>> GetEntriesForEventAsync(string season, int year, string sport, string category, string @event) =>
         await _db.ClassificationEntries.AsNoTracking()
             .Include(e => e.SportSheet)
             .Where(e => e.SportSheet!.Season == season
+                     && e.SportSheet.Year == year
                      && e.SportSheet.Sport == sport
                      && e.SportSheet.Category == category
                      && e.Event == @event)

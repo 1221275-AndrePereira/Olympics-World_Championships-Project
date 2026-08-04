@@ -6,16 +6,16 @@ public interface IResultsService
 {
     Task<List<string>> GetSeasonsAsync();
     Task<List<int>> GetYearsAsync(string season);
-    Task<List<string>> GetSportsAsync(string season);
-    Task<List<OptionDto>> GetEventsAsync(string season, string sport);
+    Task<List<string>> GetSportsAsync(string season, int year);
+    Task<List<OptionDto>> GetEventsAsync(string season, int year, string sport);
  
     Task<List<ResultRowDto>> GetResultsAsync(
-        string season, string sport, string eventKey,
+        string season, int year, string sport, string eventKey,
         string? athleteSearch, string? countrySearch, string sortBy);
  
     Task<List<MedalTallyDto>> GetMedalTableAsync(string season, int year);
     Task<List<MedalTallyDto>> GetAllTimeMedalTableAsync(string season);
  
-    Task<List<CountryMedalDto>> GetCountryMedalistsAsync(string season, int year, string country, string? athleteSearch, string sortBy);
-    Task<List<CountryMedalDto>> GetAllTimeCountryMedalistsAsync(string season, string country, string? athleteSearch, string sortBy);
+    Task<List<CountryMedalDto>> GetCountryMedalistsAsync(string season, int year, string country, string? athleteSearch, string? yearSearch, string sortBy);
+    Task<List<CountryMedalDto>> GetAllTimeCountryMedalistsAsync(string season, string country, string? athleteSearch, string? yearSearch, string sortBy);
 }

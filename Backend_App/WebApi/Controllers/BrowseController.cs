@@ -18,9 +18,9 @@ public class BrowseController : ControllerBase
     public async Task<IActionResult> GetYears([FromQuery] string season) => Ok(await _results.GetYearsAsync(season));
  
     [HttpGet("sports")]
-    public async Task<IActionResult> GetSports([FromQuery] string season) => Ok(await _results.GetSportsAsync(season));
+    public async Task<IActionResult> GetSports([FromQuery] string season, [FromQuery] int year) => Ok(await _results.GetSportsAsync(season, year));
  
     [HttpGet("events")]
-    public async Task<IActionResult> GetEvents([FromQuery] string season, [FromQuery] string sport) =>
-        Ok(await _results.GetEventsAsync(season, sport));
+    public async Task<IActionResult> GetEvents([FromQuery] string season, [FromQuery] int year, [FromQuery] string sport) =>
+        Ok(await _results.GetEventsAsync(season, year, sport));
 }

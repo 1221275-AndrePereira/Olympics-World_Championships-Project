@@ -26,7 +26,7 @@ public class ExcelImportService
     {
         "Alpine Skiing", "Biathlon", "Bobsleigh", "CrossCountry Skiing", "Cross-Country Skiing",
         "Curling", "Figure Skating", "Freestyle Skiing", "Ice Hockey", "Luge", "Nordic Combined",
-        "Short Speed Skating", "Short Track Speed Skating", "Skeleton", "Ski Jumping",
+        "Short Speed Skating", "Short Track Speed Skating", "Skeleton", "Ski Jumping", "Ski Mountain",
         "Snowboarding", "Speed Skating"
     };
  
@@ -68,16 +68,23 @@ public class ExcelImportService
     {
         using var workbook = new XLWorkbook(excelFilePath);
 
-        // Try to detect a four-digit year in the file path (e.g. "Tokyo2020.xlsx" or a parent folder).
-        var yearMatch = System.Text.RegularExpressions.Regex.Match(excelFilePath, "\\b(19|20)\\d{2}\\b");
-        var fileYear = yearMatch.Success ? int.Parse(yearMatch.Value) : 0;
+        // Try to detect the years encoded in the workbook filename.
+        // The combined files in this project typically contain one summer year and one winter year.
+        var fileName = Path.GetFileNameWithoutExtension(excelFilePath);
+        var fileYears = System.Text.RegularExpressions.Regex.Matches(fileName, "(19|20)\\d{2}")
+            .Select(m => int.Parse(m.Value))
+            .Distinct()
+            .OrderBy(y => y)
+            .ToList();
+        var summerYear = fileYears.ElementAtOrDefault(0);
+        var winterYear = fileYears.ElementAtOrDefault(1);
 
         foreach (var ws in workbook.Worksheets)
         {
             if (SkippedSummarySheets.Contains(ws.Name))
                 continue;
 
-            ImportSportSheet(ws, db, fileYear);
+            ImportSportSheet(ws, db, summerYear, winterYear);
         }
  
         ImportSportsQuotas(workbook, db);
@@ -87,7 +94,7 @@ public class ExcelImportService
         _logger.LogInformation("Excel import complete.");
     }
  
-    private void ImportSportSheet(IXLWorksheet ws, AppDbContext db, int fileYear)
+    private void ImportSportSheet(IXLWorksheet ws, AppDbContext db, int summerYear, int winterYear)
     {
         var usedRange = ws.RangeUsed();
         if (usedRange is null || usedRange.RowCount() < 2) return;
@@ -123,6 +130,9 @@ public class ExcelImportService
         sport = NormalizeName(sport);
         category = NormalizeName(category);
         var season = WinterSports.Contains(sport) ? "Winter" : "Summer";
+        var year = season.Equals("Winter", StringComparison.OrdinalIgnoreCase)
+            ? (winterYear > 0 ? winterYear : summerYear)
+            : (summerYear > 0 ? summerYear : winterYear);
  
         var sportSheet = new SportSheet
         {
@@ -130,7 +140,7 @@ public class ExcelImportService
             Sport = sport,
             Category = category,
             Season = season,
-            Year = fileYear
+            Year = year
         };
         db.SportSheets.Add(sportSheet);
  
@@ -213,8 +223,8 @@ public class ExcelImportService
             var row = usedRange.Row(r);
             var country = SafeGetString(row.Cell(Col("Country")));
             if (string.IsNullOrWhiteSpace(country)) continue;
- 
-            db.CountrySummaries.Add(new CountrySummary
+
+            var summary = new CountrySummary
             {
                 Place = GetInt(row, Col("Place")),
                 Country = country,
@@ -235,7 +245,39 @@ public class ExcelImportService
                 WinterSilverMedals = GetInt(row, Col("Winter Silver Medals")),
                 WinterBronzeMedals = GetInt(row, Col("Winter Bronze Medals")),
                 WinterTotalMedals = GetInt(row, Col("Winter Total Medals"))
-            });
+            };
+            var countryKey = country.ToUpperInvariant();
+
+            var existing = db.CountrySummaries.Local.FirstOrDefault(s =>
+                s.Country.Equals(country, StringComparison.OrdinalIgnoreCase))
+                ?? db.CountrySummaries.FirstOrDefault(s =>
+                    s.Country.ToUpper() == countryKey);
+
+            if (existing is null)
+            {
+                db.CountrySummaries.Add(summary);
+            }
+            else
+            {
+                existing.Place = summary.Place;
+                existing.TotalQuotas = summary.TotalQuotas;
+                existing.TotalEvents = summary.TotalEvents;
+                existing.BestOlympicGames = summary.BestOlympicGames;
+                existing.SummerOlympicsQuotas = summary.SummerOlympicsQuotas;
+                existing.WinterOlympicsQuotas = summary.WinterOlympicsQuotas;
+                existing.TotalGoldMedals = summary.TotalGoldMedals;
+                existing.TotalSilverMedals = summary.TotalSilverMedals;
+                existing.TotalBronzeMedals = summary.TotalBronzeMedals;
+                existing.TotalMedals = summary.TotalMedals;
+                existing.SummerGoldMedals = summary.SummerGoldMedals;
+                existing.SummerSilverMedals = summary.SummerSilverMedals;
+                existing.SummerBronzeMedals = summary.SummerBronzeMedals;
+                existing.SummerTotalMedals = summary.SummerTotalMedals;
+                existing.WinterGoldMedals = summary.WinterGoldMedals;
+                existing.WinterSilverMedals = summary.WinterSilverMedals;
+                existing.WinterBronzeMedals = summary.WinterBronzeMedals;
+                existing.WinterTotalMedals = summary.WinterTotalMedals;
+            }
         }
     }
  
@@ -278,12 +320,29 @@ public class ExcelImportService
                 var qty = SafeGetInt(cell);
                 if (qty > 0)
                 {
-                    db.CountrySportQuotas.Add(new CountrySportQuota
+                    var countryKey = country.ToUpperInvariant();
+                    var sportKey = sport.ToUpperInvariant();
+
+                    var existing = db.CountrySportQuotas.Local.FirstOrDefault(q =>
+                        q.Country.Equals(country, StringComparison.OrdinalIgnoreCase) &&
+                        q.Sport.Equals(sport, StringComparison.OrdinalIgnoreCase))
+                        ?? db.CountrySportQuotas.FirstOrDefault(q =>
+                            q.Country.ToUpper() == countryKey &&
+                            q.Sport.ToUpper() == sportKey);
+
+                    if (existing is null)
                     {
-                        Country = country,
-                        Sport = sport,
-                        Quotas = qty
-                    });
+                        db.CountrySportQuotas.Add(new CountrySportQuota
+                        {
+                            Country = country,
+                            Sport = sport,
+                            Quotas = qty
+                        });
+                    }
+                    else
+                    {
+                        existing.Quotas = qty;
+                    }
                 }
             }
         }

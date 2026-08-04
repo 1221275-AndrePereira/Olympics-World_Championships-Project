@@ -13,10 +13,10 @@ public class ResultsController : ControllerBase
     /// <summary>Results for a single event (eventKey comes from GET /api/browse/events).</summary>
     [HttpGet]
     public async Task<IActionResult> GetResults(
-        [FromQuery] string season, [FromQuery] string sport, [FromQuery] string eventKey,
+        [FromQuery] string season, [FromQuery] int year, [FromQuery] string sport, [FromQuery] string eventKey,
         [FromQuery] string? athlete, [FromQuery] string? country, [FromQuery] string sortBy = "rank")
     {
-        var results = await _results.GetResultsAsync(season, sport, eventKey, athlete, country, sortBy);
+        var results = await _results.GetResultsAsync(season, year, sport, eventKey, athlete, country, sortBy);
         return Ok(results);
     }
  
@@ -31,12 +31,12 @@ public class ResultsController : ControllerBase
     [HttpGet("medalists")]
     public async Task<IActionResult> GetCountryMedalists(
         [FromQuery] string season, [FromQuery] int year, [FromQuery] string country,
-        [FromQuery] string? athlete, [FromQuery] string sortBy = "rank") =>
-        Ok(await _results.GetCountryMedalistsAsync(season, year, country, athlete, sortBy));
+        [FromQuery] string? athlete, [FromQuery] string? yearSearch, [FromQuery] string sortBy = "rank") =>
+        Ok(await _results.GetCountryMedalistsAsync(season, year, country, athlete, yearSearch, sortBy));
  
     [HttpGet("medalists/all-time")]
     public async Task<IActionResult> GetAllTimeCountryMedalists(
         [FromQuery] string season, [FromQuery] string country,
-        [FromQuery] string? athlete, [FromQuery] string sortBy = "rank") =>
-        Ok(await _results.GetAllTimeCountryMedalistsAsync(season, country, athlete, sortBy));
+        [FromQuery] string? athlete, [FromQuery] string? yearSearch, [FromQuery] string sortBy = "rank") =>
+        Ok(await _results.GetAllTimeCountryMedalistsAsync(season, country, athlete, yearSearch, sortBy));
 }

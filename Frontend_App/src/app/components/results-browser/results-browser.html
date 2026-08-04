@@ -10,28 +10,28 @@
   <section class="controls">
     <div class="controls__field">
       <label for="season">Season</label>
-      <select id="season" [(ngModel)]="selectedSeason" (ngModelChange)="onSeasonChange()">
+      <select id="season" [(ngModel)]="selectedSeason" (ngModelChange)="onSeasonChange($event)">
         <option *ngFor="let s of seasons()" [value]="s">{{ s }}</option>
       </select>
     </div>
  
     <div class="controls__field">
       <label for="year">Year</label>
-      <select id="year" [(ngModel)]="selectedYear">
-        <option *ngFor="let y of years()" [value]="y">{{ y }}</option>
+      <select id="year" [(ngModel)]="selectedYear" (ngModelChange)="onYearChange($event)">
+        <option *ngFor="let y of years()" [ngValue]="y">{{ y }}</option>
       </select>
     </div>
  
     <div class="controls__field">
       <label for="sport">Sport</label>
-      <select id="sport" [(ngModel)]="selectedSport" (ngModelChange)="onSportChange()">
+      <select id="sport" [(ngModel)]="selectedSport" (ngModelChange)="onSportChange($event)">
         <option *ngFor="let s of sports()" [value]="s">{{ s }}</option>
       </select>
     </div>
  
     <div class="controls__field controls__field--grow">
       <label for="event">Event</label>
-      <select id="event" [(ngModel)]="selectedEventKey" (ngModelChange)="onEventChange()">
+      <select id="event" [(ngModel)]="selectedEventKey" (ngModelChange)="onEventChange($event)">
         <option *ngFor="let e of events()" [value]="e.key">{{ e.label }}</option>
       </select>
     </div>
@@ -52,12 +52,17 @@
       <label for="countrySearch">Search country</label>
       <input id="countrySearch" type="text" placeholder="Country" [(ngModel)]="countrySearch" (ngModelChange)="onSearchChanged()" />
     </div>
+    <div class="controls__field controls__field--grow">
+      <label for="yearSearch">Search year</label>
+      <input id="yearSearch" type="text" placeholder="Year" [(ngModel)]="yearSearch" (ngModelChange)="onSearchChanged()" />
+    </div>
     <div class="controls__field">
       <label for="sortBy">Sort by</label>
       <select id="sortBy" [(ngModel)]="sortBy" (ngModelChange)="onSortChanged()">
         <option value="rank">Rank</option>
         <option value="athlete">Athlete</option>
         <option value="country">Country</option>
+        <option value="year">Year</option>
       </select>
     </div>
   </section>
@@ -108,10 +113,11 @@
     <!-- Country medalist drill-down -->
     <table class="results" *ngIf="view() === 'countryMedalists' || view() === 'allTimeCountryMedalists'">
       <thead>
-        <tr><th>Rank</th><th>Athlete / Team</th><th>Sport</th><th>Event</th><th>Country</th></tr>
+        <tr><th>Year</th><th>Rank</th><th>Athlete / Team</th><th>Sport</th><th>Event</th><th>Country</th></tr>
       </thead>
       <tbody>
         <tr *ngFor="let r of countryMedalRows()">
+          <td>{{ r.year }}</td>
           <td class="rank">{{ medalEmoji(r.rank) }}</td>
           <td><strong>{{ r.athlete }}</strong></td>
           <td>
@@ -124,7 +130,7 @@
             {{ r.country }}
           </td>
         </tr>
-        <tr *ngIf="countryMedalRows().length === 0"><td colspan="5" class="empty">No medalists found.</td></tr>
+        <tr *ngIf="countryMedalRows().length === 0"><td colspan="6" class="empty">No medalists found.</td></tr>
       </tbody>
     </table>
  

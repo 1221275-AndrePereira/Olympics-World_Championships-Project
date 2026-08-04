@@ -67,5 +67,5 @@ export interface CountryMedal {
   country: string;
 }
  
-export type SortBy = 'rank' | 'athlete' | 'country';
+export type SortBy = 'rank' | 'athlete' | 'country' | 'year';
 export type ResultsView = 'results' | 'medalTable' | 'allTimeMedalTable' | 'countryMedalists' | 'allTimeCountryMedalists';

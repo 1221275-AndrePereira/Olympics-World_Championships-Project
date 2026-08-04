@@ -13,8 +13,8 @@ public class ResultsService : IResultsService
     // Initially the project covered two Games; maintain a mapping but allow multiple years per season.
     private static readonly Dictionary<string, List<int>> SeasonYears = new(StringComparer.OrdinalIgnoreCase)
     {
-        ["Summer"] = new List<int> { 2024 },
-        ["Winter"] = new List<int> { 2026 }
+        ["Summer"] = new List<int> { 2024,2028 },
+        ["Winter"] = new List<int> { 2026,2030 }
     };
  
     private readonly IClassificationRepository _repo;
@@ -41,16 +41,16 @@ public class ResultsService : IResultsService
         return SeasonYears.TryGetValue(season, out var known) ? known : new List<int>();
     }
  
-    public async Task<List<string>> GetSportsAsync(string season)
+    public async Task<List<string>> GetSportsAsync(string season, int year)
     {
         var sheets = await _repo.GetSportSheetsAsync();
-        return sheets.Where(s => s.Season.Equals(season, StringComparison.OrdinalIgnoreCase))
+        return sheets.Where(s => s.Season.Equals(season, StringComparison.OrdinalIgnoreCase) && s.Year == year)
                      .Select(s => s.Sport).Distinct().OrderBy(s => s).ToList();
     }
  
-    public async Task<List<OptionDto>> GetEventsAsync(string season, string sport)
+    public async Task<List<OptionDto>> GetEventsAsync(string season, int year, string sport)
     {
-        var pairs = await _repo.GetEventOptionsAsync(season, sport);
+        var pairs = await _repo.GetEventOptionsAsync(season, sport, year);
         return pairs.Select(p => new OptionDto
         {
             Key = BuildEventKey(p.Category, p.Event),
@@ -59,11 +59,11 @@ public class ResultsService : IResultsService
     }
  
     public async Task<List<ResultRowDto>> GetResultsAsync(
-        string season, string sport, string eventKey,
+        string season, int year, string sport, string eventKey,
         string? athleteSearch, string? countrySearch, string sortBy)
     {
         var (category, ev) = ParseEventKey(eventKey);
-        var entries = await _repo.GetEntriesForEventAsync(season, sport, category, ev);
+        var entries = await _repo.GetEntriesForEventAsync(season, year, sport, category, ev);
  
         var rows = entries.Select(e => new ResultRowDto
         {
@@ -101,21 +101,20 @@ public class ResultsService : IResultsService
     }
  
     public async Task<List<CountryMedalDto>> GetCountryMedalistsAsync(
-        string season, int year, string country, string? athleteSearch, string sortBy)
+        string season, int year, string country, string? athleteSearch, string? yearSearch, string sortBy)
     {
         if (!SeasonYears.TryGetValue(season, out var known) || !known.Contains(year))
             return new List<CountryMedalDto>();
 
         var entries = await _repo.GetMedalEntriesForCountryAsync(season, country, year);
-        return ProjectAndSortMedalists(entries, year, athleteSearch, sortBy);
+        return ProjectAndSortMedalists(entries, year, athleteSearch, yearSearch, sortBy, useEntryYear: false);
     }
  
     public async Task<List<CountryMedalDto>> GetAllTimeCountryMedalistsAsync(
-        string season, string country, string? athleteSearch, string sortBy)
+        string season, string country, string? athleteSearch, string? yearSearch, string sortBy)
     {
         var entries = await _repo.GetMedalEntriesForCountryAsync(season, country);
-        var year = SeasonYears.TryGetValue(season, out var ys) ? ys.FirstOrDefault() : 0;
-        return ProjectAndSortMedalists(entries, year, athleteSearch, sortBy);
+        return ProjectAndSortMedalists(entries, 0, athleteSearch, yearSearch, sortBy, useEntryYear: true);
     }
  
     // --- helpers ---------------------------------------------------------
@@ -147,11 +146,11 @@ public class ResultsService : IResultsService
     }
  
     private static List<CountryMedalDto> ProjectAndSortMedalists(
-        List<Backend_App.Domain.Model.ClassificationEntry> entries, int year, string? athleteSearch, string sortBy)
+        List<Backend_App.Domain.Model.ClassificationEntry> entries, int year, string? athleteSearch, string? yearSearch, string sortBy, bool useEntryYear)
     {
         var medalists = entries.Select(e => new CountryMedalDto
         {
-            Year = year,
+            Year = useEntryYear ? e.SportSheet!.Year : year,
             Sport = e.SportSheet!.Sport,
             Category = e.SportSheet.Category,
             Event = e.Event,
@@ -162,11 +161,15 @@ public class ResultsService : IResultsService
  
         if (!string.IsNullOrWhiteSpace(athleteSearch))
             medalists = medalists.Where(m => m.Athlete.Contains(athleteSearch, StringComparison.OrdinalIgnoreCase));
+
+        if (!string.IsNullOrWhiteSpace(yearSearch))
+            medalists = medalists.Where(m => m.Year.ToString().Contains(yearSearch, StringComparison.OrdinalIgnoreCase));
  
         medalists = sortBy switch
         {
             "athlete" => medalists.OrderBy(m => m.Athlete, StringComparer.OrdinalIgnoreCase),
             "country" => medalists.OrderBy(m => m.Country, StringComparer.OrdinalIgnoreCase),
+            "year" => medalists.OrderByDescending(m => m.Year).ThenBy(m => m.Rank),
             _ => medalists.OrderBy(m => m.Rank)
         };
  

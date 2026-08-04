@@ -13,11 +13,11 @@ public interface IClassificationRepository
     Task<List<SportSheet>> GetSportSheetsAsync();
     Task<List<string>> GetDistinctCountriesAsync();
  
-    /// Distinct (Category, Event) pairs available for a sport within a season.
-    Task<List<(string Category, string Event)>> GetEventOptionsAsync(string season, string sport);
+    /// Distinct (Category, Event) pairs available for a sport within a season and Games year.
+    Task<List<(string Category, string Event)>> GetEventOptionsAsync(string season, string sport, int? year = null);
  
-    /// All entries for a given season + sport + category + event.
-    Task<List<ClassificationEntry>> GetEntriesForEventAsync(string season, string sport, string category, string @event);
+    /// All entries for a given season + year + sport + category + event.
+    Task<List<ClassificationEntry>> GetEntriesForEventAsync(string season, int year, string sport, string category, string @event);
  
     /// All entries for a season that currently hold a medal-position value (1, 2 or 3).
     /// If `year` is provided, the results are limited to that Games year.
