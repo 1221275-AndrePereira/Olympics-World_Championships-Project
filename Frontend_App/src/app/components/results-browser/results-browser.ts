@@ -70,7 +70,7 @@ export class ResultsBrowserComponent implements OnInit {
     this.selectedSeason = season;
     this.api.getYears(this.selectedSeason).subscribe((years) => {
       this.years.set(years);
-      this.selectedYear = years[0] ?? null;
+      this.selectedYear = years.length ? years[years.length - 1] : null;
       this.loadSportsAndResults();
     });
   }
@@ -184,10 +184,11 @@ export class ResultsBrowserComponent implements OnInit {
     this.api.getEvents(this.selectedSeason, this.selectedYear, this.selectedSport).subscribe((events) => {
       this.events.set(events);
       this.selectedEventKey = events[0]?.key ?? '';
+      // clear any stale results immediately
+      this.resultRows.set([]);
+      // call loadResults on the next tick so the select control updates first
       if (this.selectedEventKey) {
-        this.loadResults();
-      } else {
-        this.resultRows.set([]);
+        setTimeout(() => this.loadResults(), 0);
       }
     });
   }
