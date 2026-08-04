@@ -1,0 +1,7 @@
+.countries-summary { padding: 16px; }
+.countries-summary h2 { margin-top: 0; }
+.countries-summary table { width: 100%; border-collapse: collapse; }
+.countries-summary thead th { text-align: left; color: var(--ink-400); padding: 8px; }
+.countries-summary td { padding: 8px; border-top: 1px solid var(--ink-800); }
+.countries-summary .flag { width: 22px; height: 16px; margin-right: 8px; vertical-align: middle; }
+.countries-summary .num { text-align: right; font-family: var(--font-mono); }

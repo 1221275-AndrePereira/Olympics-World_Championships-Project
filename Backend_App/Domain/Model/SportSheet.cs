@@ -21,4 +21,7 @@ public class SportSheet
     public string Season { get; set; } = "Summer";
  
     public List<ClassificationEntry> Entries { get; set; } = new();
+    
+    /// Four-digit year for the Games this sheet belongs to (e.g. 2024).
+    public int Year { get; set; } = 0;
 }

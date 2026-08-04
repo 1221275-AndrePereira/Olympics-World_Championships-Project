@@ -1,6 +1,5 @@
 import { Routes } from '@angular/router';
 import { Dashboard } from './page/dashboard/dashboard';
-import { QuotaBoardComponent } from './components/quota-board/quota-board';
 import { ResultsBrowserComponent } from './components/results-browser/results-browser';
 
 export const routes: Routes = [
@@ -15,7 +14,7 @@ export const routes: Routes = [
         children: [
             {
                 path: '',
-                component: QuotaBoardComponent
+                component: ResultsBrowserComponent
             },
             {
                 path: 'results',

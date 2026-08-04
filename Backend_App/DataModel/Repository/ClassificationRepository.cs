@@ -37,26 +37,30 @@ public class ClassificationRepository : IClassificationRepository
                      && e.Event == @event)
             .ToListAsync();
  
-    public async Task<List<ClassificationEntry>> GetMedalEntriesAsync(string season) =>
-        await _db.ClassificationEntries.AsNoTracking()
-            .Include(e => e.SportSheet)
+    public async Task<List<ClassificationEntry>> GetMedalEntriesAsync(string season, int? year = null)
+    {
+        var q = _db.ClassificationEntries.AsNoTracking().Include(e => e.SportSheet)
             .Where(e => e.SportSheet!.Season == season
                      && e.ClassificationValue != null
-                     && e.ClassificationValue >= 1 && e.ClassificationValue <= 3)
-            .ToListAsync();
+                     && e.ClassificationValue >= 1 && e.ClassificationValue <= 3);
+        if (year.HasValue) q = q.Where(e => e.SportSheet!.Year == year.Value);
+        return await q.ToListAsync();
+    }
  
-    public async Task<List<ClassificationEntry>> GetMedalEntriesForCountryAsync(string season, string country) =>
-        await _db.ClassificationEntries.AsNoTracking()
-            .Include(e => e.SportSheet)
+    public async Task<List<ClassificationEntry>> GetMedalEntriesForCountryAsync(string season, string country, int? year = null)
+    {
+        var q = _db.ClassificationEntries.AsNoTracking().Include(e => e.SportSheet)
             .Where(e => e.SportSheet!.Season == season
                      && e.Country == country
                      && e.ClassificationValue != null
-                     && e.ClassificationValue >= 1 && e.ClassificationValue <= 3)
-            .ToListAsync();
+                     && e.ClassificationValue >= 1 && e.ClassificationValue <= 3);
+        if (year.HasValue) q = q.Where(e => e.SportSheet!.Year == year.Value);
+        return await q.ToListAsync();
+    }
  
     public async Task<(List<ClassificationEntry> Items, int TotalCount)> QueryAsync(
         string? sport, string? category, string? country, string? search, bool? pendingOnly,
-        int page, int pageSize)
+        int page, int pageSize, string? sortBy)
     {
         var query = _db.ClassificationEntries.AsNoTracking().Include(e => e.SportSheet).AsQueryable();
  
@@ -79,9 +83,20 @@ public class ClassificationRepository : IClassificationRepository
         }
  
         var total = await query.CountAsync();
- 
+
+        // Apply requested ordering
+        query = sortBy switch
+        {
+            "sport" => query.OrderBy(e => e.SportSheet!.Sport).ThenBy(e => e.Country).ThenBy(e => e.Event),
+            "category" => query.OrderBy(e => e.SportSheet!.Category).ThenBy(e => e.SportSheet!.Sport).ThenBy(e => e.Event),
+            "country" => query.OrderBy(e => e.Country).ThenBy(e => e.SportSheet!.Sport).ThenBy(e => e.Event),
+            "event" => query.OrderBy(e => e.Event).ThenBy(e => e.SportSheet!.Sport).ThenBy(e => e.Country),
+            "athlete" => query.OrderBy(e => e.EntryName).ThenBy(e => e.SportSheet!.Sport).ThenBy(e => e.Country),
+            "classification" => query.OrderBy(e => e.ClassificationValue == -1).ThenBy(e => e.ClassificationValue),
+            _ => query.OrderBy(e => e.SportSheet!.Sport).ThenBy(e => e.Country).ThenBy(e => e.Event),
+        };
+
         var items = await query
-            .OrderBy(e => e.SportSheet!.Sport).ThenBy(e => e.Country).ThenBy(e => e.Event)
             .Skip((page - 1) * pageSize)
             .Take(pageSize)
             .ToListAsync();

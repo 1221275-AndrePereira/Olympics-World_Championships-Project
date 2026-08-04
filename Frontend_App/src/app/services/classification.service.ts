@@ -33,6 +33,7 @@ export class ClassificationService {
     if (filter.country) params = params.set('country', filter.country);
     if (filter.search) params = params.set('search', filter.search);
     if (filter.pendingOnly) params = params.set('pendingOnly', filter.pendingOnly);
+    if (filter.sort) params = params.set('sortBy', filter.sort);
  
     return this.http.get<PagedResult<ClassificationEntry>>(`${API_BASE}/entries`, { params });
   }

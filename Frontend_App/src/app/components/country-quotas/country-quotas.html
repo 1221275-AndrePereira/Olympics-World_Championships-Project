@@ -1,0 +1,14 @@
+<div class="country-quotas" *ngIf="country">
+  <h3>Quota breakdown — {{ country }}</h3>
+  <div class="status" *ngIf="error() as e">{{ e }}</div>
+  <table *ngIf="quotas().length">
+    <thead><tr><th>Sport</th><th>Quotas</th></tr></thead>
+    <tbody>
+      <tr *ngFor="let q of quotas()">
+        <td>{{ q.sport }}</td>
+        <td class="num">{{ q.quotas }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="loading" *ngIf="loading()">Loading…</div>
+</div>

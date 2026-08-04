@@ -14,7 +14,7 @@ public class EntriesService : IEntriesService
         var page = Math.Max(filter.Page, 1);
  
         var (items, total) = await _repo.QueryAsync(
-            filter.Sport, filter.Category, filter.Country, filter.Search, filter.PendingOnly, page, pageSize);
+            filter.Sport, filter.Category, filter.Country, filter.Search, filter.PendingOnly, page, pageSize, filter.SortBy);
  
         return new PagedResultDto<ClassificationEntryDto>
         {

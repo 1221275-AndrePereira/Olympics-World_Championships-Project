@@ -10,28 +10,36 @@ namespace Backend_App.Application.Services;
 /// 
 public class ResultsService : IResultsService
 {
-    // This workbook only covers two specific Games, so season maps 1:1 to a year.
-    // If more Games were ever added to the source data, this is the one place to extend.
-    private static readonly Dictionary<string, int> SeasonYearMap = new(StringComparer.OrdinalIgnoreCase)
+    // Initially the project covered two Games; maintain a mapping but allow multiple years per season.
+    private static readonly Dictionary<string, List<int>> SeasonYears = new(StringComparer.OrdinalIgnoreCase)
     {
-        ["Summer"] = 2024,
-        ["Winter"] = 2026  
+        ["Summer"] = new List<int> { 2024 },
+        ["Winter"] = new List<int> { 2026 }
     };
  
     private readonly IClassificationRepository _repo;
-    private readonly ICountrySummaryRepository _countrySummaryRepo;
  
     public ResultsService(IClassificationRepository repo, ICountrySummaryRepository countrySummaryRepo)
     {
         _repo = repo;
-        _countrySummaryRepo = countrySummaryRepo;
     }
  
-    public Task<List<string>> GetSeasonsAsync() =>
-        Task.FromResult(SeasonYearMap.Keys.ToList());
- 
-    public Task<List<int>> GetYearsAsync(string season) =>
-        Task.FromResult(SeasonYearMap.TryGetValue(season, out var year) ? new List<int> { year } : new List<int>());
+    public async Task<List<string>> GetSeasonsAsync()
+    {
+        var sheets = await _repo.GetSportSheetsAsync();
+        var seasons = sheets.Select(s => s.Season).Distinct(StringComparer.OrdinalIgnoreCase).OrderBy(s => s).ToList();
+        if (seasons.Any()) return seasons;
+        return SeasonYears.Keys.ToList();
+    }
+
+    public async Task<List<int>> GetYearsAsync(string season)
+    {
+        var sheets = await _repo.GetSportSheetsAsync();
+        var years = sheets.Where(s => s.Season.Equals(season, StringComparison.OrdinalIgnoreCase) && s.Year > 0)
+                          .Select(s => s.Year).Distinct().OrderByDescending(y => y).ToList();
+        if (years.Any()) return years;
+        return SeasonYears.TryGetValue(season, out var known) ? known : new List<int>();
+    }
  
     public async Task<List<string>> GetSportsAsync(string season)
     {
@@ -82,52 +90,31 @@ public class ResultsService : IResultsService
  
     public async Task<List<MedalTallyDto>> GetMedalTableAsync(string season, int year)
     {
-        // Single-Games dataset: the year is validated against the season's mapped year,
-        // but the underlying query is the same as the season-wide medal set.
-        if (!SeasonYearMap.TryGetValue(season, out var mappedYear) || mappedYear != year)
-            return new List<MedalTallyDto>();
- 
-        var entries = await _repo.GetMedalEntriesAsync(season);
+        var entries = await _repo.GetMedalEntriesAsync(season, year);
         return TallyMedals(entries.Select(e => (e.Country, e.ClassificationValue!.Value)));
     }
  
     public async Task<List<MedalTallyDto>> GetAllTimeMedalTableAsync(string season)
     {
-        // Unlike GetMedalTableAsync (this specific Games' standings, built from live
-        // classification data), this uses the country summary sheet's real historical
-        // medal counts for the season - i.e. every past Summer or Winter Games combined.
-        var summaries = await _countrySummaryRepo.GetAllAsync();
-        var isSummer = season.Equals("Summer", StringComparison.OrdinalIgnoreCase);
- 
-        return summaries
-            .Select(s => new MedalTallyDto
-            {
-                Country = s.Country,
-                Gold = isSummer ? s.SummerGoldMedals : s.WinterGoldMedals,
-                Silver = isSummer ? s.SummerSilverMedals : s.WinterSilverMedals,
-                Bronze = isSummer ? s.SummerBronzeMedals : s.WinterBronzeMedals,
-                Total = isSummer ? s.SummerTotalMedals : s.WinterTotalMedals
-            })
-            .Where(m => m.Total > 0)
-            .OrderByDescending(m => m.Gold).ThenByDescending(m => m.Silver).ThenByDescending(m => m.Bronze)
-            .ToList();
+        var entries = await _repo.GetMedalEntriesAsync(season);
+        return TallyMedals(entries.Select(e => (e.Country, e.ClassificationValue!.Value)));
     }
  
     public async Task<List<CountryMedalDto>> GetCountryMedalistsAsync(
         string season, int year, string country, string? athleteSearch, string sortBy)
     {
-        if (!SeasonYearMap.TryGetValue(season, out var mappedYear) || mappedYear != year)
+        if (!SeasonYears.TryGetValue(season, out var known) || !known.Contains(year))
             return new List<CountryMedalDto>();
- 
-        var entries = await _repo.GetMedalEntriesForCountryAsync(season, country);
-        return ProjectAndSortMedalists(entries, mappedYear, athleteSearch, sortBy);
+
+        var entries = await _repo.GetMedalEntriesForCountryAsync(season, country, year);
+        return ProjectAndSortMedalists(entries, year, athleteSearch, sortBy);
     }
  
     public async Task<List<CountryMedalDto>> GetAllTimeCountryMedalistsAsync(
         string season, string country, string? athleteSearch, string sortBy)
     {
         var entries = await _repo.GetMedalEntriesForCountryAsync(season, country);
-        var year = SeasonYearMap.GetValueOrDefault(season, 0);
+        var year = SeasonYears.TryGetValue(season, out var ys) ? ys.FirstOrDefault() : 0;
         return ProjectAndSortMedalists(entries, year, athleteSearch, sortBy);
     }
  

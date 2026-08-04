@@ -30,6 +30,7 @@ export interface EntriesFilter {
   country?: string;
   search?: string;
   pendingOnly?: boolean;
+  sort?: string;
   page: number;
   pageSize: number;
 }

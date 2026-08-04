@@ -1,0 +1,14 @@
+.country-quotas {
+  padding: 12px 16px;
+  background: var(--ink-900);
+  border-top: 1px solid var(--ink-700);
+}
+.country-quotas h3 {
+  margin: 0 0 8px 0;
+  font-size: 16px;
+}
+.country-quotas table { width: 100%; border-collapse: collapse; }
+.country-quotas thead th { text-align: left; color: var(--ink-400); padding: 8px; }
+.country-quotas td { padding: 8px; border-top: 1px solid var(--ink-800); }
+.country-quotas .num { text-align: right; font-family: var(--font-mono); }
+.country-quotas .loading { padding: 12px 0; }

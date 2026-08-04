@@ -41,15 +41,14 @@ var app = builder.Build();
 using (var scope = app.Services.CreateScope())
 {
     var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+
+    var excelPath = app.Configuration["Import:ExcelFilePath"] ?? "Data/Files/Tokyo2020_Beijing2022.xlsx";
+    var fullPath = Path.Combine(AppContext.BaseDirectory, excelPath);
+    var importer = scope.ServiceProvider.GetRequiredService<ExcelImportService>();
+
+    db.Database.EnsureDeleted();
     db.Database.EnsureCreated();
- 
-    if (!db.ClassificationEntries.Any())
-    {
-        var excelPath = app.Configuration["Import:ExcelFilePath"] ?? "Data/Files/Tokyo2020_Beijing2022.xlsx";
-        var fullPath = Path.Combine(AppContext.BaseDirectory, excelPath);
-        var importer = scope.ServiceProvider.GetRequiredService<ExcelImportService>();
-        importer.Import(fullPath, db);
-    }
+    importer.Import(fullPath, db);
 }
  
 // --- Middleware pipeline ------------------------------------------------

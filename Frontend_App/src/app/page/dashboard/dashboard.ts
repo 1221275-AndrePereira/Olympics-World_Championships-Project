@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { ThemeService } from '../../services/theme.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -10,7 +11,14 @@ import { RouterModule } from '@angular/router';
 })
 
 export class Dashboard {
-  constructor() {
-    // Dashboard initialization
+  themeIsDark = false;
+
+  constructor(private themeService: ThemeService) {
+    this.themeIsDark = this.themeService.theme() === 'dark';
+  }
+
+  toggleTheme(): void {
+    this.themeService.toggle();
+    this.themeIsDark = this.themeService.theme() === 'dark';
   }
 }

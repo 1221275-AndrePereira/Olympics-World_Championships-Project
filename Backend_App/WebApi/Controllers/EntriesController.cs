@@ -16,13 +16,14 @@ public class EntriesController : ControllerBase
     public async Task<IActionResult> GetEntries(
         [FromQuery] string? sport, [FromQuery] string? category, [FromQuery] string? country,
         [FromQuery] string? search, [FromQuery] bool? pendingOnly,
-        [FromQuery] int page = 1, [FromQuery] int pageSize = 50)
+        [FromQuery] int page = 1, [FromQuery] int pageSize = 50, [FromQuery] string? sortBy = null)
     {
         var filter = new EntriesFilterDto
         {
             Sport = sport, Category = category, Country = country,
             Search = search, PendingOnly = pendingOnly, Page = page, PageSize = pageSize
         };
+        filter.SortBy = sortBy;
         return Ok(await _entries.GetEntriesAsync(filter));
     }
  

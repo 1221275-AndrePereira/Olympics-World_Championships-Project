@@ -51,16 +51,33 @@ public class ExcelImportService
         }
     }
 
+    private static int SafeGetInt(IXLCell cell)
+    {
+        var text = cell.GetFormattedString().Trim();
+        if (int.TryParse(text, System.Globalization.NumberStyles.Integer, System.Globalization.CultureInfo.InvariantCulture, out var intValue))
+            return intValue;
+
+        if (double.TryParse(text, System.Globalization.NumberStyles.Float, System.Globalization.CultureInfo.InvariantCulture, out var doubleValue))
+            return (int)Math.Round(doubleValue);
+
+        text = SafeGetString(cell);
+        return int.TryParse(text, System.Globalization.NumberStyles.Integer, System.Globalization.CultureInfo.InvariantCulture, out var parsed) ? parsed : 0;
+    }
+
     public void Import(string excelFilePath, AppDbContext db)
     {
         using var workbook = new XLWorkbook(excelFilePath);
- 
+
+        // Try to detect a four-digit year in the file path (e.g. "Tokyo2020.xlsx" or a parent folder).
+        var yearMatch = System.Text.RegularExpressions.Regex.Match(excelFilePath, "\\b(19|20)\\d{2}\\b");
+        var fileYear = yearMatch.Success ? int.Parse(yearMatch.Value) : 0;
+
         foreach (var ws in workbook.Worksheets)
         {
             if (SkippedSummarySheets.Contains(ws.Name))
                 continue;
- 
-            ImportSportSheet(ws, db);
+
+            ImportSportSheet(ws, db, fileYear);
         }
  
         ImportSportsQuotas(workbook, db);
@@ -70,7 +87,7 @@ public class ExcelImportService
         _logger.LogInformation("Excel import complete.");
     }
  
-    private void ImportSportSheet(IXLWorksheet ws, AppDbContext db)
+    private void ImportSportSheet(IXLWorksheet ws, AppDbContext db, int fileYear)
     {
         var usedRange = ws.RangeUsed();
         if (usedRange is null || usedRange.RowCount() < 2) return;
@@ -103,6 +120,8 @@ public class ExcelImportService
         }
  
         var (sport, category) = SplitSheetName(ws.Name);
+        sport = NormalizeName(sport);
+        category = NormalizeName(category);
         var season = WinterSports.Contains(sport) ? "Winter" : "Summer";
  
         var sportSheet = new SportSheet
@@ -110,36 +129,60 @@ public class ExcelImportService
             SheetName = ws.Name,
             Sport = sport,
             Category = category,
-            Season = season
+            Season = season,
+            Year = fileYear
         };
         db.SportSheets.Add(sportSheet);
  
         for (int r = 2; r <= usedRange.RowCount(); r++)
         {
             var row = usedRange.Row(r);
-            var country = SafeGetString(row.Cell(countryCol));
+            var country = NormalizeName(SafeGetString(row.Cell(countryCol)));
             if (string.IsNullOrWhiteSpace(country)) continue;
  
             var name = SafeGetString(row.Cell(nameCol));
-            string? entryName = string.IsNullOrWhiteSpace(name) ? null : name;
+            string? entryName = string.IsNullOrWhiteSpace(name) ? null : NormalizeName(name);
  
             foreach (var (col, eventName) in eventColumns)
             {
                 var cell = row.Cell(col);
                 if (cell.IsEmpty()) continue;
  
-                int? value = cell.TryGetValue<int>(out var intVal) ? intVal : null;
+                var text = cell.GetFormattedString().Trim();
+                int? value = int.TryParse(text, System.Globalization.NumberStyles.Integer, System.Globalization.CultureInfo.InvariantCulture, out var intVal)
+                    ? intVal
+                    : double.TryParse(text, System.Globalization.NumberStyles.Float, System.Globalization.CultureInfo.InvariantCulture, out var doubleVal)
+                        ? (int)Math.Round(doubleVal)
+                        : int.TryParse(SafeGetString(cell), System.Globalization.NumberStyles.Integer, System.Globalization.CultureInfo.InvariantCulture, out var parsed)
+                            ? parsed
+                            : null;
  
                 sportSheet.Entries.Add(new ClassificationEntry
                 {
                     SourceRowIndex = r,
                     Country = country,
-                    Event = eventName,
+                    Event = NormalizeName(eventName),
                     EntryName = entryName,
                     ClassificationValue = value
                 });
             }
         }
+    }
+
+    private static string NormalizeName(string input)
+    {
+        if (string.IsNullOrWhiteSpace(input)) return input;
+        // Trim, collapse whitespace, and remove diacritics to normalize variations
+        var trimmed = System.Text.RegularExpressions.Regex.Replace(input.Trim(), "\\s+", " ");
+        var normalized = trimmed.Normalize(System.Text.NormalizationForm.FormD);
+        var sb = new System.Text.StringBuilder();
+        foreach (var ch in normalized)
+        {
+            var uc = System.Globalization.CharUnicodeInfo.GetUnicodeCategory(ch);
+            if (uc != System.Globalization.UnicodeCategory.NonSpacingMark)
+                sb.Append(ch);
+        }
+        return sb.ToString().Normalize(System.Text.NormalizationForm.FormC);
     }
  
     private void ImportSportsQuotas(XLWorkbook workbook, AppDbContext db)
@@ -163,7 +206,7 @@ public class ExcelImportService
         }
  
         int Col(string name) => columnIndex.TryGetValue(name, out var i) ? i : -1;
-        int GetInt(IXLRangeRow row, int col) => col > 0 && row.Cell(col).TryGetValue<int>(out var v) ? v : 0;
+        int GetInt(IXLRangeRow row, int col) => col > 0 ? SafeGetInt(row.Cell(col)) : 0;
  
         for (int r = 2; r <= usedRange.RowCount(); r++)
         {
@@ -232,7 +275,8 @@ public class ExcelImportService
             foreach (var (col, sport) in sportColumns)
             {
                 var cell = row.Cell(col);
-                if (cell.TryGetValue<int>(out var qty) && qty > 0)
+                var qty = SafeGetInt(cell);
+                if (qty > 0)
                 {
                     db.CountrySportQuotas.Add(new CountrySportQuota
                     {

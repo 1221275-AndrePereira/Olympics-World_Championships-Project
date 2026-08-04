@@ -18,11 +18,7 @@ export class ThemeService {
   }
  
   private apply(theme: 'dark' | 'light'): void {
-    if (theme === 'light') {
-      document.documentElement.setAttribute('data-theme', 'light');
-    } else {
-      document.documentElement.removeAttribute('data-theme');
-    }
+    document.documentElement.setAttribute('data-theme', theme);
   }
  
   private readInitialTheme(): 'dark' | 'light' {
